@@ -1,16 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
+using GameState;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : BaseController
 {
-	public float movementScale = 9.8f;
-
 	void Update()
 	{
-		//Vector3 pos = transform.position;
-		//pos.y = Vector3.Dot(Input.gyro.gravity, Vector3.up) * movementScale;
-		//transform.position = pos;
 
+		if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
+			Inputs();
+	}
 
+	private void Inputs()
+	{
+		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+		{
+			if (state == e_GAMESTATE.PLAYING)
+				gsManager.SetGameState(e_GAMESTATE.PAUSED);
+			else if (state == e_GAMESTATE.PAUSED)
+				gsManager.SetGameState(e_GAMESTATE.PLAYING);
+		}
 	}
 }
