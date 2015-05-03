@@ -32,16 +32,12 @@ public class BaseController : MonoBehaviour, IGameState
 	{
 		if (state == e_GAMESTATE.PAUSED && e_State == e_GAMESTATE.PLAYING)
 		{
-			state = e_State;
-
 			rb.velocity = prevVelocity;
 			rb.useGravity = true;
 			rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |RigidbodyConstraints.FreezeRotationY;
 		}
 		else if (state == e_GAMESTATE.PLAYING && e_State == e_GAMESTATE.PAUSED)
 		{
-			state = e_State;
-
 			if (!doesVelocityStop)
 				prevVelocity = rb.velocity;
 
@@ -49,6 +45,7 @@ public class BaseController : MonoBehaviour, IGameState
 			rb.useGravity = false;
 			rb.constraints = RigidbodyConstraints.FreezeAll;
 		}
+		state = e_State;
 	}
 
 	void OnDestroy()

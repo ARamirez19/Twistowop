@@ -58,6 +58,8 @@ public class GameStateManager : MonoBehaviour
 
 	public void SetGameState(e_GAMESTATE e_state)
 	{
+		Debug.Log (e_state);
+
 		state = e_state;
 
 		foreach(GameObject obj in subscribers)
