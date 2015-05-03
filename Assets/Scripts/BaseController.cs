@@ -50,4 +50,9 @@ public class BaseController : MonoBehaviour, IGameState
 			rb.constraints = RigidbodyConstraints.FreezeAll;
 		}
 	}
+
+	void OnDestroy()
+	{
+		gsManager.GameStateUnSubscribe(this.gameObject);
+	}
 }

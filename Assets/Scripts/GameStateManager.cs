@@ -71,4 +71,9 @@ public class GameStateManager : MonoBehaviour
 	{
 		subscribers.Add (go);
 	}
+
+	public void GameStateUnSubscribe(GameObject go)
+	{
+		subscribers.Remove (go);
+	}
 }
