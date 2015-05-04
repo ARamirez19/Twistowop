@@ -43,6 +43,8 @@ public class PlayerController : BaseController
 					levelManager.ToggleLevelFreeze();
 				}
 			}
+
+
 		}
 	}
 
