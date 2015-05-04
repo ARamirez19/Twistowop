@@ -46,6 +46,8 @@ public class GameStateManager : MonoBehaviour
 			{
 				gsManager = go.AddComponent<GameStateManager>();
 			}
+			else
+				gsManager = go.GetComponent<GameStateManager>();
 		}
 
 		return gsManager;
@@ -66,7 +68,6 @@ public class GameStateManager : MonoBehaviour
 		{
 			obj.GetComponent<IGameState>().ChangeState(e_state);
 		}
-
 	}
 
 	public void GameStateSubscribe(GameObject go)

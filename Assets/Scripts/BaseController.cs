@@ -9,6 +9,7 @@ public class BaseController : MonoBehaviour, IGameState
 	[SerializeField] protected bool doesVelocityStop = true;
 	protected Vector3 prevVelocity = Vector3.zero;
 	protected Rigidbody rb;
+	protected LevelManager levelManager;
 	
 	void Start()
 	{
@@ -16,16 +17,11 @@ public class BaseController : MonoBehaviour, IGameState
 		gsManager.GameStateSubscribe(this.gameObject);
 		state = gsManager.GetGameState();
 
+		levelManager = LevelManager.GetInstance();
+
+		ExtraStart();
+
 		rb = GetComponent<Rigidbody>();
-	}
-	
-	void Update()
-	{
-		//Vector3 pos = transform.position;
-		//pos.y = Vector3.Dot(Input.gyro.gravity, Vector3.up) * movementScale;
-		//transform.position = pos;
-		
-		
 	}
 	
 	public void ChangeState(e_GAMESTATE e_State)
@@ -52,4 +48,6 @@ public class BaseController : MonoBehaviour, IGameState
 	{
 		gsManager.GameStateUnSubscribe(this.gameObject);
 	}
+
+	protected virtual void ExtraStart(){}
 }

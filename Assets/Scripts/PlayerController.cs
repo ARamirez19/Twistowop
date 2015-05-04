@@ -5,13 +5,13 @@ using GameState;
 public class PlayerController : BaseController
 {
 	private bool playerInGoal = false;
-	private float freezeCount = 0;
-	private float completionTimer = 1.0f;
+	private bool canFreezeLevel = true;
+	private float completionTimer = 0.1f;
 	private float timer = 0.0f;
 
 	void Update()
 	{
-		if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
+		if ((state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED) && canFreezeLevel)
 			Inputs();
 
 		if (state == e_GAMESTATE.PLAYING)
@@ -36,24 +36,12 @@ public class PlayerController : BaseController
 			Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 			RaycastHit hit;
 
-			switch(state)
+			if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
 			{
-			case e_GAMESTATE.PLAYING:
 				if (Physics.Raycast(ray,out hit) && hit.collider.tag == "PausePlay")
 				{
-					gsManager.SetGameState(e_GAMESTATE.PAUSED);
-					freezeCount++;
+					levelManager.ToggleLevelFreeze();
 				}
-				break;
-			case e_GAMESTATE.PAUSED:
-				if (Physics.Raycast(ray,out hit) && hit.collider.tag == "PausePlay")
-					gsManager.SetGameState(e_GAMESTATE.PLAYING);
-				break;
-			case e_GAMESTATE.LEVELCOMPLETE:
-				//Do Level Complete stuff like... Continue to the next screen or something. Or maybe GUIManager can do that.
-				break;
-			default:
-				break;
 			}
 		}
 	}
@@ -74,5 +62,10 @@ public class PlayerController : BaseController
 			playerInGoal = false;
 			Debug.Log ("Player out of goal!");
 		}
+	}
+
+	protected override void ExtraStart ()
+	{
+		canFreezeLevel = levelManager.GetPlayerFreezeStatus();
 	}
 }
