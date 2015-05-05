@@ -57,24 +57,10 @@ public class LevelManager : MonoBehaviour, IGameState
 			currentTimer += Time.deltaTime;
 		}
 
-		if (state == e_GAMESTATE.LEVELCOMPLETE)
-		{
-			if (GUIObj.activeSelf == false)
-			{
-				GUIObj.SetActive(true);
-
-				GUIObj.transform.FindChild("CompleteText").GetComponent<Text>().text =
-					"Your time: " + System.Math.Round (currentTimer,2) + "s\nTime to Beat: " +
-						System.Math.Round (timeToBeat,2) + "s\nTimes Frozen: " + timesFrozen;
-			}
-		}
-
-
 		if (state == e_GAMESTATE.MENU)
 		{
 			if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
 			{
-				GUIObj.transform.FindChild("MenuText").gameObject.SetActive(false);
 				gsManager.SetGameState(e_GAMESTATE.PLAYING);
 			}
 		}
@@ -83,6 +69,20 @@ public class LevelManager : MonoBehaviour, IGameState
 
 	public void ChangeState(e_GAMESTATE e_state)
 	{
+		if (state == e_GAMESTATE.PLAYING && e_state == e_GAMESTATE.LEVELCOMPLETE)
+		{
+			GUIObj.transform.FindChild("LevelCompleteGUI").gameObject.SetActive(true);
+			
+			GUIObj.transform.FindChild("LevelCompleteGUI").FindChild("CompleteText").GetComponent<Text>().text =
+				"Your time: " + System.Math.Round (currentTimer,2) + "s\nTime to Beat: " +
+					System.Math.Round (timeToBeat,2) + "s\nTimes Frozen: " + timesFrozen;
+		}
+
+		if (state == e_GAMESTATE.MENU && e_state == e_GAMESTATE.PLAYING)
+		{
+			GUIObj.transform.FindChild("MenuGUI").gameObject.SetActive(false);
+		}
+
 		state = e_state;
 	}
 

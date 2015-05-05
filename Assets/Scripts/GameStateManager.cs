@@ -17,7 +17,7 @@ namespace GameState
 public class GameStateManager : MonoBehaviour
 {
 	public static GameStateManager gsManager;
-	private e_GAMESTATE state = e_GAMESTATE.PLAYING;
+	[SerializeField] private e_GAMESTATE state = e_GAMESTATE.MENU;
 	private List<GameObject> subscribers = new List<GameObject>();
 
 	void Start ()

@@ -17,7 +17,7 @@ public class EnemyController : BaseController
 
 	void OnCollisionEnter(Collision other)
 	{
-		if (other.collider.tag == "Player")
+		if (other.collider.tag == "Player" && (state == GameState.e_GAMESTATE.PLAYING || state == GameState.e_GAMESTATE.PAUSED))
 		{
 			Application.LoadLevel(Application.loadedLevel);
 		}

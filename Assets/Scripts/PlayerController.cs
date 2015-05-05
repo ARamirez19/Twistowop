@@ -8,14 +8,18 @@ public class PlayerController : BaseController
 	private bool canFreezeLevel = true;
 	private float completionTimer = 0.1f;
 	private float timer = 0.0f;
+	private bool playerInputEnabled = false;
 
 	void Update()
 	{
-		if ((state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED) && canFreezeLevel)
+		if ((state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED) && canFreezeLevel && playerInputEnabled)
 			Inputs();
 
 		if (state == e_GAMESTATE.PLAYING)
 		{
+			if (playerInputEnabled == false)
+				playerInputEnabled = true;
+
 			if (playerInGoal)
 			{
 				if (rb.velocity.magnitude < .05f)
