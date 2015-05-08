@@ -86,6 +86,14 @@ public class LevelManager : MonoBehaviour, IGameState
 		state = e_state;
 	}
 
+	public void NextLevel()
+	{
+		if (Application.loadedLevel == Application.levelCount -1)
+			Application.LoadLevel(0);
+		else
+			Application.LoadLevel(Application.loadedLevel + 1);
+	}
+
 	public void RestartLevel()
 	{
 		Application.LoadLevel(Application.loadedLevel);
