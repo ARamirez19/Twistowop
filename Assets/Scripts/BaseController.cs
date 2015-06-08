@@ -10,6 +10,8 @@ public class BaseController : MonoBehaviour, IGameState
 	protected Vector3 prevVelocity = Vector3.zero;
 	protected Rigidbody rb;
 	protected LevelManager levelManager;
+	[SerializeField] protected bool isAffectedByFreeze = true;
+	[SerializeField] protected bool isAffectedByGravityWells = false;
 	
 	void Start()
 	{
@@ -21,18 +23,19 @@ public class BaseController : MonoBehaviour, IGameState
 
 		ExtraStart();
 
-		rb = GetComponent<Rigidbody>();
+		if (GetComponent<Rigidbody>() != null)
+			rb = GetComponent<Rigidbody>();
 	}
 	
 	public void ChangeState(e_GAMESTATE e_State)
 	{
-		if (state == e_GAMESTATE.PAUSED && e_State == e_GAMESTATE.PLAYING)
+		if ((state == e_GAMESTATE.PAUSED && e_State == e_GAMESTATE.PLAYING) && isAffectedByFreeze)
 		{
 			rb.velocity = prevVelocity;
 			rb.useGravity = true;
 			rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |RigidbodyConstraints.FreezeRotationY;
 		}
-		else if (state == e_GAMESTATE.PLAYING && e_State == e_GAMESTATE.PAUSED)
+		else if ((state == e_GAMESTATE.PLAYING && e_State == e_GAMESTATE.PAUSED) && isAffectedByFreeze)
 		{
 			if (!doesVelocityStop)
 				prevVelocity = rb.velocity;
@@ -50,4 +53,9 @@ public class BaseController : MonoBehaviour, IGameState
 	}
 
 	protected virtual void ExtraStart(){}
+
+	public bool GravWellStatus()
+	{
+		return isAffectedByGravityWells;
+	}
 }

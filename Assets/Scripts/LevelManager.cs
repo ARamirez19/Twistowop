@@ -17,6 +17,8 @@ public class LevelManager : MonoBehaviour, IGameState
 	private e_GAMESTATE state;
 
 	private GameObject GUIObj;
+	private GameObject LevelCompleteGUIObj;
+	private GameObject StartMenuGUIObj;
 
 	public static LevelManager GetInstance()
 	{
@@ -46,8 +48,18 @@ public class LevelManager : MonoBehaviour, IGameState
 		gsManager = GameStateManager.GetInstance();
 		state = gsManager.GetGameState();
 		gsManager.GameStateSubscribe(this.gameObject);
+
 		GUIObj = GameObject.FindGameObjectWithTag("GUI");
-		GUIObj.transform.FindChild("LevelCompleteGUI").gameObject.SetActive(false);
+
+		LevelCompleteGUIObj = GameObject.FindGameObjectWithTag("LevelCompleteGUI");
+		StartMenuGUIObj = GameObject.FindGameObjectWithTag("StartMenuGUI");
+
+		LevelCompleteGUIObj.SetActive(false);
+
+		if (freezeLimit >= 0)
+			StartMenuGUIObj.transform.FindChild("MenuText").gameObject.GetComponent<Text>().text = "Tap to start!\nFreezes available: " + freezeLimit;
+		else
+			StartMenuGUIObj.transform.FindChild("MenuText").gameObject.GetComponent<Text>().text = "Tap to start!\nFreezes available: Infinite";
 	}
 
 	void Update ()
@@ -59,6 +71,7 @@ public class LevelManager : MonoBehaviour, IGameState
 
 		if (state == e_GAMESTATE.MENU)
 		{
+
 			if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
 			{
 				gsManager.SetGameState(e_GAMESTATE.PLAYING);
@@ -73,14 +86,14 @@ public class LevelManager : MonoBehaviour, IGameState
 		{
 			GUIObj.transform.FindChild("LevelCompleteGUI").gameObject.SetActive(true);
 			
-			GUIObj.transform.FindChild("LevelCompleteGUI").FindChild("CompleteText").GetComponent<Text>().text =
+			LevelCompleteGUIObj.transform.FindChild("CompleteText").GetComponent<Text>().text =
 				"Your time: " + System.Math.Round (currentTimer,2) + "s\nTime to Beat: " +
 					System.Math.Round (timeToBeat,2) + "s\nTimes Frozen: " + timesFrozen;
 		}
 
 		if (state == e_GAMESTATE.MENU && e_state == e_GAMESTATE.PLAYING)
 		{
-			GUIObj.transform.FindChild("MenuGUI").gameObject.SetActive(false);
+			StartMenuGUIObj.SetActive(false);
 		}
 
 		state = e_state;
