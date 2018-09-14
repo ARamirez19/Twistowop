@@ -28,17 +28,6 @@ public class GravityManager: MonoBehaviour, IGameState
 
 	void CalcGrav()
 	{
-
-		/*
-		if (!Application.isMobilePlatform)
-		{
-			xx = Mathf.Sin (-Camera.main.transform.localEulerAngles.z*Mathf.Deg2Rad) * GRAV_SPEED;
-			yy = Mathf.Cos (-Camera.main.transform.localEulerAngles.z*Mathf.Deg2Rad) * GRAV_SPEED;
-			Physics.gravity = new Vector3(xx,yy,0f);
-		}
-		else 
-		{
-		*/
 		if (state != e_GAMESTATE.MENU)
 		{
 			if (state == e_GAMESTATE.PLAYING)
@@ -47,6 +36,12 @@ public class GravityManager: MonoBehaviour, IGameState
 				float yy;
 				float zz;
 
+				#if UNITY_EDITOR
+				xx = Mathf.Sin (Camera.main.transform.localEulerAngles.z*Mathf.Deg2Rad) * GRAV_SPEED;
+				yy = Mathf.Cos (-Camera.main.transform.localEulerAngles.z*Mathf.Deg2Rad) * GRAV_SPEED;
+				Physics.gravity = new Vector3(xx,-yy);
+
+				#else
 				xx = Input.gyro.gravity.x;
 				yy = Input.gyro.gravity.y;
 				zz = Input.gyro.gravity.z;
@@ -61,6 +56,7 @@ public class GravityManager: MonoBehaviour, IGameState
 				
 					Physics.gravity = new Vector3 (xx, yy);
 				}
+				#endif
 			}
 		}
 	}
@@ -69,8 +65,8 @@ public class GravityManager: MonoBehaviour, IGameState
 	{
 		state = e_state;
 		//If going from paused to play, enable gravity on all gravity objects
-		//If going from play to paused, disable gravity on all gravityObjects and freeze rigidbody.velocity (0,0,0);
+		//If going from play to paused, disable gravity on all gravityObjects and freeze rigidbody.velocity (0,0,0) if object should.
 
-		//Some things not affected by pause? oooo.... That can be interesting
+		//Some things not affected by pause? oooo.... That can be interesting - Boom, implemented.
 	}
 }

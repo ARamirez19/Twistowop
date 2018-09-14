@@ -35,6 +35,18 @@ public class PlayerController : BaseController
 
 	private void Inputs()
 	{
+		#if UNITY_EDITOR
+
+		if(Input.GetKeyDown(KeyCode.Space))
+		{
+			if(state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
+			{
+				levelManager.ToggleLevelFreeze();
+			}
+		}
+
+		#else
+
 		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
 		{
 			Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
@@ -50,6 +62,7 @@ public class PlayerController : BaseController
 
 
 		}
+		#endif
 	}
 
 	public void OnTriggerEnter(Collider other)

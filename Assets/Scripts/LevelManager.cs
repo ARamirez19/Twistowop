@@ -57,9 +57,9 @@ public class LevelManager : MonoBehaviour, IGameState
 		LevelCompleteGUIObj.SetActive(false);
 
 		if (freezeLimit >= 0)
-			StartMenuGUIObj.transform.FindChild("MenuText").gameObject.GetComponent<Text>().text = "Tap to start!\nFreezes available: " + freezeLimit;
+			StartMenuGUIObj.transform.Find("MenuText").gameObject.GetComponent<Text>().text = "Tap to start!\nFreezes available: " + freezeLimit;
 		else
-			StartMenuGUIObj.transform.FindChild("MenuText").gameObject.GetComponent<Text>().text = "Tap to start!\nFreezes available: Infinite";
+			StartMenuGUIObj.transform.Find("MenuText").gameObject.GetComponent<Text>().text = "Tap to start!\nFreezes available: Infinite";
 	}
 
 	void Update ()
@@ -72,7 +72,7 @@ public class LevelManager : MonoBehaviour, IGameState
 		if (state == e_GAMESTATE.MENU)
 		{
 
-			if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+			if ((Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) || Input.GetKeyDown(KeyCode.Space))
 			{
 				gsManager.SetGameState(e_GAMESTATE.PLAYING);
 			}
@@ -84,9 +84,9 @@ public class LevelManager : MonoBehaviour, IGameState
 	{
 		if (state == e_GAMESTATE.PLAYING && e_state == e_GAMESTATE.LEVELCOMPLETE)
 		{
-			GUIObj.transform.FindChild("LevelCompleteGUI").gameObject.SetActive(true);
+			GUIObj.transform.Find("LevelCompleteGUI").gameObject.SetActive(true);
 			
-			LevelCompleteGUIObj.transform.FindChild("CompleteText").GetComponent<Text>().text =
+			LevelCompleteGUIObj.transform.Find("CompleteText").GetComponent<Text>().text =
 				"Your time: " + System.Math.Round (currentTimer,2) + "s\nTime to Beat: " +
 					System.Math.Round (timeToBeat,2) + "s\nTimes Frozen: " + timesFrozen;
 		}
