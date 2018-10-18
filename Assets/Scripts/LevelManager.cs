@@ -2,6 +2,8 @@
 using UnityEngine.UI;
 using System.Collections;
 using GameState;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LevelManager : MonoBehaviour, IGameState
 {
@@ -55,11 +57,6 @@ public class LevelManager : MonoBehaviour, IGameState
 		StartMenuGUIObj = GameObject.FindGameObjectWithTag("StartMenuGUI");
 
 		LevelCompleteGUIObj.SetActive(false);
-
-		if (freezeLimit >= 0)
-			StartMenuGUIObj.transform.Find("MenuText").gameObject.GetComponent<Text>().text = "Tap to start!\nFreezes available: " + freezeLimit;
-		else
-			StartMenuGUIObj.transform.Find("MenuText").gameObject.GetComponent<Text>().text = "Tap to start!\nFreezes available: Infinite";
 	}
 
 	void Update ()
@@ -77,7 +74,6 @@ public class LevelManager : MonoBehaviour, IGameState
 				gsManager.SetGameState(e_GAMESTATE.PLAYING);
 			}
 		}
-
 	}
 
 	public void ChangeState(e_GAMESTATE e_state)
@@ -86,7 +82,7 @@ public class LevelManager : MonoBehaviour, IGameState
 		{
 			GUIObj.transform.Find("LevelCompleteGUI").gameObject.SetActive(true);
 			
-			LevelCompleteGUIObj.transform.Find("CompleteText").GetComponent<Text>().text =
+			LevelCompleteGUIObj.transform.Find("CompleteText").GetComponent<TextMeshProUGUI>().text =
 				"Your time: " + System.Math.Round (currentTimer,2) + "s\nTime to Beat: " +
 					System.Math.Round (timeToBeat,2) + "s\nTimes Frozen: " + timesFrozen;
 		}
@@ -101,17 +97,24 @@ public class LevelManager : MonoBehaviour, IGameState
 
 	public void NextLevel()
 	{
-		if (Application.loadedLevel == Application.levelCount -1)
-			Application.LoadLevel(0);
-		else
-			Application.LoadLevel(Application.loadedLevel + 1);
+        if (SceneManager.GetActiveScene().name == "Level5")
+            SceneManager.LoadScene("LevelSelect");
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 
 	public void RestartLevel()
 	{
-		Application.LoadLevel(Application.loadedLevel);
+        Debug.LogError(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
-
+    
+    public void ReturnToLevelSelect()
+    {
+        Debug.LogError("Level Select?");
+        SceneManager.LoadScene("LevelSelect");
+    }
+    
 	public bool GetPlayerFreezeStatus()
 	{
 		return canPlayerFreeze;

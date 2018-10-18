@@ -29,11 +29,16 @@ public class BaseController : MonoBehaviour, IGameState
 	
 	public void ChangeState(e_GAMESTATE e_State)
 	{
+        Debug.LogError("Changing State BaseController " + gameObject.name);
+        Debug.LogError(state + "    " + e_State);
 		if ((state == e_GAMESTATE.PAUSED && e_State == e_GAMESTATE.PLAYING) && isAffectedByFreeze)
 		{
-			rb.velocity = prevVelocity;
-			rb.useGravity = true;
-			rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |RigidbodyConstraints.FreezeRotationY;
+            Debug.LogError(gameObject.name + "   " + prevVelocity);
+            rb.useGravity = true;
+            rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
+            rb.velocity = prevVelocity;
+            Debug.LogError(rb.velocity + "  rb");
+			
 		}
 		else if ((state == e_GAMESTATE.PLAYING && e_State == e_GAMESTATE.PAUSED) && isAffectedByFreeze)
 		{
