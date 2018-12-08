@@ -10,6 +10,7 @@ public class FadeEffect : MonoBehaviour
     [SerializeField] private bool fadeOut = false;
     [SerializeField] private float fadeInSpeed = 0f;
     [SerializeField] private float fadeOutSpeed = 0f;
+    [SerializeField] private float startingAlpha = 0f;
     [Space]
     [SerializeField] private CanvasGroup group;
 
@@ -20,6 +21,8 @@ public class FadeEffect : MonoBehaviour
 
     private void OnEnable()
     {
+        group.alpha = startingAlpha;
+
         if (playOnEnable)
         {
             if (fadeIn)
