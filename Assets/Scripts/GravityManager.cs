@@ -5,7 +5,7 @@ using GameState;
 
 public class GravityManager: MonoBehaviour, IGameState
 {
-	private const float GRAV_SPEED = 20f;
+	private const float GRAV_SPEED = 25f;
 	private GameStateManager gsManager;
 	private e_GAMESTATE state;
 
