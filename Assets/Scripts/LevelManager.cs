@@ -81,10 +81,10 @@ public class LevelManager : MonoBehaviour, IGameState
 		if (state == e_GAMESTATE.PLAYING && e_state == e_GAMESTATE.LEVELCOMPLETE)
 		{
 			GUIObj.transform.Find("LevelCompleteGUI").gameObject.SetActive(true);
-			
-			LevelCompleteGUIObj.transform.Find("CompleteText").GetComponent<TextMeshProUGUI>().text =
-				"Your time: " + System.Math.Round (currentTimer,2) + "s\nTime to Beat: " +
-					System.Math.Round (timeToBeat,2) + "s\nTimes Frozen: " + timesFrozen;
+
+            double timeTaken = System.Math.Round(currentTimer, 2);
+            double recommendedTime = System.Math.Round(timeToBeat, 2);
+            LevelCompleteGUIObj.GetComponent<LevelCompleteController>().CompleteLevel(timeTaken, recommendedTime, timesFrozen);
 		}
 
 		if (state == e_GAMESTATE.MENU && e_state == e_GAMESTATE.PLAYING)
