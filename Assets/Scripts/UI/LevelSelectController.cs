@@ -12,7 +12,7 @@ public class LevelSelectController : MonoBehaviour
     [SerializeField]
     private GameObject levelWindow;
     [SerializeField]
-    private GameObject[] worldLevels;
+    private GameObject scrollContent;
     [SerializeField]
     private TextMeshProUGUI[] worldText;
     [SerializeField]
@@ -23,8 +23,8 @@ public class LevelSelectController : MonoBehaviour
     private int worldsAvaliable;
 
     private GameObject[] worlds;
-    [SerializeField]
-    private GameObject scrollContent;
+    private GameObject[] worldLevels;
+
  
 	// Use this for initialization
 	void Start ()
