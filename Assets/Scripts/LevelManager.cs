@@ -4,6 +4,7 @@ using System.Collections;
 using GameState;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Collections.Generic;
 
 public class LevelManager : MonoBehaviour, IGameState
 {
@@ -21,6 +22,10 @@ public class LevelManager : MonoBehaviour, IGameState
     private GameObject GUIObj;
     private GameObject LevelCompleteGUIObj;
     private GameObject StartMenuGUIObj;
+
+    [SerializeField] private List<BaseCollectable> collectables = new List<BaseCollectable>();
+    public int CollectableAmount { get; private set; }
+    public int CurrentCollectableCount { get; set; }
 
     public static LevelManager GetInstance()
     {
@@ -57,6 +62,9 @@ public class LevelManager : MonoBehaviour, IGameState
         StartMenuGUIObj = GameObject.FindGameObjectWithTag("StartMenuGUI");
 
         LevelCompleteGUIObj.SetActive(false);
+
+        CurrentCollectableCount = 0;
+        CollectableAmount = collectables.Count;
     }
 
     void Update()
@@ -65,7 +73,6 @@ public class LevelManager : MonoBehaviour, IGameState
         {
             currentTimer += Time.deltaTime;
         }
-
     }
 
 	public void ChangeState(e_GAMESTATE e_state)
@@ -76,7 +83,7 @@ public class LevelManager : MonoBehaviour, IGameState
 
             double timeTaken = System.Math.Round(currentTimer, 2);
             double recommendedTime = System.Math.Round(timeToBeat, 2);
-            LevelCompleteGUIObj.GetComponent<LevelCompleteController>().CompleteLevel(timeTaken, recommendedTime, timesFrozen);
+            LevelCompleteGUIObj.GetComponent<LevelCompleteController>().CompleteLevel(SceneManager.GetActiveScene().buildIndex, timeTaken, recommendedTime, timesFrozen);
 		}
 
         if (state == e_GAMESTATE.MENU && e_state == e_GAMESTATE.PLAYING)
