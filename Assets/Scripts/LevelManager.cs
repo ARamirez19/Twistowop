@@ -61,7 +61,7 @@ public class LevelManager : MonoBehaviour, IGameState
         LevelCompleteGUIObj = GameObject.FindGameObjectWithTag("LevelCompleteGUI");
         StartMenuGUIObj = GameObject.FindGameObjectWithTag("StartMenuGUI");
 
-        LevelCompleteGUIObj.SetActive(false);
+        //LevelCompleteGUIObj.SetActive(false);
 
         CurrentCollectableCount = 0;
         CollectableAmount = collectables.Count;

@@ -10,7 +10,7 @@ public class Feelers : MonoBehaviour
 
     private enum TriggerType { None, Enter, Exit, Stay };
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D (Collider2D other)
     {
         if (type != TriggerType.Enter)
         {
@@ -26,7 +26,7 @@ public class Feelers : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D (Collider2D other)
     {
         if (type != TriggerType.Exit)
         {

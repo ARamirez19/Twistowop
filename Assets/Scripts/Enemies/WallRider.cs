@@ -9,7 +9,7 @@ public class WallRider : BaseController
 
     protected override void ExtraStart()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
+        transform.position = new Vector2(transform.position.x, transform.position.y);
         AttachToNormal();
     }
 
@@ -25,26 +25,24 @@ public class WallRider : BaseController
 
     private void MoveEnemy()
     {
-        transform.Translate(-transform.right * speed * Time.deltaTime);
+        transform.Translate(transform.right * speed * Time.deltaTime);
     }
 
     private void TurnAround()
     {
-        transform.Rotate(new Vector3(0f, 180f, 0f));
+        transform.Rotate(new Vector2(0f, 180f));
         speed *= -1;
     }
 
     private void AttachToNormal()
     {
-        RaycastHit hit;
-        Vector3 startPoint = transform.position;
-
-        if (Physics.Raycast(startPoint, -transform.up, out hit, 5f))
+        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, -transform.up, 5f);
+        if (hitInfo.collider != null)
         {
-            Quaternion surfaceRotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
-            Quaternion newRotation = surfaceRotation * Quaternion.AngleAxis(transform.rotation.eulerAngles.y, Vector3.up);
+            Quaternion surfaceRotation = Quaternion.FromToRotation(Vector2.up, hitInfo.normal);
+            Quaternion newRotation = surfaceRotation * Quaternion.AngleAxis(transform.rotation.eulerAngles.y, Vector2.up);
             transform.rotation = newRotation;
-            transform.position = hit.point;
+            transform.position = hitInfo.point;
         }
         else
         {
