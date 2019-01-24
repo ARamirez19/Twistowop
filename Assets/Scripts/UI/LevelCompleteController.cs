@@ -19,7 +19,7 @@ public class LevelCompleteController : MonoBehaviour
         this.GetComponent<FadeEffect>().onFadeInComplete += AnimateStars;
     }
 
-    public void CompleteLevel(double timeTaken, double recommendedTime, int timesFrozen)
+    public void CompleteLevel(int level, double timeTaken, double recommendedTime, int timesFrozen)
     {
         ResetData();
         starsToAdd++;
@@ -31,6 +31,13 @@ public class LevelCompleteController : MonoBehaviour
         {
             starsToAdd++;
         }
+
+        if (LevelManager.GetInstance().CurrentCollectableCount == LevelManager.GetInstance().CollectableAmount)
+        {
+            starsToAdd++;
+        }
+
+        SaveManager.Instance.SaveStars(level, starsToAdd);
     }
 
     public void NextStar()

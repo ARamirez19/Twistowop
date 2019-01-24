@@ -17,14 +17,14 @@ public class GravityManager: MonoBehaviour, IGameState
 
 		Screen.orientation = ScreenOrientation.Landscape;
 		Input.gyro.enabled = true;
-		Physics.gravity = Vector3.zero;
+		Physics.gravity = Vector2.zero;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
 		CalcGrav();
-	}
+    }
 
 	void CalcGrav()
 	{
@@ -38,18 +38,18 @@ public class GravityManager: MonoBehaviour, IGameState
 				#if UNITY_EDITOR
 				xx = Mathf.Sin (Camera.main.transform.localEulerAngles.z*Mathf.Deg2Rad) * GRAV_SPEED;
 				yy = Mathf.Cos (-Camera.main.transform.localEulerAngles.z*Mathf.Deg2Rad) * GRAV_SPEED;
-				Physics.gravity = new Vector3(xx,-yy);
+				Physics2D.gravity = new Vector2(xx,-yy);
 
-				#else
+                #else
 				
 				xx = Input.gyro.gravity.x * GRAV_SPEED;
 				yy = Input.gyro.gravity.y * GRAV_SPEED;
 				
-				Physics.gravity = new Vector3 (xx, yy);
+				Physics2D.gravity = new Vector2 (xx, yy);
 				
-				#endif
-			}
-		}
+                #endif
+            }
+        }
 	}
 
 	public void ChangeState(e_GAMESTATE e_state)
