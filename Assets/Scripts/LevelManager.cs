@@ -105,7 +105,6 @@ public class LevelManager : MonoBehaviour, IGameState
 
     public void RestartLevel()
     {
-        Debug.LogError(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
