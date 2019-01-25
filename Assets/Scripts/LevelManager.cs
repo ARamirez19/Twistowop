@@ -59,6 +59,7 @@ public class LevelManager : MonoBehaviour, IGameState
         GUIObj = GameObject.FindGameObjectWithTag("GUI");
 
         LevelCompleteGUIObj = GameObject.FindGameObjectWithTag("LevelCompleteGUI");
+        LevelCompleteGUIObj.SetActive(false);
         StartMenuGUIObj = GameObject.FindGameObjectWithTag("StartMenuGUI");
 
         //LevelCompleteGUIObj.SetActive(false);
