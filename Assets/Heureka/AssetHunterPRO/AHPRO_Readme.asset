@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b27603d2be0e81488eb446378c435df, type: 3}
+  m_Name: AHPRO_Readme
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 2800000, guid: 94411db6691648e4590eb22360ba6934, type: 3}
+  PackageShowPrio: 100
+  AssetName: Asset Hunter PRO
+  Subheader: Project Cleaning Tool
+  AssetIdentifier: Heureka.AssetHunterPro
+  Description: 'Asset Hunter is THE project cleaning tool of the asset store.
+
+
+    It helps you locate all the unused asset and delete them. It will reduce time
+    spend waiting for the editor to load, it also simply boosts productivity in general
+    by having to search through less stuff.
+
+
+    Quick start:
+
+    1: Open Asset Hunter PRO (Ctrl+H)
+
+    2: Create a build
+
+    3: Load newly created log into Asset Hunter PRO
+
+    4: Inspect and delete unused assets
+
+    5: Use settings to ignore certain types, folders etc.
+
+
+    On the roadmap:
+
+    Information on added assemblies [DONE]
+
+    Improved unused script detection
+
+    Buildinfo comparison
+
+    Asset Dependency graph
+
+'
+  Links:
+  - ActiveLink: 0
+    Name: Asset Store
+    Link: https://assetstore.unity.com/packages/slug/135296
+  - ActiveLink: 1
+    Name: Documentation
+    Link: http://heureka.dk/wp-content/uploads/2018/12/Documentation-Asset-Hunter-PRO.pdf
+  - ActiveLink: 1
+    Name: Forum Thread
+    Link: http://forum.unity3d.com/threads/released-asset-hunter-project-cleaning.274173/
+  - ActiveLink: 1
+    Name: Youtube Promo
+    Link: https://youtu.be/dxqrJhBKdbY
+  - ActiveLink: 1
+    Name: Youtube Introduction
+    Link: https://youtu.be/m4_DcrhYhxI
+  VersionData:
+  - VersionNum:
+      Major: 1
+      Minor: 0
+      Patch: 0
+    VersionChanges:
+    - Full re-write of Asset Hunter 2. New features, improved workflow, new UI and
+      HUGE performance gains
+    FoldOut: 0
+  - VersionNum:
+      Major: 1
+      Minor: 1
+      Patch: 0
+    VersionChanges:
+    - '[Feature] New window that showcases buildreport information (2018 or newer)'
+    - '[Feature] Now able to remove text from buttons in settings'
+    - '[Feature] Added a way to set default save location for userprefs in settings'
+    - '[Feature] Added a way to set default save location for build info in settings'
+    - '[Bug] Fixed issue with file endings not being excluding properly'
+    FoldOut: 0
+  - VersionNum:
+      Major: 1
+      Minor: 1
+      Patch: 1
+    VersionChanges:
+    - '[Feature] Folders show accumulated disc size used'
+    - '[UI Enhancement] Now the refresh button changes color when project is out of
+      sync with buildinfo treeview'
+    - '[Documentation] Added documentation for 1.1.0'
+    FoldOut: 0
+  - VersionNum:
+      Major: 1
+      Minor: 1
+      Patch: 2
+    VersionChanges:
+    - '[Optimization] Now caches size of each folder, instead of calculating each
+      frame'
+    - '[Bug] Fixed an issue with loosing button icons after play/stop'
+    FoldOut: 1
