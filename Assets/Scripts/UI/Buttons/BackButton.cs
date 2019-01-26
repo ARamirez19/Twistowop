@@ -14,6 +14,6 @@ public class BackButton : MonoBehaviour {
 	// Update is called once per frame
     public void Back()
     { 
-        GetComponent<Button>().onClick.AddListener(LevelManager.GetInstance().ReturnToLevelSelect);
+        LevelManager.GetInstance().ReturnToLevelSelect();
     }
 }
