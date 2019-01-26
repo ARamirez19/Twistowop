@@ -62,4 +62,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/World1/World1Level16.unity
     guid: d2a9aae4f3e42804fa289e8ed77ed8ea
+  - enabled: 1
+    path: Assets/Scenes/World1/World1Level17.unity
+    guid: ff4a4fa2676bcfb4fb4ee67e3343c99c
+  - enabled: 1
+    path: Assets/Scenes/World1/World1Level18.unity
+    guid: 58b1a603e7b2c654ea96914e5a9226b5
+  - enabled: 1
+    path: Assets/Scenes/World1/World1Level19.unity
+    guid: d4644a723d86ce14999f4dcee8215135
+  - enabled: 1
+    path: Assets/Scenes/World1/World1Level20.unity
+    guid: 9484b17b77cf2794da46f96debce3a7c
   m_configObjects: {}

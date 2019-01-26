@@ -66,7 +66,10 @@ public class LevelManager : MonoBehaviour, IGameState
 
         CurrentCollectableCount = 0;
         CollectableAmount = collectables.Count;
-        PersistentGUI.Instance.gameObject.SetActive(true);
+        if (PersistentGUI.Instance != null)
+        {
+            PersistentGUI.Instance.gameObject.SetActive(true);
+        }
     }
 
     void Update()
@@ -91,7 +94,10 @@ public class LevelManager : MonoBehaviour, IGameState
         if (state == e_GAMESTATE.MENU && e_state == e_GAMESTATE.PLAYING)
         {
             StartMenuGUIObj.SetActive(false);
-            PersistentGUI.Instance.gameObject.SetActive(false);
+            if (PersistentGUI.Instance != null)
+            {
+                PersistentGUI.Instance.gameObject.SetActive(false);
+            }
         }
 
         state = e_state;
