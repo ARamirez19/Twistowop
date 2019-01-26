@@ -7,7 +7,7 @@ public class GravityWell : MonoBehaviour, IGameState
 	private GameStateManager gsManager;
 	private e_GAMESTATE state;
 	private GameObject player;
-	private float scale = 1.0f;
+    private CircleCollider2D collider;
 	[SerializeField] float pullMagnification = .1f;
 	//Would have to get subscribers of gravity
 
@@ -17,7 +17,7 @@ public class GravityWell : MonoBehaviour, IGameState
 		gsManager.GameStateSubscribe(this.gameObject);
 		state = gsManager.GetGameState();
 		player = GameObject.FindGameObjectWithTag("Player");
-		scale = this.transform.localScale.x *.75f;
+        collider = GetComponent<CircleCollider2D>();
 	}
 
 	void Update ()
@@ -27,16 +27,16 @@ public class GravityWell : MonoBehaviour, IGameState
 
 		if (state == e_GAMESTATE.PLAYING)
 		{
-			Vector3 heading = this.transform.position;
-			heading.z = 0f;
-			heading -= player.transform.position;
+			Vector2 heading = this.transform.position;
+			
+			heading -= new Vector2(player.transform.position.x, player.transform.position.y);
 
 			float distance = heading.magnitude;
 
-			if (distance < scale)
+			if (distance < collider.radius)
 			{
-				Vector3 direction = heading / distance;
-				player.GetComponent<Rigidbody>().velocity += direction * pullMagnification;
+				Vector2 direction = heading / distance;
+				player.GetComponent<Rigidbody2D>().velocity += direction * pullMagnification;
 			}
 		}
 	}

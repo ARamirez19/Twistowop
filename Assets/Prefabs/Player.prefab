@@ -149,4 +149,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doesVelocityStop: 1
   isAffectedByFreeze: 1
-  isAffectedByGravityWells: 0
+  isAffectedByGravityWells: 1

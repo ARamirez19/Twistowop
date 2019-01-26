@@ -22,12 +22,13 @@ public class PlayerController : BaseController
 
 			if (playerInGoal)
 			{
+                /*
 				if (rb.velocity.magnitude < .05f)
 					timer += Time.deltaTime;
 				else
 					timer = 0.0f;
 
-				if (timer >= completionTimer)
+				if (timer >= completionTimer)*/
 					gsManager.SetGameState(e_GAMESTATE.LEVELCOMPLETE);
 			}
 		}
@@ -45,36 +46,19 @@ public class PlayerController : BaseController
 			}
 		}
 
-#else
+		#else
 
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
 		{
-            
+			Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+			RaycastHit hit;
 
-            if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
+			if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
 			{
-                /*
-                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position), Vector2.zero);
-                */
-                
-
-                Collider2D[] col = Physics2D.OverlapPointAll(Input.GetTouch(0).position);
-
-                if (col.Length > 0)
-                {
-                    foreach (Collider2D c in col)
-                    {
-                        if (c.tag == "PausePlay")
-                        {
-                            levelManager.ToggleLevelFreeze();
-                        }
-                    }
-                }
-                /*
-                if (hit.collider.tag == "PausePlay")
+				if (Physics.Raycast(ray,out hit) && hit.collider.tag == "PausePlay")
 				{
 					levelManager.ToggleLevelFreeze();
-				}*/
+				}
 			}
 
 
