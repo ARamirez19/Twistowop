@@ -22,12 +22,13 @@ public class PlayerController : BaseController
 
 			if (playerInGoal)
 			{
+                /*
 				if (rb.velocity.magnitude < .05f)
 					timer += Time.deltaTime;
 				else
 					timer = 0.0f;
 
-				if (timer >= completionTimer)
+				if (timer >= completionTimer)*/
 					gsManager.SetGameState(e_GAMESTATE.LEVELCOMPLETE);
 			}
 		}

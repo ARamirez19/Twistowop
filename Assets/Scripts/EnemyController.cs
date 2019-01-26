@@ -9,7 +9,7 @@ public class EnemyController : BaseController
 
 	}
 
-	void OnCollisionEnter(Collision other)
+	void OnCollisionEnter2D(Collision2D other)
 	{
 		if (other.collider.tag == "Player" && (state == GameState.e_GAMESTATE.PLAYING || state == GameState.e_GAMESTATE.PAUSED))
 		{

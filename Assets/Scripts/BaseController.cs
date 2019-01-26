@@ -8,7 +8,7 @@ public class BaseController : MonoBehaviour, IGameState
 	protected e_GAMESTATE state;
 	[SerializeField] protected bool doesVelocityStop = true;
 	protected Vector3 prevVelocity = Vector3.zero;
-	protected Rigidbody rb;
+	protected Rigidbody2D rb;
 	protected LevelManager levelManager;
 	[SerializeField] protected bool isAffectedByFreeze = true;
 	[SerializeField] protected bool isAffectedByGravityWells = false;
@@ -23,21 +23,17 @@ public class BaseController : MonoBehaviour, IGameState
 
 		ExtraStart();
 
-		if (GetComponent<Rigidbody>() != null)
-			rb = GetComponent<Rigidbody>();
+		if (GetComponent<Rigidbody2D>() != null)
+			rb = GetComponent<Rigidbody2D>();
 	}
 	
 	public void ChangeState(e_GAMESTATE e_State)
 	{
-        Debug.LogError("Changing State BaseController " + gameObject.name);
-        Debug.LogError(state + "    " + e_State);
 		if ((state == e_GAMESTATE.PAUSED && e_State == e_GAMESTATE.PLAYING) && isAffectedByFreeze)
 		{
-            Debug.LogError(gameObject.name + "   " + prevVelocity);
-            rb.useGravity = true;
-            rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
+            rb.gravityScale = 1.0f;
             rb.velocity = prevVelocity;
-            Debug.LogError(rb.velocity + "  rb");
+            rb.constraints = RigidbodyConstraints2D.None;
 			
 		}
 		else if ((state == e_GAMESTATE.PLAYING && e_State == e_GAMESTATE.PAUSED) && isAffectedByFreeze)
@@ -45,10 +41,14 @@ public class BaseController : MonoBehaviour, IGameState
 			if (!doesVelocityStop)
 				prevVelocity = rb.velocity;
 
-			rb.velocity = Vector3.zero;
-			rb.useGravity = false;
-			rb.constraints = RigidbodyConstraints.FreezeAll;
+			rb.velocity = Vector2.zero;
+            rb.gravityScale = 0f;
+			rb.constraints = RigidbodyConstraints2D.FreezeAll;
 		}
+        else if((state == e_GAMESTATE.MENU && e_State == e_GAMESTATE.PLAYING) && isAffectedByFreeze)
+        {
+            rb.gravityScale = 1f;
+        }
 		state = e_State;
 	}
 

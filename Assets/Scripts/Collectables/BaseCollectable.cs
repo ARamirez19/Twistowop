@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BaseCollectable : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (string.Compare(other.tag, "Player") == 0)
         {

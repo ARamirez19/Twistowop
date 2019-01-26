@@ -59,12 +59,17 @@ public class LevelManager : MonoBehaviour, IGameState
         GUIObj = GameObject.FindGameObjectWithTag("GUI");
 
         LevelCompleteGUIObj = GameObject.FindGameObjectWithTag("LevelCompleteGUI");
+        LevelCompleteGUIObj.SetActive(false);
         StartMenuGUIObj = GameObject.FindGameObjectWithTag("StartMenuGUI");
 
         //LevelCompleteGUIObj.SetActive(false);
 
         CurrentCollectableCount = 0;
         CollectableAmount = collectables.Count;
+        if (PersistentGUI.Instance != null)
+        {
+            PersistentGUI.Instance.gameObject.SetActive(true);
+        }
     }
 
     void Update()
@@ -89,6 +94,10 @@ public class LevelManager : MonoBehaviour, IGameState
         if (state == e_GAMESTATE.MENU && e_state == e_GAMESTATE.PLAYING)
         {
             StartMenuGUIObj.SetActive(false);
+            if (PersistentGUI.Instance != null)
+            {
+                PersistentGUI.Instance.gameObject.SetActive(false);
+            }
         }
 
         state = e_state;
@@ -104,14 +113,12 @@ public class LevelManager : MonoBehaviour, IGameState
 
     public void RestartLevel()
     {
-        Debug.LogError(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void ReturnToLevelSelect()
     {
-        Debug.LogError("Level Select?");
-        SceneManager.LoadScene("LevelSelect");
+        SceneManager.LoadScene("HomeMenu");
     }
 
     public bool GetPlayerFreezeStatus()
