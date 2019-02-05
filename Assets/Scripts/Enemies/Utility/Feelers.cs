@@ -5,8 +5,9 @@ using UnityEngine.Events;
 
 public class Feelers : MonoBehaviour
 {
-    [SerializeField] private TriggerType type = TriggerType.None;
     [SerializeField] private UnityEvent callback;
+
+    [SerializeField] private TriggerType type = TriggerType.None;
 
     private enum TriggerType { None, Enter, Exit, Stay };
 

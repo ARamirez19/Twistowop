@@ -9,8 +9,9 @@ public class PlayerController : BaseController
 	private float completionTimer = 0.1f;
 	private float timer = 0.0f;
 	private bool playerInputEnabled = false;
+    /*[SerializeField]*/ float boostSpeed = 25f;
 
-	void Update()
+    void Update()
 	{
 		if ((state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED) && canFreezeLevel && playerInputEnabled)
 			Inputs();
@@ -36,37 +37,35 @@ public class PlayerController : BaseController
 
 	private void Inputs()
 	{
-		#if UNITY_EDITOR
-
-		if(Input.GetKeyDown(KeyCode.Space))
+#if UNITY_EDITOR
+        if (Input.GetKey(KeyCode.Space))
 		{
 			if(state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
 			{
-				levelManager.ToggleLevelFreeze();
+                JumpBoost();
+				//levelManager.ToggleLevelFreeze();
 			}
-		}
+        }
+#else
 
-		#else
-
-		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+		if (Input.touchCount > 0 && (Input.GetTouch(0).phase == TouchPhase.Stationary || Input.GetTouch(0).phase == TouchPhase.Began))
 		{
 			Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 			RaycastHit hit;
 
-			if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
-			{
-				if (Physics.Raycast(ray,out hit) && hit.collider.tag == "PausePlay")
-				{
-					levelManager.ToggleLevelFreeze();
-				}
-			}
-
-
+            JumpBoost();
+   //         else if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
+			//{
+			//	if (Physics.Raycast(ray,out hit) && hit.collider.tag == "PausePlay")
+			//	{
+			//		levelManager.ToggleLevelFreeze();
+			//	}
+			//}
 		}
-		#endif
-	}
+#endif
+    }
 
-	public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "Goal")
 		{
@@ -88,4 +87,35 @@ public class PlayerController : BaseController
 	{
 		canFreezeLevel = levelManager.GetPlayerFreezeStatus();
 	}
+
+    private void JumpBoost()
+    {
+        Physics2D.gravity = Vector2.zero;
+#if UNITY_EDITOR
+        rb.velocity = Vector2.Lerp(rb.velocity, Camera.main.transform.up * boostSpeed, 0.3f);
+#else
+        rb.velocity = Vector2.Lerp(rb.velocity, Input.gyro.gravity * -boostSpeed, 0.3f);
+#endif
+    }
+
+    private bool DoubleTap()
+    {
+#if !UNITY_EDITOR
+
+        //if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
+        //{
+        //    float DeltaTime = Input.GetTouch(0).deltaTime;
+        //    float DeltaPositionLenght = Input.GetTouch(0).deltaPosition.magnitude;
+
+        //    if (DeltaTime > 0 && DeltaTime < doubleTapTime && DeltaPositionLenght < doubleTapDelta)
+        //        return true;
+        //}
+        //return false;
+#endif
+        if (Input.GetKey(KeyCode.Space))
+        {
+            return true;
+        }
+        return false;
+    }
 }
