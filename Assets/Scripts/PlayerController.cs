@@ -4,12 +4,15 @@ using GameState;
 
 public class PlayerController : BaseController
 {
-	private bool playerInGoal = false;
+    public float boostSpeed = 25f;
+    public float boostDelay = 0.5f;
+    private float currentDelay = 0f;
+
+    private bool playerInGoal = false;
 	private bool canFreezeLevel = true;
 	private float completionTimer = 0.1f;
 	private float timer = 0.0f;
 	private bool playerInputEnabled = false;
-    /*[SerializeField]*/ float boostSpeed = 25f;
 
     void Update()
 	{
@@ -38,21 +41,23 @@ public class PlayerController : BaseController
 	private void Inputs()
 	{
 #if UNITY_EDITOR
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && currentDelay >= boostDelay)
 		{
 			if(state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
 			{
+                currentDelay = 0;
                 JumpBoost();
 				//levelManager.ToggleLevelFreeze();
 			}
         }
 #else
 
-		if (Input.touchCount > 0 && (Input.GetTouch(0).phase == TouchPhase.Stationary || Input.GetTouch(0).phase == TouchPhase.Began))
+		if (Input.touchCount > 0 && (Input.GetTouch(0).phase == TouchPhase.Stationary || Input.GetTouch(0).phase == TouchPhase.Began) && currentDelay >= boostDelay)
 		{
 			Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 			RaycastHit hit;
 
+            currentDelay = 0;
             JumpBoost();
    //         else if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
 			//{
@@ -63,6 +68,10 @@ public class PlayerController : BaseController
 			//}
 		}
 #endif
+        if (currentDelay < boostDelay)
+        {
+            currentDelay += Time.deltaTime;
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D other)
