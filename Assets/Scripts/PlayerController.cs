@@ -27,8 +27,6 @@ public class PlayerController : BaseController
 			if (playerInputEnabled == false)
 				playerInputEnabled = true;
 
-  
-
             if (playerInGoal)
 			{
                 /*
@@ -47,25 +45,14 @@ public class PlayerController : BaseController
     {
         if(state == e_GAMESTATE.PLAYING)
         {
-            //#if UNITY_EDITOR
-            //float angle = Mathf.Atan() * Mathf.Rad2Deg;
-            Quaternion gyro = Input.gyro.attitude;
-            Vector3 rotation = gyro.eulerAngles;
-            rotation.x = 0;
-            rotation.y = 0;
-            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.Euler(-rotation), Time.time * rotationSpeed/1000);
-
-/*#else
-            float angle = Mathf.Atan2(-Input.gyro.attitude.x, Input.gyro.attitude.y) * Mathf.Rad2Deg;
-            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.AngleAxis(angle ,transform.forward), Time.time * (rotationSpeed/1000));
-           
-//#endif*/
+            float angle = Mathf.Atan2(Physics2D.gravity.x, -Physics2D.gravity.y) * Mathf.Rad2Deg;
+            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.AngleAxis(angle, Vector3.forward), Time.time * rotationSpeed/1000);
         }
     }
 
     private void Inputs()
 	{
-/*#if UNITY_EDITOR
+#if UNITY_EDITOR
 
 		if(Input.GetKey(KeyCode.Space))
 		{
@@ -76,9 +63,9 @@ public class PlayerController : BaseController
 			}
 		}
 
-#else*/
+#else
 
-		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+		if (Input.touchCount > 0 /*&& Input.GetTouch(0).phase == TouchPhase.Began*/)
 		{
 			Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 			RaycastHit hit;
@@ -94,7 +81,7 @@ public class PlayerController : BaseController
 
 
 		}
-//#endif
+#endif
 	}
 
 	public void OnTriggerEnter2D(Collider2D other)
