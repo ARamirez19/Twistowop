@@ -9,8 +9,15 @@ public class PlayerController : BaseController
 	private float completionTimer = 0.1f;
 	private float timer = 0.0f;
 	private bool playerInputEnabled = false;
+    [SerializeField]
+    private float jetpackSpeed = 10.0f;
+    [SerializeField]
+    private float maxJetpackSpeed = 30.0f;
+    [SerializeField]
+    private float rotationSpeed = 1.0f;
 
-	void Update()
+
+    void Update()
 	{
 		if ((state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED) && canFreezeLevel && playerInputEnabled)
 			Inputs();
@@ -20,7 +27,9 @@ public class PlayerController : BaseController
 			if (playerInputEnabled == false)
 				playerInputEnabled = true;
 
-			if (playerInGoal)
+  
+
+            if (playerInGoal)
 			{
                 /*
 				if (rb.velocity.magnitude < .05f)
@@ -34,19 +43,40 @@ public class PlayerController : BaseController
 		}
 	}
 
-	private void Inputs()
-	{
-		#if UNITY_EDITOR
+    private void FixedUpdate()
+    {
+        if(state == e_GAMESTATE.PLAYING)
+        {
+            //#if UNITY_EDITOR
+            //float angle = Mathf.Atan() * Mathf.Rad2Deg;
+            Quaternion gyro = Input.gyro.attitude;
+            Vector3 rotation = gyro.eulerAngles;
+            rotation.x = 0;
+            rotation.y = 0;
+            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.Euler(-rotation), Time.time * rotationSpeed/1000);
 
-		if(Input.GetKeyDown(KeyCode.Space))
+/*#else
+            float angle = Mathf.Atan2(-Input.gyro.attitude.x, Input.gyro.attitude.y) * Mathf.Rad2Deg;
+            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.AngleAxis(angle ,transform.forward), Time.time * (rotationSpeed/1000));
+           
+//#endif*/
+        }
+    }
+
+    private void Inputs()
+	{
+/*#if UNITY_EDITOR
+
+		if(Input.GetKey(KeyCode.Space))
 		{
 			if(state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
 			{
-				levelManager.ToggleLevelFreeze();
+                //levelManager.ToggleLevelFreeze();
+                UseJetpack();
 			}
 		}
 
-		#else
+#else*/
 
 		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
 		{
@@ -55,15 +85,16 @@ public class PlayerController : BaseController
 
 			if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
 			{
-				if (Physics.Raycast(ray,out hit) && hit.collider.tag == "PausePlay")
+				if(Physics.Raycast(ray,out hit) && hit.collider.tag == "PausePlay")
 				{
-					levelManager.ToggleLevelFreeze();
+					//levelManager.ToggleLevelFreeze();
+                    UseJetpack();
 				}
 			}
 
 
 		}
-		#endif
+//#endif
 	}
 
 	public void OnTriggerEnter2D(Collider2D other)
@@ -88,4 +119,12 @@ public class PlayerController : BaseController
 	{
 		canFreezeLevel = levelManager.GetPlayerFreezeStatus();
 	}
+
+    private void UseJetpack()
+    {
+        if (this.GetComponent<Rigidbody2D>().velocity.magnitude < maxJetpackSpeed)
+        {
+            this.GetComponent<Rigidbody2D>().AddForce(this.transform.up * jetpackSpeed * 10.0f, ForceMode2D.Impulse);
+        }
+    }
 }

@@ -35,19 +35,29 @@ public class GravityManager: MonoBehaviour, IGameState
 				float xx;
 				float yy;
 
-				#if UNITY_EDITOR
+				/*#if UNITY_EDITOR
 				xx = Mathf.Sin (Camera.main.transform.localEulerAngles.z*Mathf.Deg2Rad) * GRAV_SPEED;
-				yy = Mathf.Cos (-Camera.main.transform.localEulerAngles.z*Mathf.Deg2Rad) * GRAV_SPEED;
-				Physics2D.gravity = new Vector2(xx,-yy);
+                yy = Mathf.Cos(-Camera.main.transform.localEulerAngles.z * Mathf.Deg2Rad) * GRAV_SPEED;
 
-                #else
+               
+                if(yy < 0.0f)
+                {
+                    yy = 0.0f;
+                }
+                Physics2D.gravity = new Vector2(xx,-yy);
+                
+                #else*/
 				
 				xx = Input.gyro.gravity.x * GRAV_SPEED;
 				yy = Input.gyro.gravity.y * GRAV_SPEED;
+
+                if(yy > 0.0f)
+                {
+                    yy = 0.0f;
+                }
+                Physics2D.gravity = new Vector2 (xx, yy);
 				
-				Physics2D.gravity = new Vector2 (xx, yy);
-				
-                #endif
+              // #endif
             }
         }
 	}
