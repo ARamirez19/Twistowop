@@ -279,6 +279,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6615956050558878121}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &1265475013 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6615956049989882421, guid: 4c7010f0e390560408be9db645afebca,
+    type: 3}
+  m_PrefabInstance: {fileID: 6615956050558878121}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1296831310 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8299115902534842554, guid: ddf2c5043d29df14f82a9f5885df6461,
@@ -687,6 +693,80 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
+--- !u!1 &2119942036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2119942037}
+  - component: {fileID: 2119942039}
+  - component: {fileID: 2119942038}
+  m_Layer: 5
+  m_Name: JetpackMeter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2119942037
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119942036}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1265475013}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1126.1, y: 0.000020981}
+  m_SizeDelta: {x: 394.4, y: 51.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2119942038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119942036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: cfff4ca888b650840886ed0fc87917ca, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &2119942039
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119942036}
+  m_CullTransparentMesh: 0
 --- !u!1001 &6615956050558878121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -917,7 +997,22 @@ PrefabInstance:
     - target: {fileID: 4200497048849933106, guid: 4c7010f0e390560408be9db645afebca,
         type: 3}
       propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200497048849933106, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: jetpackBar
+      value: 
+      objectReference: {fileID: 2119942038}
+    - target: {fileID: 4200497048849933106, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: jetpackFuel
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200497048849933106, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: jetpackEnabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6399307656137580797, guid: 4c7010f0e390560408be9db645afebca,
         type: 3}
@@ -943,6 +1038,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 230.4375
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615956050601934200, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: use360
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c7010f0e390560408be9db645afebca, type: 3}

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using GameState;
+using UnityEngine.UI;
 
 public class PlayerController : BaseController
 {
@@ -15,7 +16,13 @@ public class PlayerController : BaseController
     private float maxJetpackSpeed = 30.0f;
     [SerializeField]
     private float rotationSpeed = 1.0f;
-
+    [SerializeField]
+    private float jetpackFuel = 10.0f;
+    private float maxFuel;
+    [SerializeField]
+    private Image jetpackBar;
+    [SerializeField]
+    private bool jetpackEnabled = true;
 
     void Update()
 	{
@@ -39,14 +46,19 @@ public class PlayerController : BaseController
 					gsManager.SetGameState(e_GAMESTATE.LEVELCOMPLETE);
 			}
 		}
+        if (jetpackFuel < maxFuel)
+        {
+            jetpackFuel = jetpackFuel + 0.05f;
+            jetpackBar.fillAmount = jetpackFuel / maxFuel;
+        }
 	}
 
     private void FixedUpdate()
     {
         if(state == e_GAMESTATE.PLAYING)
         {
-            float angle = Mathf.Atan2(Physics2D.gravity.x, -Physics2D.gravity.y) * Mathf.Rad2Deg;
-            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.AngleAxis(angle, Vector3.forward), Time.time * rotationSpeed/1000);
+            float angle = Mathf.Atan2(Physics2D.gravity.x, -Physics2D.gravity.y) * Mathf.Rad2Deg; //Converts the gravity x and y values into an angle
+            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.AngleAxis(angle, Vector3.forward), Time.time * rotationSpeed/1000); //Rotates player to that angle
         }
     }
 
@@ -56,10 +68,13 @@ public class PlayerController : BaseController
 
 		if(Input.GetKey(KeyCode.Space))
 		{
-			if(state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
-			{
+            if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
+            {
                 //levelManager.ToggleLevelFreeze();
-                UseJetpack();
+                if (jetpackEnabled)
+                {
+                    UseJetpack();
+                }
 			}
 		}
 
@@ -72,7 +87,7 @@ public class PlayerController : BaseController
 
 			if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
 			{
-				if(Physics.Raycast(ray,out hit) && hit.collider.tag == "PausePlay")
+				if(Physics.Raycast(ray,out hit) && hit.collider.tag == "PausePlay" && jetpackEnabled)
 				{
 					//levelManager.ToggleLevelFreeze();
                     UseJetpack();
@@ -105,13 +120,20 @@ public class PlayerController : BaseController
 	protected override void ExtraStart ()
 	{
 		canFreezeLevel = levelManager.GetPlayerFreezeStatus();
+        maxFuel = jetpackFuel;
+        if(!jetpackEnabled)
+        {
+            jetpackBar.gameObject.SetActive(false);
+        }
 	}
 
     private void UseJetpack()
     {
-        if (this.GetComponent<Rigidbody2D>().velocity.magnitude < maxJetpackSpeed)
+        if (this.GetComponent<Rigidbody2D>().velocity.magnitude < maxJetpackSpeed && jetpackFuel > 0.0f)
         {
             this.GetComponent<Rigidbody2D>().AddForce(this.transform.up * jetpackSpeed * 10.0f, ForceMode2D.Impulse);
+            jetpackFuel = jetpackFuel - 0.1f;
+            jetpackBar.fillAmount = jetpackFuel / maxFuel;
         }
     }
 }

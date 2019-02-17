@@ -8,6 +8,8 @@ public class GravityManager: MonoBehaviour, IGameState
 	private const float GRAV_SPEED = 20f;
 	private GameStateManager gsManager;
 	private e_GAMESTATE state;
+    [SerializeField]
+    private bool use360;
 
 	void Start ()
 	{
@@ -40,7 +42,7 @@ public class GravityManager: MonoBehaviour, IGameState
                 yy = Mathf.Cos(-Camera.main.transform.localEulerAngles.z * Mathf.Deg2Rad) * GRAV_SPEED;
 
                
-                if(yy < 0.0f)
+                if(yy < 0.0f && !use360)
                 {
                     yy = 0.0f;
                 }
@@ -51,7 +53,7 @@ public class GravityManager: MonoBehaviour, IGameState
 				xx = Input.gyro.gravity.x * GRAV_SPEED;
 				yy = Input.gyro.gravity.y * GRAV_SPEED;
 
-                if(yy > 0.0f)
+                if(yy > 0.0f && !use360)
                 {
                     yy = 0.0f;
                 }
