@@ -89,7 +89,7 @@ public class PlayerController : BaseController
 
     private void Inputs()
 	{
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
         if (!jetpackCooldown)
         {
             if (Input.GetKey(KeyCode.Space))
@@ -118,7 +118,7 @@ public class PlayerController : BaseController
             }
         }
 
-#else
+#else*/
         if(!jetpackCooldown)
         {
 		if (Input.touchCount > 0)
@@ -153,7 +153,7 @@ public class PlayerController : BaseController
 			    }
 		    }
         }
-#endif
+//#endif
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -177,18 +177,12 @@ public class PlayerController : BaseController
 	protected override void ExtraStart ()
 	{
 		canFreezeLevel = levelManager.GetPlayerFreezeStatus();
+        jetpackBar = GameObject.Find("JetpackMeter").GetComponent<Image>();
+        timerImage = GameObject.Find("JetpackTimer").GetComponent<Image>();
+        timerText = GameObject.Find("TimerText").GetComponent<TextMeshProUGUI>();
+        jetpackBar.gameObject.SetActive(false);
+        timerImage.gameObject.SetActive(false);
         maxFuel = jetpackFuel;
-        if(jetpackEnabled)
-        {
-            if (jetpackCooldown)
-            {
-                timerImage.gameObject.SetActive(true);
-            }
-            else
-            {
-                jetpackBar.gameObject.SetActive(true);
-            }
-        }
 	}
 
     private void UseJetpack()
@@ -210,5 +204,52 @@ public class PlayerController : BaseController
                 jetpackTime = 0;
             }
         }
+    }
+
+    public void UseJetpack(bool s)
+    {
+        jetpackEnabled = s;
+        if (jetpackCooldown)
+        {
+            timerImage.gameObject.SetActive(true);
+            jetpackBar.gameObject.SetActive(false);
+        }
+        else
+        {
+            jetpackBar.gameObject.SetActive(true);
+            timerImage.gameObject.SetActive(false);
+        }
+        if (!jetpackEnabled)
+        {
+            timerImage.gameObject.SetActive(false);
+            jetpackBar.gameObject.SetActive(false);
+        }
+    }
+
+
+    public void UseCooldown(bool s)
+    {
+        jetpackCooldown = s;
+        if (jetpackCooldown)
+        {
+            timerImage.gameObject.SetActive(true);
+            jetpackBar.gameObject.SetActive(false);
+        }
+        else
+        {
+            jetpackBar.gameObject.SetActive(true);
+            timerImage.gameObject.SetActive(false);
+        }
+        if (!jetpackEnabled)
+        {
+            timerImage.gameObject.SetActive(false);
+            jetpackBar.gameObject.SetActive(false);
+        }
+    }
+
+
+    public void RotatePlayer(bool s)
+    {
+        rotatePlayer = s;
     }
 }

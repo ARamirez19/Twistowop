@@ -899,10 +899,100 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6840604484491026710, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840604484491026710, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353027666044004704, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353027666044004704, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650316156049049214, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650316156049049214, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6929561834803393928, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6929561834803393928, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5054261894915857380, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5054261894915857380, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372653471460184545, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372653471460184545, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 581784559879977921, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 581784559879977921, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897918334539503689, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324995074230990552, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324995074230990552, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6125466267063451884, guid: 4c7010f0e390560408be9db645afebca,
         type: 3}
       propertyPath: m_Name
       value: CoreLevelObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615956049989882421, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3896621507894398487, guid: 4c7010f0e390560408be9db645afebca,
         type: 3}
@@ -957,11 +1047,6 @@ PrefabInstance:
     - target: {fileID: 3896621507894398487, guid: 4c7010f0e390560408be9db645afebca,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6615956049989882421, guid: 4c7010f0e390560408be9db645afebca,
-        type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 728146897104036276, guid: 4c7010f0e390560408be9db645afebca,
