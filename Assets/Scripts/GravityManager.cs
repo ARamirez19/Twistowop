@@ -5,11 +5,11 @@ using GameState;
 
 public class GravityManager: MonoBehaviour, IGameState
 {
-	private const float GRAV_SPEED = 20f;
+	private const float GRAV_SPEED = 40f;
 	private GameStateManager gsManager;
 	private e_GAMESTATE state;
     [SerializeField]
-    private bool use360;
+    private bool use360 = true;
 
 	void Start ()
 	{
@@ -20,6 +20,7 @@ public class GravityManager: MonoBehaviour, IGameState
 		Screen.orientation = ScreenOrientation.Landscape;
 		Input.gyro.enabled = true;
 		Physics.gravity = Vector2.zero;
+        use360 = true;
 	}
 	
 	// Update is called once per frame
