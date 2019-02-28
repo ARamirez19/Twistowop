@@ -19,4 +19,9 @@ public class TogglePlayerController : MonoBehaviour
         FindObjectOfType<PlayerController>().RotatePlayer(s);
 
     }
+
+    public void OnChangeUpIsUp(bool s)
+    {
+        FindObjectOfType<PlayerController>().UpIsUp(s);
+    }
 }

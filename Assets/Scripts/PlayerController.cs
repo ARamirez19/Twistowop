@@ -11,14 +11,10 @@ public class PlayerController : BaseController
     private float completionTimer = 0.1f;
     private float timer = 0.0f;
     private bool playerInputEnabled = false;
-    [SerializeField]
-    private float jetpackSpeed = 10.0f;
-    [SerializeField]
+    private float jetpackSpeed = 5.0f;
     private float maxJetpackSpeed = 30.0f;
-    [SerializeField]
     private float rotationSpeed = 1.0f;
-    [SerializeField]
-    private int jetpackTimer = 2;
+    private int jetpackTimer = 1;
     private float jetpackTime = 2;
     [SerializeField]
     private float jetpackFuel = 10.0f;
@@ -29,13 +25,10 @@ public class PlayerController : BaseController
     private Image timerImage;
     [SerializeField]
     private TextMeshProUGUI timerText;
-    [SerializeField]
-    private bool jetpackEnabled = false;
-    [SerializeField]
-    private bool jetpackCooldown = false;
-    [SerializeField]
+    private bool jetpackEnabled = true;
+    private bool jetpackCooldown = true;
     private bool rotatePlayer = false;
-
+    private bool upIsUp = false;
 
     void Update()
     {
@@ -200,7 +193,14 @@ public class PlayerController : BaseController
         {
             if (jetpackTime >= jetpackTimer)
             {
-                this.GetComponent<Rigidbody2D>().AddForce(this.transform.up * jetpackSpeed * 200.0f, ForceMode2D.Impulse);
+                if (upIsUp)
+                {
+                    this.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1) * jetpackSpeed * 200.0f, ForceMode2D.Impulse);
+                }
+                else
+                {
+                    this.GetComponent<Rigidbody2D>().AddForce(this.transform.up * jetpackSpeed * 200.0f, ForceMode2D.Impulse);
+                }
                 jetpackTime = 0;
             }
         }
@@ -251,5 +251,10 @@ public class PlayerController : BaseController
     public void RotatePlayer(bool s)
     {
         rotatePlayer = s;
+    }
+
+    public void UpIsUp(bool s)
+    {
+        upIsUp = s;
     }
 }
