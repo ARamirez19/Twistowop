@@ -89,7 +89,7 @@ public class PlayerController : BaseController
 
     private void Inputs()
 	{
-/*#if UNITY_EDITOR
+        #if UNITY_EDITOR
         if (!jetpackCooldown)
         {
             if (Input.GetKey(KeyCode.Space))
@@ -118,7 +118,7 @@ public class PlayerController : BaseController
             }
         }
 
-#else*/
+        #else
         if(!jetpackCooldown)
         {
 		if (Input.touchCount > 0)
@@ -153,7 +153,7 @@ public class PlayerController : BaseController
 			    }
 		    }
         }
-//#endif
+        #endif
     }
 
     public void OnTriggerEnter2D(Collider2D other)

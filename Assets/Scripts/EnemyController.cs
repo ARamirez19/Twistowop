@@ -3,8 +3,7 @@ using System.Collections;
 
 public class EnemyController : BaseController
 {
-
-	protected override void ExtraStart ()
+    protected override void ExtraStart ()
 	{
 
 	}
