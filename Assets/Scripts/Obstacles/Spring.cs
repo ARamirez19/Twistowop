@@ -6,7 +6,7 @@ public class Spring : MonoBehaviour
 {
     [SerializeField]
     private bool affectedByGravity;
-    private Rigidbody body;
+    private Rigidbody2D body;
     [SerializeField]
     private float springForce = 100.0f;
     [SerializeField]
@@ -15,23 +15,22 @@ public class Spring : MonoBehaviour
     private bool useVelocity;
     [SerializeField]
     private bool useDirectionalHit;
-    private Vector3 direction;  
+    private Vector2 direction;  
 	// Use this for initialization
 	void Start ()
     {
-        body = this.GetComponent<Rigidbody>();
+        body = this.GetComponent<Rigidbody2D>();
 	    if(!affectedByGravity)
         {
-            body.constraints = RigidbodyConstraints.FreezeAll;
+            body.constraints = RigidbodyConstraints2D.FreezeAll;
         }
         else
         {
-            body.constraints = RigidbodyConstraints.None;
-            body.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
+            body.constraints = RigidbodyConstraints2D.None;
         }
 	}
 
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.tag == "Player")
         {
@@ -49,7 +48,7 @@ public class Spring : MonoBehaviour
             }
             else
             {
-                other.rigidbody.AddForce(direction * springForce, ForceMode.Impulse);
+                other.rigidbody.AddForce(direction * springForce * 1000, ForceMode2D.Impulse);
             }
         }
     }
