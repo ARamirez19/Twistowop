@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour, IGameState
     [SerializeField]
     private int speed;
     protected LevelManager levelManager;
+    private Rigidbody2D rbody;
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class Bullet : MonoBehaviour, IGameState
         gsManager.GameStateSubscribe(this.gameObject);
         state = gsManager.GetGameState();
         levelManager = LevelManager.GetInstance();
+        rbody = this.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -24,7 +26,21 @@ public class Bullet : MonoBehaviour, IGameState
     {
         if (state == GameState.e_GAMESTATE.PLAYING)
         {
-            transform.Translate(Vector2.up * Time.deltaTime * speed);
+            rbody.AddForce(transform.up * speed);
+            if (rbody.velocity.magnitude > 1)
+            {
+                float angle = Mathf.Atan2(rbody.velocity.x, rbody.velocity.y) * Mathf.Rad2Deg;
+                this.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.AngleAxis(-angle, Vector3.forward), 1);
+            }
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (state == GameState.e_GAMESTATE.PLAYING)
+        {
+            
+            //this.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(rbody.velocity.normalized), 1);
         }
     }
 

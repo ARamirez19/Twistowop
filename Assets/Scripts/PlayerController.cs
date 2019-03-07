@@ -10,6 +10,8 @@ public class PlayerController : BaseController
     private bool canFreezeLevel = true;
     private float completionTimer = 0.1f;
     private float timer = 0.0f;
+    [SerializeField]
+    private float speedCap = 10.0f;
     private bool playerInputEnabled = false;
     private float jetpackSpeed = 5.0f;
     private float maxJetpackSpeed = 30.0f;
@@ -29,9 +31,15 @@ public class PlayerController : BaseController
     private bool jetpackCooldown = true;
     private bool rotatePlayer = false;
     private bool upIsUp = false;
+    private Rigidbody2D playerRigidbody;
 
     void Update()
     {
+        if(playerRigidbody.velocity.magnitude > speedCap)
+        {
+            playerRigidbody.velocity = playerRigidbody.velocity.normalized * speedCap;
+        }
+        
         if ((state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED) && canFreezeLevel && playerInputEnabled)
             Inputs();
 
@@ -176,7 +184,8 @@ public class PlayerController : BaseController
         jetpackBar.gameObject.SetActive(false);
         timerImage.gameObject.SetActive(false);
         maxFuel = jetpackFuel;
-	}
+        playerRigidbody = this.GetComponent<Rigidbody2D>();
+    }
 
     private void UseJetpack()
     {

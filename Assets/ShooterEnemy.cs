@@ -32,7 +32,6 @@ public class ShooterEnemy : MonoBehaviour, IGameState
             timer -= Time.deltaTime;
             if (timer < 0)
             {
-                
                 Instantiate(bullet, this.transform.position + this.transform.up * (this.GetComponent<Renderer>().bounds.size.y / 2), transform.rotation);
                 timer = interval;
             }
