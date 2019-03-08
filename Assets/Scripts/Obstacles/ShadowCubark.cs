@@ -14,7 +14,7 @@ public class ShadowCubark : BaseController
 
     public void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.collider.tag == "Player")
+        if (other.collider.tag == "Player" || other.collider.tag == "Enemy")
         {
             levelManager.RestartLevel();
         }
