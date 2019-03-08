@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4795264861033929006}
   - component: {fileID: 4795264861033929005}
   - component: {fileID: 6656123737867205452}
+  - component: {fileID: 16510424931058553}
   m_Layer: 0
   m_Name: WallSpike
   m_TagString: Untagged
@@ -191,3 +192,24 @@ PolygonCollider2D:
       - {x: 1.63, y: -2.22}
       - {x: 1.63, y: -2.08}
       - {x: 1.5699999, y: -1.9799999}
+--- !u!50 &16510424931058553
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4795264861033929010}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

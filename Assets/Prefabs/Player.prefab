@@ -150,3 +150,8 @@ MonoBehaviour:
   doesVelocityStop: 1
   isAffectedByFreeze: 1
   isAffectedByGravityWells: 1
+  speedCap: 100
+  jetpackFuel: 10
+  jetpackBar: {fileID: 0}
+  timerImage: {fileID: 0}
+  timerText: {fileID: 0}
