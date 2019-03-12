@@ -13,6 +13,7 @@ TagManager:
   - Enemy
   - GravityEnemy
   - Theme
+  - Door
   layers:
   - Default
   - TransparentFX
