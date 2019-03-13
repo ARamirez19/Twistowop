@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChargerEnemy : EnemyController
 {
-	private float speed = 5.0f;
+	private float speed = 12.0f;
 	private float startTime;
 	private float journeyLength;
 	private float distCovered;

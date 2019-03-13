@@ -340,13 +340,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doesVelocityStop: 1
+  isAffectedByFreeze: 1
   isAffectedByGravityWells: 0
   moveToEndPos: 0
   returnToStartPos: 0
-  field: {fileID: 0}
-  startPos: {fileID: 0}
-  endPos: {fileID: 0}
-  movementSprite: {fileID: 0}
+  field: {fileID: 3221149377244581418}
+  startPos: {fileID: 354422352579399870}
+  endPos: {fileID: 3855281112639611472}
+  movementSprite: {fileID: 4804278842222897091}
 --- !u!50 &5999134441855841771
 Rigidbody2D:
   serializedVersion: 4
