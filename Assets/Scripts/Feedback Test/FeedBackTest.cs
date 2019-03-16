@@ -122,12 +122,12 @@ public class FeedBackTest : MonoBehaviour
 		{
 			correctChoices++;
 			UpdateText();
-		}
+        }
 		else
 		{
 			incorrectChoices++;
 			UpdateText();
-		}
+        }
 	}
 
 	public void PlayerSelectDouble()
@@ -136,7 +136,7 @@ public class FeedBackTest : MonoBehaviour
 		{
 			correctChoices++;
 			UpdateText();
-		}
+        }
 		else
 		{
 			incorrectChoices++;

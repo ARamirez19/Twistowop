@@ -74,4 +74,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/World1/World1Level20.unity
     guid: 9484b17b77cf2794da46f96debce3a7c
+  - enabled: 1
+    path: Assets/Scenes/FeedbackTest/VisualTest.unity
+    guid: 461568341199988468a4ae4879378eb4
+  - enabled: 1
+    path: Assets/Scenes/FeedbackTest/AudioTest.unity
+    guid: c6067da6a6670ab4481099e1fa6f9012
+  - enabled: 1
+    path: Assets/Scenes/FeedbackTest/VibrationTest.unity
+    guid: b1e35e04a11355d4a9565e702bf2c8d7
+  - enabled: 1
+    path: Assets/Scenes/FeedbackTest/HapticsTest.unity
+    guid: f982c2856675ade4286c0b73bf00f68e
   m_configObjects: {}
