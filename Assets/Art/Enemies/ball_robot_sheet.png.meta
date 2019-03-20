@@ -1,0 +1,298 @@
+fileFormatVersion: 2
+guid: 2528f2504a3ae00409b96161946954ca
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ball_headA
+    21300002: ball_headB
+    21300004: ball_jawA
+    21300006: ball_antenna
+    21300008: ball_jawB
+    21300010: ball_hinge
+    21300012: ball_ear
+    21300014: ball_eyes
+    21300016: ball_robot_sheet_8
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ball_headA
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 544
+        width: 477
+        height: 460
+      alignment: 9
+      pivot: {x: 0.94441515, y: 0.56509054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 189.5, y: 188}
+        - {x: 116.5, y: 230}
+        - {x: -109.5, y: 230}
+        - {x: -238.5, y: 186}
+        - {x: -238.5, y: -119}
+        - {x: -165.5, y: -197}
+        - {x: -90.5, y: -230}
+        - {x: 51.5, y: -230}
+        - {x: 160.5, y: -144}
+        - {x: 238.5, y: -20}
+        - {x: 238.5, y: 128}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6474a6c22abd32644b983e0f6bdeb240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ball_headB
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 687
+        width: 464
+        height: 310
+      alignment: 9
+      pivot: {x: 0.9387983, y: 0.45363927}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 232, y: -66}
+        - {x: 232, y: 56}
+        - {x: 137, y: 155}
+        - {x: -71, y: 155}
+        - {x: -228, y: 69}
+        - {x: -232, y: 47}
+        - {x: -232, y: -120}
+        - {x: -210, y: -155}
+        - {x: -37, y: -155}
+        - {x: 59, y: -141}
+        - {x: 170, y: -99}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0116ffb5375d3874a93af1d89b6cb237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ball_jawA
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 124
+        width: 481
+        height: 404
+      alignment: 9
+      pivot: {x: 0.88594073, y: 0.72530276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 83.5, y: 202}
+        - {x: -80.5, y: 201}
+        - {x: -240.5, y: 83}
+        - {x: -240.5, y: -94}
+        - {x: -141.5, y: -202}
+        - {x: 113.5, y: -202}
+        - {x: 240.5, y: -58}
+        - {x: 240.5, y: 181}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae6fa297c61e254da778fa504147a40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ball_antenna
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 458
+        width: 37
+        height: 129
+      alignment: 9
+      pivot: {x: 0.43526182, y: 0.04507541}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a752e3795065b41b5470c68be402c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ball_jawB
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 303
+        width: 478
+        height: 367
+      alignment: 9
+      pivot: {x: 0.90089077, y: 0.75128055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e99ed36227f2ab45b4abe2885383103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ball_hinge
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 166
+        width: 115
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660cfe935ea3abb47a9d8fef6012082a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ball_ear
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 112
+        width: 332
+        height: 181
+      alignment: 9
+      pivot: {x: 0.83909696, y: 0.5860203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbd76545ee740d4991db59da6cfc8a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ball_eyes
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 326
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c14ccd7fc383ef42aa51a8cd4fc987f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 522fad287ebd1844d99b3708db6915d8
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
