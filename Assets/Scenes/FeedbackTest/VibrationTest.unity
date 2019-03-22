@@ -1464,8 +1464,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Recreate the audio pattern by pressing the buttons in the order they happened.
-    Wait until the lights finish blinking to start.
+  m_Text: Recreate the vibration pattern by pressing the buttons in the order they
+    happened. Wait until the vibrations stop to enter inputs
 --- !u!222 &1080600533
 CanvasRenderer:
   m_ObjectHideFlags: 0

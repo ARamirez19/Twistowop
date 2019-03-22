@@ -123,12 +123,12 @@ public class VibrationFeedbackTest : MonoBehaviour
         if (testCorrect)
         {
             finishText.text = "Test Passed";
-            Amplitude.Instance.logEvent("Visual Test Passed");
+            Amplitude.Instance.logEvent("Haptic Test Passed");
         }
         else
         {
             finishText.text = "Test Failed";
-            Amplitude.Instance.logEvent("Visual Test Failed");
+            Amplitude.Instance.logEvent("Haptic Test Failed");
         }
     }
 }

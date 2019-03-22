@@ -125,12 +125,12 @@ public class AudioFeedbackTest : MonoBehaviour
         if (testCorrect)
         {
             finishText.text = "Test Passed";
-            Amplitude.Instance.logEvent("Visual Test Passed");
+            Amplitude.Instance.logEvent("Audio Test Passed");
         }
         else
         {
             finishText.text = "Test Failed";
-            Amplitude.Instance.logEvent("Visual Test Failed");
+            Amplitude.Instance.logEvent("Audio Test Failed");
         }
     }
 }

@@ -165,12 +165,12 @@ public class HapticFeedbackTest : MonoBehaviour
         if (testCorrect)
         {
             finishText.text = "Test Passed";
-            Amplitude.Instance.logEvent("Visual Test Passed");
+            Amplitude.Instance.logEvent("Comprehensive Test Passed");
         }
         else
         {
             finishText.text = "Test Failed";
-            Amplitude.Instance.logEvent("Visual Test Failed");
+            Amplitude.Instance.logEvent("Comprehensive Test Failed");
         }
     }
 }
