@@ -388,7 +388,7 @@ TextureImporter:
         - {x: -108.5, y: -19.5}
         - {x: -99.5, y: -22.5}
         - {x: 55.5, y: -22.5}
-        - {x: 108.5, y: -2.5}
+        - {x: 108.5, y: -3.5}
         - {x: 108.5, y: 22.5}
       physicsShape: []
       tessellationDetail: 0

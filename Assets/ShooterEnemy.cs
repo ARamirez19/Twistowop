@@ -9,6 +9,8 @@ public class ShooterEnemy : MonoBehaviour, IGameState
     private e_GAMESTATE state;
     [SerializeField]
     private GameObject bullet;
+	[SerializeField]
+	private GameObject canonPosition;
     [SerializeField]
     private float interval = 2;
     [SerializeField]
@@ -22,6 +24,7 @@ public class ShooterEnemy : MonoBehaviour, IGameState
         state = gsManager.GetGameState();
         timer = interval;
         bullet.GetComponent<Bullet>().SetSpeed(speed);
+		canonPosition = GameObject.Find("Shooter_Canon");
     }
 
     // Update is called once per frame
@@ -32,7 +35,7 @@ public class ShooterEnemy : MonoBehaviour, IGameState
             timer -= Time.deltaTime;
             if (timer < 0)
             {
-                Instantiate(bullet, this.transform.position + this.transform.up * (this.GetComponent<Renderer>().bounds.size.y / 2), transform.rotation);
+                Instantiate(bullet, canonPosition.transform.position + this.transform.up * (this.GetComponent<Renderer>().bounds.size.y / 2), transform.rotation);
                 timer = interval;
             }
         }
