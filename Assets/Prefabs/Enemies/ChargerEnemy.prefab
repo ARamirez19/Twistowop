@@ -4970,37 +4970,6 @@ Transform:
   m_Father: {fileID: 2003768379672041307}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2555388005815499710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2957412522489781892}
-  m_Layer: 0
-  m_Name: MovementSprites
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2957412522489781892
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2555388005815499710}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2003768379672041307}
-  m_Father: {fileID: 8242553878502452484}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2555869705902390414
 GameObject:
   m_ObjectHideFlags: 0
@@ -5335,7 +5304,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1745752603
   m_SortingLayer: 0
-  m_SortingOrder: 13
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300016, guid: 56b096f5498594f48b7c903b9c931577, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -5617,8 +5586,8 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 3985656821811827628}
-  m_Father: {fileID: 2957412522489781892}
-  m_RootOrder: 0
+  m_Father: {fileID: 8242553878502452484}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3557133622541165369
 SpriteRenderer:
@@ -10878,7 +10847,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1557803398221323546}
-  - {fileID: 2957412522489781892}
+  - {fileID: 2003768379672041307}
   - {fileID: 354422352579399870}
   - {fileID: 3855281112639611472}
   m_Father: {fileID: 0}
@@ -10947,13 +10916,14 @@ MonoBehaviour:
   doesVelocityStop: 1
   isAffectedByFreeze: 1
   isAffectedByGravityWells: 0
-  speed: 12
+  speed: 0
   moveToEndPos: 0
   returnToStartPos: 0
+  hitWall: 0
   field: {fileID: 3221149377244581418}
   startPos: {fileID: 354422352579399870}
   endPos: {fileID: 3855281112639611472}
-  movementSprite: {fileID: 2555388005815499710}
+  movementSprite: {fileID: 4804278842222897091}
 --- !u!50 &5999134441855841771
 Rigidbody2D:
   serializedVersion: 4

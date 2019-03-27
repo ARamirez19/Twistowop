@@ -20,6 +20,8 @@ public class ChargerEnemy : EnemyController
 	private bool moveToEndPos = false;
 	[SerializeField]
 	private bool returnToStartPos = false;
+	[SerializeField]
+	private bool hitWall = false;
 
 	[SerializeField]
 	private GameObject field;
@@ -30,6 +32,9 @@ public class ChargerEnemy : EnemyController
 	[SerializeField]
 	private GameObject movementSprite;
 
+	private Animator myAnim;
+	private Vector2 direction;
+
     // Start is called before the first frame update
     protected override void ExtraStart()
     {
@@ -38,6 +43,8 @@ public class ChargerEnemy : EnemyController
 		startPos = this.gameObject.transform.GetChild(2).transform;
 		endPos = this.gameObject.transform.GetChild(3).transform;
 		field.GetComponent<Renderer>().enabled = false;
+		myAnim = movementSprite.GetComponent<Animator>();
+		direction = (endPos.transform.position - startPos.transform.position).normalized;
     }
 
     // Update is called once per frame
@@ -48,17 +55,29 @@ public class ChargerEnemy : EnemyController
 			distCovered = (Time.time - startTime) * speed;
 			fracJourney = distCovered / journeyLength;
 			movementSprite.transform.position = Vector2.Lerp(startPos.position, endPos.position, fracJourney);
+			myAnim.SetBool("charging", true);
 		}
 		if(returnToStartPos == true)
 		{
 			returnDist = (Time.time - returnTime) * speed;
 			returnFrac = returnDist / returnLength;
 			movementSprite.transform.position = Vector2.Lerp(endPos.position, startPos.position, returnFrac);
+			myAnim.SetBool("charging", false);
+			myAnim.SetBool("returning", true);
 		}
 		if(movementSprite.transform.position == endPos.transform.position)
 		{
-			moveToEndPos = false;
-			ReturnCharger();
+//			moveToEndPos = false;
+//			ReturnCharger();
+			if(hitWall == true)
+			{
+				StartCoroutine(ImpactTimer());
+			}
+			else
+			{
+				moveToEndPos = false;
+				ReturnCharger();
+			}
 		}
 
 		if(Input.GetKeyDown (KeyCode.Space))
@@ -68,19 +87,49 @@ public class ChargerEnemy : EnemyController
 
 		if(movementSprite.transform.position.x == endPos.transform.position.x)
 		{
-			ReturnCharger();
+			//ReturnCharger();
+			if(hitWall == true)
+			{
+				StartCoroutine(ImpactTimer());
+			}
+			else
+			{
+				moveToEndPos = false;
+				ReturnCharger();
+			}
 		}
 		if(movementSprite.transform.position.x == startPos.transform.position.x)
 		{
 			returnToStartPos = false;
+			myAnim.SetBool("returning", false);
 		}
     }
+
+	public IEnumerator ImpactTimer()
+	{
+		yield return new WaitForSeconds(1.5f);
+		hitWall = false;
+	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.gameObject.tag == "Player" && moveToEndPos == false && returnToStartPos == false)
 		{
 			MoveCharger();
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		if(other.gameObject.tag == "Wall")
+		{
+			myAnim.SetTrigger("hitWall");
+			hitWall = true;
+		}
+		if(other.gameObject.tag == "Player")
+		{
+			myAnim.SetTrigger("hitCubark");
+			base.OnCollisionEnter2D(other);
 		}
 	}
 
