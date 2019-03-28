@@ -17,6 +17,13 @@ public class ChargerEnemy : EnemyController
 	private float returnFrac;
 
 	[SerializeField]
+	private float incrementSpeed;
+	[SerializeField]
+	private float maxSpeed;
+	[SerializeField]
+	private float returnSpeed;
+
+	[SerializeField]
 	private bool moveToEndPos = false;
 	[SerializeField]
 	private bool returnToStartPos = false;
@@ -52,6 +59,7 @@ public class ChargerEnemy : EnemyController
     {
 		if(moveToEndPos == true)
 		{
+			speed += incrementSpeed;
 			distCovered = (Time.time - startTime) * speed;
 			fracJourney = distCovered / journeyLength;
 			movementSprite.transform.position = Vector2.Lerp(startPos.position, endPos.position, fracJourney);
@@ -59,16 +67,18 @@ public class ChargerEnemy : EnemyController
 		}
 		if(returnToStartPos == true)
 		{
-			returnDist = (Time.time - returnTime) * speed;
+			returnDist = (Time.time - returnTime) * returnSpeed;
 			returnFrac = returnDist / returnLength;
 			movementSprite.transform.position = Vector2.Lerp(endPos.position, startPos.position, returnFrac);
 			myAnim.SetBool("charging", false);
 			myAnim.SetBool("returning", true);
 		}
+		if(speed >= maxSpeed)
+		{
+			speed = maxSpeed;
+		}
 		if(movementSprite.transform.position == endPos.transform.position)
 		{
-//			moveToEndPos = false;
-//			ReturnCharger();
 			if(hitWall == true)
 			{
 				StartCoroutine(ImpactTimer());
@@ -87,7 +97,6 @@ public class ChargerEnemy : EnemyController
 
 		if(movementSprite.transform.position.x == endPos.transform.position.x)
 		{
-			//ReturnCharger();
 			if(hitWall == true)
 			{
 				StartCoroutine(ImpactTimer());
@@ -102,6 +111,7 @@ public class ChargerEnemy : EnemyController
 		{
 			returnToStartPos = false;
 			myAnim.SetBool("returning", false);
+			speed = 0;
 		}
     }
 
