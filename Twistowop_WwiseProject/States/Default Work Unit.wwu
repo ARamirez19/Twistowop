@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F6698F38-B407-485C-800E-79A6D4FC779B}" SchemaVersion="89">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{F6698F38-B407-485C-800E-79A6D4FC779B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="BallEnemy_Ambience" ID="{7F0E6829-3448-44C2-B43F-352453194AAA}">
+					<ChildrenList>
+						<State Name="None" ID="{AFFC4F3F-2A9E-4856-AC12-66E2B361ECF2}"/>
+						<State Name="Active" ID="{87A03406-5C06-4F46-9251-FFB4F94A9F78}"/>
+						<State Name="Inactive" ID="{93E9463B-17DE-427C-B675-E91A8F35B188}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Active" ID="{87A03406-5C06-4F46-9251-FFB4F94A9F78}"/>
+							<EndState Name="Inactive" ID="{93E9463B-17DE-427C-B675-E91A8F35B188}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

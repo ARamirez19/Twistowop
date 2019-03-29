@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	506762798	Play_BallEnemy_Attack			\Default Work Unit\Play_BallEnemy_Attack	
+	738307890	Play_BallEnemy_Beep			\Default Work Unit\Play_BallEnemy_Beep	
+	789229116	Play_BallEnemy_Bark			\Default Work Unit\Play_BallEnemy_Bark	
+	1677540204	Stop_BallEnemy_Ambience			\Default Work Unit\Stop_BallEnemy_Ambience	
+	3284840310	Play_BallEnemy_Ambience			\Default Work Unit\Play_BallEnemy_Ambience	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1252037349	BallEnemy_Ambience			\Default Work Unit\BallEnemy_Ambience	
+
+State	ID	Name	State Group			Notes
+	58138747	Active	BallEnemy_Ambience			
+	748895195	None	BallEnemy_Ambience			
+	3163453698	Inactive	BallEnemy_Ambience			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	120297609	BallEnemy_Bark_3	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Windows\SFX\BallEnemy_Bark_3_3BF2ADC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_3		50748
+	180651609	BallEnemy_Bark_4	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Windows\SFX\BallEnemy_Bark_4_CE683DA6.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_4		59816
+	598320126	BallEnemy_Bite_2	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Windows\SFX\BallEnemy_Attack_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Attack\BallEnemy_Bite_2		42864
+	737388196	BallEnemy_Beep	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Windows\SFX\BallEnemy_Beep_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Beep		22208
+	905224636	BallEnemy_Bark_2	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Windows\SFX\BallEnemy_Bark_2_3B7BF6C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_2		43736
+	928833758	BallEnemy_Bark_1	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Windows\SFX\BallEnemy_Bark_1_0D5DB38F.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_1		58112
+
