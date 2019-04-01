@@ -8,6 +8,6 @@
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <WwiseInstallationPathMac />
-  <WwiseInstallationPathWindows>E:\GameData\Wwise 2018.1.6.6858</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../Twistowop_WwiseProject/Twistowop_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseInstallationPathWindows>C:\GameData\Wwise 2018.1.6.6858</WwiseInstallationPathWindows>
+  <WwiseProjectPath>../../Twistowop2/Twistowop_WwiseProject/Twistowop_WwiseProject.wproj</WwiseProjectPath>
 </WwiseSettings>
