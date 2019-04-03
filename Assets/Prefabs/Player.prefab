@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6322020373777093236}
   - component: {fileID: 3936111252062736587}
   - component: {fileID: 8806526442856901540}
+  - component: {fileID: 1281614391337431808}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -155,3 +156,15 @@ MonoBehaviour:
   jetpackBar: {fileID: 0}
   timerImage: {fileID: 0}
   timerText: {fileID: 0}
+--- !u!114 &1281614391337431808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584153425367028590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8da0a62bb20c8d4f96e5361559fa2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
