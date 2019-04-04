@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: bc4345af560021746aa560d2c681ca0a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pusher_barrel
+    21300002: pusher_boltB
+    21300004: pusher_boltA
+    21300006: pusher_base
+    21300008: pusher_pupil
+    21300010: pusher_arm
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pusher_barrel
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 159
+        width: 348
+        height: 353
+      alignment: 9
+      pivot: {x: 0.1819821, y: 0.41030106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81, y: -128.5}
+        - {x: -11, y: -173.5}
+        - {x: -98, y: -120.5}
+        - {x: -174, y: -101.5}
+        - {x: -172, y: 173.5}
+        - {x: 168, y: 173.5}
+        - {x: 172, y: -100.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b42a0d331e5994fa82961523111f8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pusher_boltB
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 314
+        width: 108
+        height: 109
+      alignment: 9
+      pivot: {x: 0.48528656, y: 0.46598354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108007f0ff348a24d86644b6dab0df15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pusher_boltA
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 182
+        width: 126
+        height: 124
+      alignment: 9
+      pivot: {x: 0.51261175, y: 0.46155512}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30e75a7098efca4283c842a9b832469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pusher_base
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 3
+        width: 418
+        height: 203
+      alignment: 9
+      pivot: {x: 0.50506884, y: 0.30430117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62, y: -101.5}
+        - {x: -136, y: -100.5}
+        - {x: -209, y: -84.5}
+        - {x: -204, y: -9.5}
+        - {x: -58, y: 96.5}
+        - {x: 31, y: 98.5}
+        - {x: 200, y: -20.5}
+        - {x: 204, y: -93.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5746ff21217103849a35f6530256d942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pusher_pupil
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 117
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abbfdf98e727e54ea18e34b6b9b8e98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pusher_arm
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 58
+        width: 55
+        height: 163
+      alignment: 9
+      pivot: {x: 0.4614769, y: 1.0231928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6864ea0aec097429eb89d3a171265a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 99e8c862513c59e49863ac83e6e91df6
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

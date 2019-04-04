@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 5d6ed783fdfee9144bfe8991b6106aef
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BG_AsteroidA_1
+    21300002: BG_AsteroidA_2
+    21300004: BG_AsteroidB_1
+    21300006: BG_AsteroidB_2
+    21300008: BG_Asteroid_planetA
+    21300010: BG_Asteroid_planetB
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BG_AsteroidA_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 597
+        height: 118
+      alignment: 9
+      pivot: {x: 0.11970286, y: 0.48082823}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d9d929ecb8f9b41a3cb1839ae3c2aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_AsteroidA_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 782
+        width: 591
+        height: 121
+      alignment: 9
+      pivot: {x: 0.1230011, y: 0.46391764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6dddf37af2b5ec438e045362da098f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_AsteroidB_1
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 19
+        width: 104
+        height: 563
+      alignment: 9
+      pivot: {x: 0.5530055, y: 0.13380624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d9dc9f676723e45a50895ca17c0cb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_AsteroidB_2
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 17
+        width: 108
+        height: 564
+      alignment: 9
+      pivot: {x: 0.5408348, y: 0.13641046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8274d2aa071e6014c864638c03e447c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_Asteroid_planetA
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 771
+        height: 774
+      alignment: 9
+      pivot: {x: 0.5042899, y: 0.50712216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -111.5, y: 387}
+        - {x: -235.5, y: 321}
+        - {x: -329.5, y: 241}
+        - {x: -385.5, y: 137}
+        - {x: -376.5, y: -225}
+        - {x: -326.5, y: -377}
+        - {x: 28.5, y: -387}
+        - {x: 195.5, y: -365}
+        - {x: 385.5, y: -149}
+        - {x: 385.5, y: 80}
+        - {x: 348.5, y: 200}
+        - {x: 144.5, y: 379}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510b59befe208d94d9b996a82ff06c3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_Asteroid_planetB
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 605
+        width: 429
+        height: 419
+      alignment: 9
+      pivot: {x: 0.47430092, y: 0.48684394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41.5, y: 209.5}
+        - {x: -114.5, y: 204.5}
+        - {x: -214.5, y: 111.5}
+        - {x: -214.5, y: -48.5}
+        - {x: -174.5, y: -143.5}
+        - {x: -85.5, y: -209.5}
+        - {x: 115.5, y: -206.5}
+        - {x: 190.5, y: -109.5}
+        - {x: 213.5, y: 62.5}
+        - {x: 135.5, y: 173.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be29fd7ac1fda644293f9cb809348196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 826fa994f1b50a342b2f913a6c70ae34
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -55,3 +55,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG_Object
+    uniqueID: 3682099307
+    locked: 0
+  - name: Objects
+    uniqueID: 4222980675
+    locked: 0
+  - name: Items
+    uniqueID: 1742047525
+    locked: 0
+  - name: Player
+    uniqueID: 2953491519
+    locked: 0
+  - name: Enemy
+    uniqueID: 413562865
+    locked: 0
+  - name: FX
+    uniqueID: 3973035417
+    locked: 0

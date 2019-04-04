@@ -8,7 +8,8 @@ public class WindEnemy : EnemyController
 	private bool pushObject = true;
 	private bool playerPushed = false;
 	private bool playerPulled = false;
-	private float windPower = 0.1f;
+    [SerializeField]
+	private float windPower;
 	private GameObject player;
 	private Rigidbody2D playerBody;
 	[SerializeField]
@@ -19,6 +20,7 @@ public class WindEnemy : EnemyController
 	private Vector2 endPos;
 	private Vector2 windDiection;
 	private Vector2 pullDirection;
+    private Animator myAnim;
 
     // Start is called before the first frame update
     protected override void ExtraStart()
@@ -32,6 +34,7 @@ public class WindEnemy : EnemyController
 		field.gameObject.GetComponent<Renderer>().enabled = false;
 		windDiection = startPos - endPos;
 		pullDirection = endPos - startPos;
+        myAnim = this.gameObject.GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -40,11 +43,20 @@ public class WindEnemy : EnemyController
 		if(playerPushed == true)
 		{
 			playerBody.velocity -= windDiection * windPower;
+            
 		}
 		if(playerPulled == true)
 		{
 			playerBody.velocity -= pullDirection * windPower;
 		}
+        if(pushObject == true)
+        {
+            myAnim.SetBool("Pushing", true);
+        }
+        if(pushObject == false)
+        {
+            myAnim.SetBool("Pushing", false);
+        }
     }
 
 	void OnTriggerEnter2D(Collider2D other)
