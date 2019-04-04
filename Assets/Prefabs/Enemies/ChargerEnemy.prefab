@@ -4878,7 +4878,7 @@ ParticleSystem:
 --- !u!199 &998590806557006883
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10321,7 +10321,7 @@ ParticleSystem:
 --- !u!199 &8899804830620358749
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10917,6 +10917,9 @@ MonoBehaviour:
   isAffectedByFreeze: 1
   isAffectedByGravityWells: 0
   speed: 0
+  incrementSpeed: 0.3
+  maxSpeed: 17
+  returnSpeed: 10
   moveToEndPos: 0
   returnToStartPos: 0
   hitWall: 0
@@ -15853,7 +15856,7 @@ ParticleSystem:
 --- !u!199 &5633755961623463373
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
