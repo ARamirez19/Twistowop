@@ -54,6 +54,7 @@ public class Bullet : MonoBehaviour, IGameState
         if (other.collider.tag == "Player" && (state == GameState.e_GAMESTATE.PLAYING))
         {
             levelManager.RestartLevel();
+            Destroy(this.gameObject);
         }
         else
         {
