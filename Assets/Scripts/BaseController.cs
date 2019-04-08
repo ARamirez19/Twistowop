@@ -12,6 +12,9 @@ public class BaseController : MonoBehaviour, IGameState
 	protected LevelManager levelManager;
 	[SerializeField] protected bool isAffectedByFreeze = true;
 	[SerializeField] protected bool isAffectedByGravityWells = false;
+    [SerializeField] protected bool isAffectedByStickyWalls = true;
+
+    public bool IsAffectedByStickyWalls { get { return isAffectedByStickyWalls; } }
 	
 	void Start()    
 	{

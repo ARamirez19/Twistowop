@@ -4,41 +4,52 @@ using UnityEngine;
 
 public class StickyWalls : MonoBehaviour
 {
-	[SerializeField]
-	private bool objectStuck = false;
-	[SerializeField]
-	private bool eligibleStick = true;
-	private Rigidbody2D otherRigidbody;
+    class StuckObject
+    {
+        public BaseController stuckObject;
+        public float timeStuck = 0f;
+    }
+
+    private List<StuckObject> stuckObjects;
+    private float stickDuration = 2.0f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        stuckObjects = new List<StuckObject>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        UpdateStuckObjects();
     }
 
 	void OnCollisionEnter2D(Collision2D other)
 	{
-		otherRigidbody = other.gameObject.GetComponent<Rigidbody2D>();
-		if(objectStuck == false && eligibleStick == true)
-		{
-			objectStuck = true;
-			otherRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
-			StartCoroutine(StuckTimer(otherRigidbody));
-		}
+        BaseController collidedObject = other.gameObject.GetComponent<BaseController>();
+        if (collidedObject != null)
+        {
+            if (collidedObject.IsAffectedByStickyWalls)
+            {
+                StuckObject newStuckObject = new StuckObject();
+                newStuckObject.stuckObject = collidedObject;
+                newStuckObject.stuckObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+                stuckObjects.Add(newStuckObject);
+            }
+        }
 	}
 
-	IEnumerator StuckTimer(Rigidbody2D otherRigidbody)
+	void UpdateStuckObjects()
 	{
-		yield return new WaitForSeconds(2.0f);
-		otherRigidbody.constraints = RigidbodyConstraints2D.None;
-		objectStuck = false;
-		eligibleStick = false;
-		yield return new WaitForSeconds(2);
-		eligibleStick = true;
+        for(int i=0; i<stuckObjects.Count; i++)
+        {
+            stuckObjects[i].timeStuck += Time.deltaTime;
+            if(stuckObjects[i].timeStuck >= stickDuration)
+            {
+                stuckObjects[i].stuckObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                stuckObjects.RemoveAt(i);
+            }
+        }
 	}
 }
