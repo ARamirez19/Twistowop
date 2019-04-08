@@ -1,0 +1,745 @@
+fileFormatVersion: 2
+guid: 3185fb539aeb9eb44988e55f17e26449
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cubark_head
+    21300002: cubark_parts_1
+    21300004: cubark_earR
+    21300006: cubark_earstemL
+    21300008: cubark_hair
+    21300010: cubark_earL
+    21300012: cubark_EarstemR
+    21300014: cubark_sides
+    21300016: cubark_tailA
+    21300018: cubark_legA
+    21300020: cubark_legB
+    21300022: cubark_legC
+    21300024: cubark_pupilL
+    21300026: cubark_body
+    21300028: cubark_tailB
+    21300030: cubark_parts_15
+    21300032: cubark_tailC
+    21300034: cubark_tongueB
+    21300036: cubark_collar
+    21300038: cubark_eyeL
+    21300040: cubark_tongueA
+    21300042: cubark_pupilR
+    21300044: cubark_eyeR
+    21300046: cubark_tag
+    21300048: cubark_nose
+    21300050: cubark_browL
+    21300052: cubark_browR
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cubark_head
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 516
+        width: 504
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79671474b41afa743a1ddea4f25c5532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_parts_1
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 804
+        width: 212
+        height: 208
+      alignment: 9
+      pivot: {x: 0.50575835, y: 0.7230292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -106, y: 104}
+        - {x: -106, y: -104}
+        - {x: 22, y: -104}
+        - {x: 106, y: 6}
+        - {x: 106, y: 93}
+        - {x: 77, y: 104}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8c1ec98d506cf45988c1134c0adecd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_earR
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 590
+        width: 216
+        height: 266
+      alignment: 9
+      pivot: {x: 0.21175753, y: 0.77536654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 133}
+        - {x: -108, y: 133}
+        - {x: -108, y: -43}
+        - {x: -68, y: -133}
+        - {x: -18, y: -133}
+        - {x: 65, y: -64}
+        - {x: 108, y: -2}
+        - {x: 108, y: 71}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442035aa49c87964c8fb4573b3661fb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_earstemL
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 847
+        width: 192
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 76.5}
+        - {x: -96, y: 38.5}
+        - {x: -96, y: -37.5}
+        - {x: -10, y: -76.5}
+        - {x: 42, y: -76.5}
+        - {x: 96, y: -10.5}
+        - {x: 96, y: 76.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f7ee5054c41b14e8f24a1277521d34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_hair
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 593
+        width: 100
+        height: 96
+      alignment: 9
+      pivot: {x: 0.48779237, y: 0.08035278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 48}
+        - {x: -50, y: 23}
+        - {x: -50, y: -36}
+        - {x: -43, y: -48}
+        - {x: 38, y: -48}
+        - {x: 50, y: -23}
+        - {x: 50, y: 19}
+        - {x: 5, y: 48}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1353d35b6c064744abbf8015d6d6610d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_earL
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 592
+        width: 199
+        height: 248
+      alignment: 9
+      pivot: {x: 0.75151974, y: 0.7904301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 124}
+        - {x: -99.5, y: 49}
+        - {x: -99.5, y: -14}
+        - {x: -34.5, y: -92}
+        - {x: -5.5, y: -124}
+        - {x: 99.5, y: -124}
+        - {x: 99.5, y: 110}
+        - {x: 81.5, y: 124}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f38137a3ddc8f449dc0f6b89d95885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_EarstemR
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 375
+        width: 152
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43, y: 129}
+        - {x: -15, y: 129}
+        - {x: -76, y: 39}
+        - {x: -76, y: -8}
+        - {x: 1, y: -129}
+        - {x: 49, y: -129}
+        - {x: 76, y: -77}
+        - {x: 76, y: 94}
+        - {x: 67, y: 116}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d7ae8f6dfa5b74fbfa7e0ed2007b25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_sides
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 3
+        width: 503
+        height: 494
+      alignment: 9
+      pivot: {x: 0.50503236, y: 0.4905965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 160.5, y: 247}
+        - {x: -101.5, y: 247}
+        - {x: -243.5, y: 210}
+        - {x: -251.5, y: 50}
+        - {x: -203.5, y: -194}
+        - {x: -178.5, y: -232}
+        - {x: -4.5, y: -247}
+        - {x: 184.5, y: -236}
+        - {x: 251.5, y: -46}
+        - {x: 251.5, y: 193}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ea6df998da66f428759c0bdb1a99cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_tailA
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 464
+        width: 100
+        height: 112
+      alignment: 9
+      pivot: {x: 0.915069, y: 0.19480215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 56}
+        - {x: -50, y: 32}
+        - {x: -50, y: -25}
+        - {x: -15, y: -56}
+        - {x: 50, y: -56}
+        - {x: 50, y: -24}
+        - {x: -5, y: 56}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a8274ac898afd429b0663e00cf35f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_legA
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 472
+        width: 41
+        height: 100
+      alignment: 9
+      pivot: {x: 0.73820233, y: 0.90286136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae3542ff302ad24a867d350078eaf8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_legB
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 472
+        width: 52
+        height: 97
+      alignment: 9
+      pivot: {x: 0.35913908, y: 0.91532093}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 48.5}
+        - {x: -26, y: 33.5}
+        - {x: -26, y: -22.5}
+        - {x: -10, y: -48.5}
+        - {x: 26, y: -48.5}
+        - {x: 26, y: -22.5}
+        - {x: 14, y: -3.5}
+        - {x: 7, y: 48.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e232230cddb0c148ae41276bdcfe9a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_legC
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 492
+        width: 58
+        height: 79
+      alignment: 9
+      pivot: {x: 0.39475855, y: 0.88632625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 7.5}
+        - {x: 7, y: 39.5}
+        - {x: -15, y: 39.5}
+        - {x: -29, y: 22.5}
+        - {x: -29, y: -22.5}
+        - {x: -13, y: -39.5}
+        - {x: 25, y: -39.5}
+        - {x: 29, y: -33.5}
+        - {x: 29, y: -2.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4cc9e76a757274fb2f0411c2af078c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_body
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 224
+        width: 193
+        height: 232
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7946739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47df33dd0a659f459d75b36db37c3be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_tailB
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 362
+        width: 156
+        height: 117
+      alignment: 9
+      pivot: {x: 0.87562793, y: 0.6252092}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: -33.5}
+        - {x: 67, y: 6.5}
+        - {x: 68, y: 20.5}
+        - {x: 19, y: 30.5}
+        - {x: -31, y: 57.5}
+        - {x: -66, y: 57.5}
+        - {x: -76, y: 33.5}
+        - {x: -76, y: -6.5}
+        - {x: -57, y: -52.5}
+        - {x: -52, y: -58.5}
+        - {x: -25, y: -50.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce3b1be5cc07874292a4dfce705ac0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_tailC
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 300
+        width: 88
+        height: 92
+      alignment: 9
+      pivot: {x: 0.9300509, y: 0.92462355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 46}
+        - {x: -29, y: 30}
+        - {x: -44, y: 12}
+        - {x: -44, y: -33}
+        - {x: -28, y: -46}
+        - {x: -2, y: -46}
+        - {x: 44, y: 16}
+        - {x: 44, y: 46}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1c3694cd47b934fb5708500d16c073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_tongueB
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 261
+        width: 114
+        height: 111
+      alignment: 9
+      pivot: {x: 0.36078683, y: 0.8079474}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f75ed3ac95af354a9f7ebe560f3deb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_collar
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 88
+        width: 116
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca007838711213458d730eb71def6b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_eyeL
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 10
+        width: 196
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ffe9c147a80364abd90bc029445436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_tongueA
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 185
+        width: 119
+        height: 73
+      alignment: 9
+      pivot: {x: 0.38715369, y: 0.7508476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2dc9750af9af945b58674ba810c70f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_pupilR
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 79
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7fd24d83cf6484aad49af441ea5698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_eyeR
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 52
+        width: 124
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6418a0a29d48884faf4960322b74ec2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_tag
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 11
+        width: 76
+        height: 61
+      alignment: 9
+      pivot: {x: 0.13054939, y: 0.5000001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ed9d7a7a176e94c8a3ad4cfb2153da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_nose
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 11
+        width: 109
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57c15a8dd6ee424eb4e0bd55d44a669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_browL
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 11
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07480bb6e491eca4fac9fb7ababcbf99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_browR
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 15
+        width: 57
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204baa7ba7cdd9f4583414e84365a547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubark_pupilL
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 16
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f99f583369a664a9eee712d961f057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5779f58acc1740e498d7f7f2a9c1adda
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
