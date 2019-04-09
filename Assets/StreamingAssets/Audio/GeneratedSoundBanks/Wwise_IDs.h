@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID PLAY_BALLENEMY_ATTACK = 506762798U;
         static const AkUniqueID PLAY_BALLENEMY_BARK = 789229116U;
         static const AkUniqueID PLAY_BALLENEMY_BEEP = 738307890U;
+        static const AkUniqueID PLAY_MAINMENUTHEME = 2251157239U;
         static const AkUniqueID STOP_BALLENEMY_AMBIENCE = 1677540204U;
     } // namespace EVENTS
 

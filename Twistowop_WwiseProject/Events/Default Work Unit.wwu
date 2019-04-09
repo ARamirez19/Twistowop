@@ -83,6 +83,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_MainMenuTheme" ID="{64F29D13-E95E-4F00-A18C-E50645A1CF55}">
+					<ChildrenList>
+						<Action Name="" ID="{2C2EAED0-1633-4845-AED5-ED93D524BF9A}" ShortID="797485189">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{B832228F-ACE6-440E-AB31-962F2D2E58BC}" WorkUnitID="{1B0BD4DB-EF0E-4575-9132-569B7299D776}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
