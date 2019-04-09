@@ -32,6 +32,7 @@ public class PlayerController : BaseController
     private bool rotatePlayer = false;
     private bool upIsUp = false;
     private Rigidbody2D playerRigidbody;
+    public bool portalEligible = true;
 
     void Update()
     {

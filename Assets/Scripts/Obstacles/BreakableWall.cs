@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BreakableWall : MonoBehaviour
 {
-    [SerializeField] private float minBreakSpeed = 5.0f;
+    private float minBreakSpeed = 20.0f;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
