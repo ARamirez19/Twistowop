@@ -57,6 +57,7 @@ public class AkPluginActivator
 			PluginID.SinkSystem,
 			PluginID.ToneGenerator,
 			PluginID.WwiseSilence,
+			PluginID.AkAudioInput,
 		};
 
 	private static readonly System.Collections.Generic.Dictionary<PluginID, string> PluginIDToStaticLibName =
@@ -74,9 +75,10 @@ public class AkPluginActivator
 			{ PluginID.AkMatrixReverb, "AkMatrixReverbFX" },
 			{ PluginID.AkMeter, "AkMeterFX" },
 			{ PluginID.AkMotionSink, "AkMotionSink" },
-			{ PluginID.AkMotionSource, "AkMotionSource" },
+			{ PluginID.AkMotionSource, "AkMotionSourceSource" },
+			{ PluginID.AkMotionGeneratorSource, "AkMotionGeneratorSource" },
 			{ PluginID.AkParametricEQ, "AkParametricEQFX" },
-			{ PluginID.AkPeakLimiter, "AkPeakLimiter" },
+			{ PluginID.AkPeakLimiter, "AkPeakLimiterFX" },
 			{ PluginID.AkPitchShifter, "AkPitchShifterFX" },
 			{ PluginID.AkRecorder, "AkRecorderFX" },
 			{ PluginID.AkReflect, "AkReflectFX" },
@@ -194,6 +196,9 @@ public class AkPluginActivator
 				return "tvOS";
 
 			case UnityEditor.BuildTarget.StandaloneLinux:
+				UnityEngine.Debug.LogError("WwiseUnity: The Linux Wwise Unity integration does not support the 32 bits architecture");
+				return "Linux";
+				
 			case UnityEditor.BuildTarget.StandaloneLinux64:
 			case UnityEditor.BuildTarget.StandaloneLinuxUniversal:
 				return "Linux";
@@ -1020,7 +1025,7 @@ void *_pluginName_##_fp = (void*)&_pluginName_##Registration;
 			}
 			else if (Target == UnityEditor.BuildTarget.tvOS)
 			{
-				return "/tvOS/DSP";
+				return "/tvOS/DSP/";
 			}
 			else if (Target == SwitchBuildTarget)
 			{
@@ -1069,6 +1074,7 @@ void *_pluginName_##_fp = (void*)&_pluginName_##Registration;
 		AkHarmonizer = 0x8A0003,
 		AkMotionSink = 0x1FB0007,
 		AkMotionSource = 0x1990002,
+		AkMotionGeneratorSource = 0x1950002,
 		AkPitchShifter = 0x880003,
 		AkRecorder = 0x840003,
 		AkReflect = 0xAB0003,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="UserProjectSettings" SchemaVersion="89">
+<WwiseDocument Type="UserProjectSettings" SchemaVersion="94">
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{9603DF21-BBA7-407E-90E1-A638DA445266}">
 			<PropertyList>
@@ -26,6 +26,7 @@
 				</Property>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="OybWcX6NTUuHjKf/uJNGN2OWCXOeFrFFvG0/ojKuUGk="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="SZUWxLWzEUmLOQ4QFIC66g=="/>

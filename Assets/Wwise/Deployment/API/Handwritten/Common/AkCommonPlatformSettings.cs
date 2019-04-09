@@ -329,6 +329,9 @@ public class AkCommonUserSettings : AkSettingsValidationHandler
 		[UnityEngine.Tooltip("Determines whether diffraction values for sound passing through portals will be calculated, and how to apply those calculations to Wwise parameters.")]
 		[AkEnumFlag(typeof(DiffractionFlags))]
 		public DiffractionFlags m_DiffractionFlags = (DiffractionFlags)~0;
+
+		[UnityEngine.Tooltip("Distance (in game units) that an emitter or listener has to move to trigger a recalculation of reflections/diffraction. Larger values can reduce the CPU load at the cost of reduced accuracy.")]
+		public float m_MovementThreshold = 1.0f;
 	}
 
 	[UnityEngine.Tooltip("Spatial audio common settings.")]
@@ -339,6 +342,7 @@ public class AkCommonUserSettings : AkSettingsValidationHandler
 		settings.uPoolSize = m_SpatialAudioSettings.m_PoolSize;
 		settings.uMaxSoundPropagationDepth = m_SpatialAudioSettings.m_MaxSoundPropagationDepth;
 		settings.uDiffractionFlags = (uint)m_SpatialAudioSettings.m_DiffractionFlags;
+		settings.fMovementThreshold = m_SpatialAudioSettings.m_MovementThreshold;
 	}
 
 	public virtual void CopyTo(AkUnityPlatformSpecificSettings settings)
@@ -412,7 +416,7 @@ public class AkCommonAdvancedSettings : AkSettingsValidationHandler
 	[System.Serializable]
 	public class SpatialAudioSettings
 	{
-		[UnityEngine.Tooltip("Multiplier that is applied to the distance attenuation of diffracted sounds (sounds that are in the 'shadow region') to simulate the phenomenon where by diffracted sound waves decay faster than incident sound waves.")]
+        [UnityEngine.Tooltip("Multiplier that is applied to the distance attenuation of diffracted sounds (sounds that are in the 'shadow region') to simulate the phenomenon where by diffracted sound waves decay faster than incident sound waves.")]
         [UnityEngine.Range(1.0f, 3.0f)]
         public float m_DiffractionShadowAttenuationFactor = 2.0f;
 
@@ -426,7 +430,7 @@ public class AkCommonAdvancedSettings : AkSettingsValidationHandler
 
 	public virtual void CopyTo(AkSpatialAudioInitSettings settings)
 	{
-		settings.fDiffractionShadowAttenFactor = m_SpatialAudioSettings.m_DiffractionShadowAttenuationFactor;
+        settings.fDiffractionShadowAttenFactor = m_SpatialAudioSettings.m_DiffractionShadowAttenuationFactor;
 		settings.fDiffractionShadowDegrees = m_SpatialAudioSettings.m_DiffractionShadowDegrees;
 	}
 

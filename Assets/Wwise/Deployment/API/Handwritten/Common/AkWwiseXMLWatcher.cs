@@ -75,6 +75,8 @@ public class AkWwiseXMLWatcher
 				{
 					callback();
 				}
+
+				AkBankManager.ReloadAllBanks();
 			}
 
 			fireEvent = false;

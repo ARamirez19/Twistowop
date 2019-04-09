@@ -226,6 +226,9 @@ public class AkWwiseTreeView : AK.Wwise.TreeView.TreeViewControl
 
 		switch (treeInfo.ObjectType)
 		{
+			case WwiseObjectType.AcousticTexture:
+				ShowButtonTextureInternal(m_textureWwiseAcousticTextureIcon);
+				break;
 			case WwiseObjectType.AuxBus:
 				ShowButtonTextureInternal(m_textureWwiseAuxBusIcon);
 				break;
@@ -233,12 +236,13 @@ public class AkWwiseTreeView : AK.Wwise.TreeView.TreeViewControl
 				ShowButtonTextureInternal(m_textureWwiseBusIcon);
 				break;
 			case WwiseObjectType.Event:
-			case WwiseObjectType.GameParameter:
-			case WwiseObjectType.AcousticTexture:
 				ShowButtonTextureInternal(m_textureWwiseEventIcon);
 				break;
 			case WwiseObjectType.Folder:
 				ShowButtonTextureInternal(m_textureWwiseFolderIcon);
+				break;
+			case WwiseObjectType.GameParameter:
+				ShowButtonTextureInternal(m_textureWwiseGameParameterIcon);
 				break;
 			case WwiseObjectType.PhysicalFolder:
 				ShowButtonTextureInternal(m_textureWwisePhysicalFolderIcon);
@@ -272,11 +276,13 @@ public class AkWwiseTreeView : AK.Wwise.TreeView.TreeViewControl
 	/// <summary>
 	///     Wwise logos
 	/// </summary>
-	private UnityEngine.Texture2D m_textureWwiseAuxBusIcon;
 
+	private UnityEngine.Texture2D m_textureWwiseAcousticTextureIcon;
+	private UnityEngine.Texture2D m_textureWwiseAuxBusIcon;
 	private UnityEngine.Texture2D m_textureWwiseBusIcon;
 	private UnityEngine.Texture2D m_textureWwiseEventIcon;
 	private UnityEngine.Texture2D m_textureWwiseFolderIcon;
+	private UnityEngine.Texture2D m_textureWwiseGameParameterIcon;
 	private UnityEngine.Texture2D m_textureWwisePhysicalFolderIcon;
 	private UnityEngine.Texture2D m_textureWwiseProjectIcon;
 	private UnityEngine.Texture2D m_textureWwiseSoundbankIcon;
@@ -293,10 +299,13 @@ public class AkWwiseTreeView : AK.Wwise.TreeView.TreeViewControl
 	{
 		base.AssignDefaults();
 		var tempWwisePath = "Assets/Wwise/Editor/WwiseWindows/TreeViewControl/";
+
+		m_textureWwiseAcousticTextureIcon = GetTexture(tempWwisePath + "acoustictexture_nor.png");
 		m_textureWwiseAuxBusIcon = GetTexture(tempWwisePath + "auxbus_nor.png");
 		m_textureWwiseBusIcon = GetTexture(tempWwisePath + "bus_nor.png");
 		m_textureWwiseEventIcon = GetTexture(tempWwisePath + "event_nor.png");
 		m_textureWwiseFolderIcon = GetTexture(tempWwisePath + "folder_nor.png");
+		m_textureWwiseGameParameterIcon = GetTexture(tempWwisePath + "gameparameter_nor.png");
 		m_textureWwisePhysicalFolderIcon = GetTexture(tempWwisePath + "physical_folder_nor.png");
 		m_textureWwiseProjectIcon = GetTexture(tempWwisePath + "wproj.png");
 		m_textureWwiseSoundbankIcon = GetTexture(tempWwisePath + "soundbank_nor.png");
@@ -336,6 +345,7 @@ public class AkWwiseTreeView : AK.Wwise.TreeView.TreeViewControl
 		{ typeof(AkBank), WwiseObjectType.Soundbank },
 		{ typeof(AkEnvironment), WwiseObjectType.AuxBus },
 		{ typeof(AkState), WwiseObjectType.State },
+		{ typeof(AkSurfaceReflector), WwiseObjectType.AcousticTexture },
 		{ typeof(AkSwitch), WwiseObjectType.Switch },
 	};
 

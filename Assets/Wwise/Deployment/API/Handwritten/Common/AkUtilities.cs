@@ -85,7 +85,7 @@ public partial class AkUtilities
 {
 	/// <summary>
 	/// These values represent the maximum value of the "Unity Integration Version" number in the Version.txt file that will migrated.
-	/// For example, in Wwise v2018.1.6, "Unity Integration Version" is 17 which means that all migrations up until this version are required.
+	/// For example, in Wwise v2019.1.0, "Unity Integration Version" is 18 which means that all migrations up until this version are required.
 	/// </summary>
 	public enum MigrationStep
 	{
@@ -94,6 +94,8 @@ public partial class AkUtilities
 		AkAudioListener_v2017_1_0 = 14,
 		InitializationSettings_v2018_1_0 = 15,
 		WwiseTypes_v2018_1_6 = 16,
+		AkEventCallback_v2018_1_6 = 16,
+		AkAmbient_v2019_1_0 = 17,
 		/// <summary>
 		/// The value that is currently in the Version.txt file.
 		/// </summary>

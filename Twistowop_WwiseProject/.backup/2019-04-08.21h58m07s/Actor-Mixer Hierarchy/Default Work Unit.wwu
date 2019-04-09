@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}" SchemaVersion="89">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="BallEnemy" ID="{F0B9A3C7-BD0E-4D96-BB59-9D4E0361F1C5}" ShortID="955223797">
+					<ChildrenList>
+						<Sound Name="BallEnemy_Beep" ID="{FB5F11EF-E3DF-4C49-BD4D-EEB8B61A4D01}" ShortID="343345377">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BallEnemy_Beep" ID="{42C23BCC-F657-4441-A72F-5A438D7C8CA6}" ShortID="737388196">
+									<Language>SFX</Language>
+									<AudioFile>BallEnemy_Beep.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BallEnemy_Beep" ID="{42C23BCC-F657-4441-A72F-5A438D7C8CA6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="BallEnemy_Attack" ID="{256C3D38-C4EB-4A0E-8D1F-74152DE90CB0}" ShortID="784249">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{35117D60-2972-48EA-BEA2-C1C9C85C4753}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="253"/>
+													<Property Name="Min" Type="Real64" Value="-227"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="BallEnemy_Bite_1" ID="{8CBB81BA-205B-4165-BFD1-C968A6256387}" ShortID="626315682">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BallEnemy_Attack_1" ID="{BFE458A7-82DC-41E8-B582-AD40D69D05C2}" ShortID="778387790">
+											<Language>SFX</Language>
+											<AudioFile>BallEnemy_Attack_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BallEnemy_Attack_1" ID="{BFE458A7-82DC-41E8-B582-AD40D69D05C2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BallEnemy_Bite_2" ID="{1BF5C6C6-F310-4516-9B4A-7F911B9340E5}" ShortID="243394896">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BallEnemy_Attack_2" ID="{56DB5AB2-9027-4049-A869-EED0E43436B4}" ShortID="598320126">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+												</Reference>
+											</ReferenceList>
+											<Language>SFX</Language>
+											<AudioFile>BallEnemy_Attack_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BallEnemy_Attack_2" ID="{56DB5AB2-9027-4049-A869-EED0E43436B4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BallEnemy_Bite_3" ID="{7CE6F13A-5CF7-42A9-9A5B-AF23528E6538}" ShortID="26760405">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BallEnemy_Attack_3" ID="{E70F327C-2AEB-41D1-86F5-B98CAED22AB6}" ShortID="912221674">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+												</Reference>
+											</ReferenceList>
+											<Language>SFX</Language>
+											<AudioFile>BallEnemy_Attack_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BallEnemy_Attack_3" ID="{E70F327C-2AEB-41D1-86F5-B98CAED22AB6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="BallEnemy_Bark" ID="{69476E02-2586-4BA8-8B79-FD1441C3A635}" ShortID="460083674">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{AC05320F-7492-4506-A229-F9F2914FAC37}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="278"/>
+													<Property Name="Min" Type="Real64" Value="-227"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="BallEnemy_Bark_1" ID="{2964329D-5253-428C-BB0C-F858FFBF8265}" ShortID="334261797">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BallEnemy_Bark_1" ID="{FE3F9B49-1389-4775-A53E-EF8B3893BABD}" ShortID="928833758">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="1.45958059210526E-02"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>BallEnemy_Bark_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BallEnemy_Bark_1" ID="{FE3F9B49-1389-4775-A53E-EF8B3893BABD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BallEnemy_Bark_2" ID="{F1F58425-B28E-46A2-BA8B-E002667ED502}" ShortID="322903024">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BallEnemy_Bark_2" ID="{31457E56-AFDF-4D6A-9143-293E8F01983C}" ShortID="905224636">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="9.61851242690058E-03"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>BallEnemy_Bark_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BallEnemy_Bark_2" ID="{31457E56-AFDF-4D6A-9143-293E8F01983C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BallEnemy_Bark_3" ID="{7F82778C-9402-41AE-A141-591E20168844}" ShortID="617133607">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BallEnemy_Bark_3" ID="{EE8AACCF-A348-46A5-B742-42B705BD9254}" ShortID="120297609">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="0.010535338998538"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>BallEnemy_Bark_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BallEnemy_Bark_3" ID="{EE8AACCF-A348-46A5-B742-42B705BD9254}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BallEnemy_Bark_4" ID="{B20DD04D-23A9-4B3D-BE3A-DF7093A83C3A}" ShortID="846362918">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BallEnemy_Bark_4" ID="{306D9954-DF11-45C0-AE92-2E7F6B202E37}" ShortID="180651609">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="6.97779605263158E-03"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>BallEnemy_Bark_4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BallEnemy_Bark_4" ID="{306D9954-DF11-45C0-AE92-2E7F6B202E37}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<SwitchContainer Name="BallEnemy_Ambience" ID="{2D07B837-44B2-46E9-B2B1-6331D8325CEC}" ShortID="797428883">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Inactive" ID="{93E9463B-17DE-427C-B675-E91A8F35B188}" WorkUnitID="{F6698F38-B407-485C-800E-79A6D4FC779B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="BallEnemy_Ambience" ID="{7F0E6829-3448-44C2-B43F-352453194AAA}" WorkUnitID="{F6698F38-B407-485C-800E-79A6D4FC779B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="BallEnemy_ChainLoop" ID="{7EBBADCE-1984-45DB-A502-A594BF35C355}" ShortID="38508307">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{A46437D9-5404-4EA5-98D7-F84B417B4E57}" ShortID="537831130">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="BallEnemy_Distance" ID="{D43BBF04-A34C-4C76-B264-9D5F66F4DCDC}" WorkUnitID="{BAB6270D-0811-4C9E-8571-9E88CB913600}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{3CB1CACD-2997-43AE-A69E-7EB45FD7D732}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-2.3552</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>4.5</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BallEnemy_ChainLoop" ID="{36244268-E4A2-4CCF-9D0B-F65EC6D8CB5F}" ShortID="576736924">
+											<ReferenceList/>
+											<Language>SFX</Language>
+											<AudioFile>BallEnemy_ChainLoop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BallEnemy_ChainLoop" ID="{36244268-E4A2-4CCF-9D0B-F65EC6D8CB5F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BallEnemy_ChatterLoop" ID="{0140440B-2FD8-43B7-9380-054C603753BE}" ShortID="701572170">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{2FC08B34-7F25-4F95-9B3E-A174852EF10E}" ShortID="571901162">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="BallEnemy_Distance" ID="{D43BBF04-A34C-4C76-B264-9D5F66F4DCDC}" WorkUnitID="{BAB6270D-0811-4C9E-8571-9E88CB913600}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{429AC9D7-7281-4069-A709-1CC250AF6300}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-2.3552</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>4.5</XPos>
+																<YPos>-12.0412</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AE324851-A9FC-434F-9D52-DD6BF3D6051D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30D3F585-5982-483E-AB55-F89AACE56617}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BallEnemy_ChatterLoop" ID="{8AE88D6A-DC31-47CD-927F-36A09D6E7B80}" ShortID="720705529">
+											<ReferenceList/>
+											<Language>SFX</Language>
+											<AudioFile>BallEnemy_ChatterLoop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BallEnemy_Ambience" ID="{7F0E6829-3448-44C2-B43F-352453194AAA}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Inactive" ID="{93E9463B-17DE-427C-B675-E91A8F35B188}"/>
+												<State Name="" ID="{DA26D32E-0341-4B16-82D7-1D7659191F7E}" ShortID="75705719"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Active" ID="{87A03406-5C06-4F46-9251-FFB4F94A9F78}"/>
+												<State Name="" ID="{A60F2C2E-CE5C-433D-B819-CC607F1E9454}" ShortID="977592936"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="BallEnemy_ChatterLoop" ID="{8AE88D6A-DC31-47CD-927F-36A09D6E7B80}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="BallEnemy_Ambience" ID="{7F0E6829-3448-44C2-B43F-352453194AAA}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Inactive" ID="{93E9463B-17DE-427C-B675-E91A8F35B188}"/>
+										<State Name="" ID="{0EA1345A-BB09-4249-BE61-715AE9E44F3B}" ShortID="792751674"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Active" ID="{87A03406-5C06-4F46-9251-FFB4F94A9F78}"/>
+										<State Name="" ID="{EDC53F28-1B1E-49C3-8021-6CF9C53D3362}" ShortID="813044337"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="BallEnemy_ChatterLoop" ID="{0140440B-2FD8-43B7-9380-054C603753BE}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="BallEnemy_ChainLoop" ID="{7EBBADCE-1984-45DB-A502-A594BF35C355}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Active" ID="{87A03406-5C06-4F46-9251-FFB4F94A9F78}"/>
+										<ItemList>
+											<ItemRef Name="BallEnemy_ChainLoop" ID="{7EBBADCE-1984-45DB-A502-A594BF35C355}"/>
+											<ItemRef Name="BallEnemy_ChatterLoop" ID="{0140440B-2FD8-43B7-9380-054C603753BE}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -7,7 +7,7 @@ public class AkSpatialAudioEmitter : AkSpatialAudioBase
 	[UnityEngine.Header("Early Reflections")]
 	[UnityEngine.Tooltip("The Auxiliary Bus with a Reflect plug-in Effect applied.")]
 	/// The Auxiliary Bus with a Reflect plug-in Effect applied.
-	public AK.Wwise.AuxBus reflectAuxBus;
+	public AK.Wwise.AuxBus reflectAuxBus = new AK.Wwise.AuxBus();
 
 	[UnityEngine.Tooltip("A heuristic to stop the computation of reflections. Should be no longer (and possibly shorter for less CPU usage) than the maximum attenuation of the sound emitter.")]
 	/// A heuristic to stop the computation of reflections. Should be no longer (and possibly shorter for less CPU usage) than the maximum attenuation of the sound emitter.
@@ -29,7 +29,7 @@ public class AkSpatialAudioEmitter : AkSpatialAudioBase
 	/// Send gain (0.f-1.f) that is applied when sending to the aux bus associated with the room that the emitter is in.
 	public float roomReverbAuxBusGain = 1;
 
-	[UnityEngine.Header("Geometric Diffraction (Experimental)")]
+	[UnityEngine.Header("Geometric Diffraction")]
 	[UnityEngine.Tooltip("The maximum number of edges that the sound can diffract around between the emitter and the listener.")]
 	/// The maximum number of edges that the sound can diffract around between the emitter and the listener.
 	public uint diffractionMaxEdges = 0;
@@ -79,10 +79,7 @@ public class AkSpatialAudioEmitter : AkSpatialAudioBase
 	public bool drawHigherOrderReflections = false;
 
 	/// This allows you to visualize geometric diffraction sound paths between an obstructed emitter and the listener.
-	public bool drawGeometricDiffraction = false;
-
-	/// This allows you to visualize sound propagation paths through portals.
-	public bool drawSoundPropagation = false;
+	public bool drawDiffractionPaths = false;
 
 	private void OnDrawGizmos()
 	{
@@ -95,35 +92,26 @@ public class AkSpatialAudioEmitter : AkSpatialAudioBase
 		if (drawFirstOrderReflections || drawSecondOrderReflections || drawHigherOrderReflections)
 			debugDrawData.DebugDrawEarlyReflections(gameObject, drawFirstOrderReflections, drawSecondOrderReflections, drawHigherOrderReflections);
 
-		if (drawGeometricDiffraction)
+		if (drawDiffractionPaths)
 			debugDrawData.DebugDrawDiffraction(gameObject);
-
-		if (drawSoundPropagation)
-			debugDrawData.DebugDrawSoundPropagation(gameObject);
 	}
 
 	private class DebugDrawData
 	{
 		// Constants
 		private const uint kMaxIndirectPaths = 64;
-		private readonly UnityEngine.Color32 colorLightYellow = new UnityEngine.Color32(252, 219, 162, 255);
-		private readonly UnityEngine.Color32 colorDarkYellow = new UnityEngine.Color32(169, 123, 39, 255);
+		private readonly UnityEngine.Color32 colorLightYellow = new UnityEngine.Color32(255, 255, 121, 255);
+		private readonly UnityEngine.Color32 colorDarkYellow = new UnityEngine.Color32(164, 164, 0, 255);
 		private readonly UnityEngine.Color32 colorLightOrange = new UnityEngine.Color32(255, 202, 79, 255);
 		private readonly UnityEngine.Color32 colorDarkOrange = new UnityEngine.Color32(164, 115, 0, 255);
 		private readonly UnityEngine.Color32 colorLightRed = new UnityEngine.Color32(252, 177, 162, 255);
 		private readonly UnityEngine.Color32 colorDarkRed = new UnityEngine.Color32(169, 62, 39, 255);
 		private readonly UnityEngine.Color32 colorLightGrey = new UnityEngine.Color32(75, 75, 75, 255);
-		private readonly UnityEngine.Color32 colorDarkGrey = new UnityEngine.Color32(35, 35, 35, 255);
-		private readonly UnityEngine.Color32 colorPurple = new UnityEngine.Color32(73, 46, 116, 255);
 		private readonly UnityEngine.Color32 colorGreen = new UnityEngine.Color32(38, 113, 88, 255);
-		private readonly UnityEngine.Color32 colorRed = new UnityEngine.Color32(170, 67, 57, 255);
 		private const float radiusSphere = 0.25f;
-		private const float radiusSphereMin = 0.1f;
-		private const float radiusSphereMax = 0.4f;
 
 		// Calculated path info
 		private readonly AkReflectionPathInfoArray indirectPathInfoArray = new AkReflectionPathInfoArray((int)kMaxIndirectPaths);
-		private readonly AkPropagationPathInfoArray propagationPathInfoArray = new AkPropagationPathInfoArray((int)AkPropagationPathInfo.kMaxNodes);
 		private readonly AkDiffractionPathInfoArray diffractionPathInfoArray = new AkDiffractionPathInfoArray((int)AkDiffractionPathInfo.kMaxNodes);
 		private readonly AkPathParams pathsParams = new AkPathParams();
 
@@ -192,12 +180,6 @@ public class AkSpatialAudioEmitter : AkSpatialAudioBase
 					// Finally the last path segment towards the emitter.
 					UnityEngine.Debug.DrawLine(listenerPt, emitterPos, path.isOccluded ? colorLightGrey : colorLight);
 				}
-				else
-				{
-					var occlusionPt = ConvertVector(path.occlusionPoint);
-					UnityEngine.Gizmos.color = colorDarkGrey;
-					UnityEngine.Gizmos.DrawWireSphere(occlusionPt, radiusSphere / order);
-				}
 			}
 		}
 
@@ -231,38 +213,6 @@ public class AkSpatialAudioEmitter : AkSpatialAudioBase
 				}
 
 				UnityEngine.Debug.DrawLine(prevPt, emitterPos, colorGreen);
-			}
-		}
-
-		public void DebugDrawSoundPropagation(UnityEngine.GameObject gameObject)
-		{
-			if (AkSoundEngine.QuerySoundPropagationPaths(gameObject, pathsParams, propagationPathInfoArray, (uint)propagationPathInfoArray.Count()) != AKRESULT.AK_Success)
-				return;
-
-			for (var idxPath = (int)pathsParams.numValidPaths - 1; idxPath >= 0; --idxPath)
-			{
-				var path = propagationPathInfoArray[idxPath];
-				var emitterPos = ConvertVector(pathsParams.emitterPos);
-				var prevPt = ConvertVector(pathsParams.listenerPos);
-
-				for (var idxSeg = 0; idxSeg < (int)path.numNodes; ++idxSeg)
-				{
-					var portalPt = ConvertVector(path.GetNodePoint((uint)idxSeg));
-
-					UnityEngine.Debug.DrawLine(prevPt, portalPt, colorPurple);
-
-					var radWet = radiusSphereMin + (1.0f - path.wetDiffraction) * (radiusSphereMax - radiusSphereMin);
-					var radDry = radiusSphereMin + (1.0f - path.dryDiffraction) * (radiusSphereMax - radiusSphereMin);
-
-					UnityEngine.Gizmos.color = colorGreen;
-					UnityEngine.Gizmos.DrawWireSphere(portalPt, radWet);
-					UnityEngine.Gizmos.color = colorRed;
-					UnityEngine.Gizmos.DrawWireSphere(portalPt, radDry);
-
-					prevPt = portalPt;
-				}
-
-				UnityEngine.Debug.DrawLine(prevPt, emitterPos, colorPurple);
 			}
 		}
 	}

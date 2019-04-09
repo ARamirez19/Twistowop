@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}" SchemaVersion="89">
+<WwiseDocument Type="WorkUnit" ID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}" SchemaVersion="94">
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}" PersistMode="Standalone">
 			<ChildrenList>
@@ -302,7 +302,6 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="BallEnemy_ChainLoop" ID="{36244268-E4A2-4CCF-9D0B-F65EC6D8CB5F}" ShortID="576736924">
-											<ReferenceList/>
 											<Language>SFX</Language>
 											<AudioFile>BallEnemy_ChainLoop.wav</AudioFile>
 										</AudioFileSource>
@@ -353,7 +352,6 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="BallEnemy_ChatterLoop" ID="{8AE88D6A-DC31-47CD-927F-36A09D6E7B80}" ShortID="720705529">
-											<ReferenceList/>
 											<Language>SFX</Language>
 											<AudioFile>BallEnemy_ChatterLoop.wav</AudioFile>
 										</AudioFileSource>
@@ -367,11 +365,11 @@
 										<CustomStateList>
 											<CustomState>
 												<StateRef Name="Inactive" ID="{93E9463B-17DE-427C-B675-E91A8F35B188}"/>
-												<State Name="" ID="{DA26D32E-0341-4B16-82D7-1D7659191F7E}" ShortID="75705719"/>
+												<CustomState Name="" ID="{DA26D32E-0341-4B16-82D7-1D7659191F7E}" ShortID="75705719"/>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Active" ID="{87A03406-5C06-4F46-9251-FFB4F94A9F78}"/>
-												<State Name="" ID="{A60F2C2E-CE5C-433D-B819-CC607F1E9454}" ShortID="977592936"/>
+												<CustomState Name="" ID="{A60F2C2E-CE5C-433D-B819-CC607F1E9454}" ShortID="977592936"/>
 											</CustomState>
 										</CustomStateList>
 									</StateInfo>
@@ -389,11 +387,11 @@
 								<CustomStateList>
 									<CustomState>
 										<StateRef Name="Inactive" ID="{93E9463B-17DE-427C-B675-E91A8F35B188}"/>
-										<State Name="" ID="{0EA1345A-BB09-4249-BE61-715AE9E44F3B}" ShortID="792751674"/>
+										<CustomState Name="" ID="{0EA1345A-BB09-4249-BE61-715AE9E44F3B}" ShortID="792751674"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="Active" ID="{87A03406-5C06-4F46-9251-FFB4F94A9F78}"/>
-										<State Name="" ID="{EDC53F28-1B1E-49C3-8021-6CF9C53D3362}" ShortID="813044337"/>
+										<CustomState Name="" ID="{EDC53F28-1B1E-49C3-8021-6CF9C53D3362}" ShortID="813044337"/>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>

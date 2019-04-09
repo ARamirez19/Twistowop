@@ -158,6 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7a797dbb6dd17499de16f31a8ce137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  use360: 1
 --- !u!1 &228754249
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +860,12 @@ MonoBehaviour:
   doesVelocityStop: 1
   isAffectedByFreeze: 1
   isAffectedByGravityWells: 0
+  isAffectedByStickyWalls: 1
+  speedCap: 10
+  jetpackFuel: 10
+  jetpackBar: {fileID: 0}
+  timerImage: {fileID: 0}
+  timerText: {fileID: 0}
 --- !u!50 &1040453169
 Rigidbody2D:
   serializedVersion: 4

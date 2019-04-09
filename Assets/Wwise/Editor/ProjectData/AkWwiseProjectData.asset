@@ -12,14 +12,171 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d869b54d10d37b40a54301bc9941402, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586481134835955020
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586481134847554883
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586480418133672884
+    List:
+    - name: Main
+      guid: 499516c4b5b311498b390e101480baea
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586479710212657311
+    List:
+    - name: Play_BallEnemy_Ambience
+      guid: b399026e76048645b66ac2fffcb09240
+      id: 3284840310
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_BallEnemy_Ambience
+        ObjectType: 3
+      Path: Default Work Unit\Play_BallEnemy_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_BallEnemy_Attack
+      guid: 803681df63962f4dadacfc82d6600b63
+      id: 506762798
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_BallEnemy_Attack
+        ObjectType: 3
+      Path: Default Work Unit\Play_BallEnemy_Attack
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_BallEnemy_Bark
+      guid: 9c94031f6209fa44adb0cccfad4a75dc
+      id: 789229116
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_BallEnemy_Bark
+        ObjectType: 3
+      Path: Default Work Unit\Play_BallEnemy_Bark
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_BallEnemy_Beep
+      guid: 15d0c9d7983ec341a6ed9fcfdabfe2e0
+      id: 738307890
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_BallEnemy_Beep
+        ObjectType: 3
+      Path: Default Work Unit\Play_BallEnemy_Beep
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_BallEnemy_Ambience
+      guid: c7bc1fa6f2cbca42a871347efc3eb7a1
+      id: 1677540204
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_BallEnemy_Ambience
+        ObjectType: 3
+      Path: Default Work Unit\Stop_BallEnemy_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586479753404135181
+    List:
+    - name: BallEnemy_Distance
+      guid: 04bf3bd44ca3764cb2649d5f66f4dcdc
+      id: 2142520180
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BallEnemy_Distance
+        ObjectType: 13
+      Path: Default Work Unit\BallEnemy_Distance
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586479710212607444
+    List:
+    - name: BallEnemy_Ambience
+      guid: 29680e7f4834c244b43f352453194aaa
+      id: 1252037349
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BallEnemy_Ambience
+        ObjectType: 9
+      Path: Default Work Unit\BallEnemy_Ambience
+      values:
+      - name: Active
+        guid: 0634a087065c464f9251ffb4f94a9f78
+        id: 58138747
+        PathAndIcons:
+        - ElementName: Active
+          ObjectType: 8
+      - name: Inactive
+        guid: 3b46e993de177c42b675e91a8f35b188
+        id: 3163453698
+        PathAndIcons:
+        - ElementName: Inactive
+          ObjectType: 8
+      - name: None
+        guid: 3f4ffcaf9e2a5648ac1266e2b361ecf2
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586481134836014872
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586481134835994708
+    List: []
   ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -6,7 +6,7 @@
 /// @details 
 public class AkRoom : AkTriggerHandler
 {
-	public static ulong INVALID_ROOM_ID = unchecked((ulong) -1.0f);
+	public static ulong INVALID_ROOM_ID = unchecked((ulong)-1.0f);
 
 	private static int RoomCount;
 
@@ -16,7 +16,7 @@ public class AkRoom : AkTriggerHandler
 	public int priority = 0;
 
 	/// The reverb auxiliary bus.
-	public AK.Wwise.AuxBus reverbAuxBus;
+	public AK.Wwise.AuxBus reverbAuxBus = new AK.Wwise.AuxBus();
 
 	[UnityEngine.Range(0, 1)]
 	/// The reverb control value for the send to the reverb aux bus.
@@ -27,7 +27,7 @@ public class AkRoom : AkTriggerHandler
 	public float wallOcclusion = 1;
 
 	/// Wwise Event to be posted on the room game object.
-	public AK.Wwise.Event roomToneEvent;
+	public AK.Wwise.Event roomToneEvent = new AK.Wwise.Event();
 
 	[UnityEngine.Range(0, 1)]
 	[UnityEngine.Tooltip("Send level for sounds that are posted on the room game object; adds reverb to ambience and room tones. Valid range: (0.f-1.f). A value of 0 disables the aux send.")]
@@ -66,11 +66,9 @@ public class AkRoom : AkTriggerHandler
 
 		RoomCount++;
 		AkSoundEngine.SetRoom(GetID(), roomParams, name);
-	}
 
-	protected override void Start()
-	{
-		base.Start();
+		/// In case a room is disbled and re-enabled. 
+		AkRoomPortalManager.RegisterRoomUpdate(this);
 	}
 
 	public override void HandleEvent(UnityEngine.GameObject in_gameObject)
@@ -80,6 +78,8 @@ public class AkRoom : AkTriggerHandler
 
 	private void OnDisable()
 	{
+		AkRoomPortalManager.RegisterRoomUpdate(this);
+
 		RoomCount--;
 		AkSoundEngine.RemoveRoom(GetID());
 	}

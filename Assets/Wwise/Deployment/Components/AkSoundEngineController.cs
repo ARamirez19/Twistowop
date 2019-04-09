@@ -67,6 +67,7 @@ public class AkSoundEngineController
 #endif
 
 		//Execute callbacks that occurred in last frame (not the current update)
+		AkRoomPortalManager.UpdatePortals();
 		AkCallbackManager.PostCallbacks();
 		AkBankManager.DoUnloadBanks();
 		AkSoundEngine.RenderAudio();
@@ -105,7 +106,7 @@ public class AkSoundEngineController
 			return;
 		}
 #else
-		bool isInitialized = AkSoundEngine.IsInitialized();
+		var isInitialized = AkSoundEngine.IsInitialized();
 #endif
 
 		AkLogger.Instance.Init();

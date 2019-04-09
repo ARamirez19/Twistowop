@@ -357,18 +357,24 @@ public class AkEventPlayableBehavior : UnityEngine.Playables.PlayableBehaviour
 	{
 		if (eventTracker != null)
 		{
+			var previousTime = UnityEngine.Playables.PlayableExtensions.GetPreviousTime(playable);
+			var currentTime = UnityEngine.Playables.PlayableExtensions.GetTime(playable);
+
+			if (previousTime == 0.0 && System.Math.Abs(currentTime - previousTime) > 1.0)
+			{
+				return false;
+			}
+
 			// If max and min duration values from metadata are equal, we can assume a deterministic event.
 			if (akEventMaxDuration == akEventMinDuration && akEventMinDuration != -1.0f)
 			{
-				return (float) UnityEngine.Playables.PlayableExtensions.GetTime(playable) < akEventMaxDuration ||
-				       eventShouldRetrigger;
+				return currentTime < akEventMaxDuration || eventShouldRetrigger;
 			}
 
-			var currentTime = (float) UnityEngine.Playables.PlayableExtensions.GetTime(playable) -
-			                  eventTracker.previousEventStartTime;
+			currentTime = currentTime - eventTracker.previousEventStartTime;
 			var currentDuration = eventTracker.currentDuration;
 			var maxDuration = currentDuration == -1.0f
-				? (float) UnityEngine.Playables.PlayableExtensions.GetDuration(playable)
+				? (float)UnityEngine.Playables.PlayableExtensions.GetDuration(playable)
 				: currentDuration;
 			return currentTime < maxDuration || eventShouldRetrigger;
 		}
