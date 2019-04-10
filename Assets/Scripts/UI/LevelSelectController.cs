@@ -53,7 +53,9 @@ public class LevelSelectController : MonoBehaviour
             worlds[i].name = "World" + (i+1);
             worlds[closureIndex].GetComponent<Button>().onClick.AddListener(() => WorldSelect(closureIndex + 1));
             Transform name = worlds[i].transform.Find("WorldName");
+            Transform stars = worlds[i].transform.Find("StarCount");
             name.GetComponent<TextMeshProUGUI>().text = "World " + (i + 1);
+            stars.GetComponent<TextMeshProUGUI>().text = CalculateWorldStars(i+1) + "/" + (levelsInWorld[i] * 3);
             /*worlds[i] = GameObject.Find("World" + (i + 1));
             worldLevels[i] = GameObject.Find("World" + ((i + 1)) + "Levels");
             worldLevels[i].SetActive(false);*/
@@ -69,6 +71,20 @@ public class LevelSelectController : MonoBehaviour
     {
    
 	}
+
+    private int CalculateWorldStars(int world)
+    {
+        int total = 0;
+        for(int i=0; i<levelsInWorld[world-1]; i++)
+        {
+            if(PlayerPrefs.HasKey("World"+world+"Level"+(i+1)+"stars"))
+            {
+                total += PlayerPrefs.GetInt("World" + world + "Level" + (i + 1) + "stars");
+            }
+        }
+        return total;
+    }
+
     public void BackToWorldSelect()
     {
         worldWindow.SetActive(true);
@@ -94,6 +110,8 @@ public class LevelSelectController : MonoBehaviour
             levels[closureIndex].GetComponent<Button>().onClick.AddListener(() => StartLevel(closureIndex + 1));
             Transform name = levels[i].transform.Find("LevelText");
             name.GetComponent<TextMeshProUGUI>().text = "Level \n" + (i + 1);
+            levels[i].GetComponent<LevelButton>().SetLevelInfo(currentWorld, (i + 1));
+            levels[i].GetComponent<LevelButton>().SetStarCount();
         }
 
        // worldLevels[worldNumber - 1].SetActive(true);

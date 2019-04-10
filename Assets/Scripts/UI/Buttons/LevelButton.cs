@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class LevelButton : MonoBehaviour
 {
@@ -10,8 +11,12 @@ public class LevelButton : MonoBehaviour
     [SerializeField]
     private List<GameObject> stars;
 
-    void Start()
+    private int b_world;
+    private int b_level;
+
+    private void CreateStars()
     {
+
         RectTransform[] s = GetComponentsInChildren<RectTransform>();
         for (int i=0; i<s.Length; i++)
         {
@@ -30,17 +35,26 @@ public class LevelButton : MonoBehaviour
         }
     }
 
-    public void SetStarCount(int count)
+    public void SetStarCount()
     {
-        if (count <= 3)
-            starCount = count;
+        if (PlayerPrefs.HasKey("World" + b_world + "Level" + b_level + "stars"))
+        {
+            starCount = PlayerPrefs.GetInt("World" + b_world + "Level" + b_level + "stars");
+        }
         else
-            Debug.Log("Only 3 Stars may be passed per level");
-            
+        {
+            starCount = 0;
+        }
+        CreateStars();
     }
     public int StarCount()
     {
         return starCount;
     }
 
+    public void SetLevelInfo(int world, int level)
+    {
+        b_world = world;
+        b_level = level;
+    }
 }
