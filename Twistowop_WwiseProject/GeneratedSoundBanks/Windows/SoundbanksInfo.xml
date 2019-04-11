@@ -5,7 +5,7 @@
 		<SourceFilesRoot>E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Windows\</SourceFilesRoot>
 		<SoundBanksRoot>E:\GameData\Twistowop\Twistowop_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\GameData\Twistowop\Twistowop_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>E:\GameData\Twistowop\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
