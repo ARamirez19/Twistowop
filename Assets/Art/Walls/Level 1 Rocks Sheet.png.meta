@@ -1,0 +1,913 @@
+fileFormatVersion: 2
+guid: fa4f7adc827cf8e47a6b32e655f711f6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Level 1 Rocks Sheet_0
+    21300002: Level 1 Rocks Sheet_1
+    21300004: Level 1 Rocks Sheet_2
+    21300006: Level 1 Rocks Sheet_3
+    21300008: Level 1 Rocks Sheet_5
+    21300010: Level 1 Rocks Sheet_6
+    21300012: Level 1 Rocks Sheet_7
+    21300014: Level 1 Rocks Sheet_8
+    21300016: Level 1 Rocks Sheet_10
+    21300018: Level 1 Rocks Sheet_13
+    21300020: Level 1 Rocks Sheet_15
+    21300022: Level 1 Rocks Sheet_16
+    21300024: Level 1 Rocks Sheet_17
+    21300026: Level 1 Rocks Sheet_18
+    21300028: Level 1 Rocks Sheet_19
+    21300030: Level 1 Rocks Sheet_20
+    21300032: Level 1 Rocks Sheet_21
+    21300034: Level 1 Rocks Sheet_22
+    21300036: Level 1 Rocks Sheet_23
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4915.2
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 102.599976, y: -144.6001}
+        - {x: -72.400024, y: -164.6001}
+        - {x: -296.40002, y: -146.6001}
+        - {x: -428.40002, y: -96.6001}
+        - {x: -467.40002, y: -43.600098}
+        - {x: -450.40002, y: 41.399902}
+        - {x: -322.40002, y: 128.3999}
+        - {x: 102.599976, y: 211.3999}
+        - {x: 204.59998, y: 173.3999}
+        - {x: 351.59998, y: 59.399902}
+        - {x: 304.59998, y: -77.6001}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3306bfeaa9953624da3498b9d52409a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 4915.2
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 388.59998, y: -87.6001}
+        - {x: 254.59998, y: -122.6001}
+        - {x: 122.599976, y: -122.6001}
+        - {x: 7.5999756, y: -59.600098}
+        - {x: -168.40002, y: -58.600098}
+        - {x: -260.40002, y: -80.6001}
+        - {x: -359.40002, y: -67.6001}
+        - {x: -399.40002, y: -75.6001}
+        - {x: -442.40002, y: -115.6001}
+        - {x: -487.40002, y: -92.6001}
+        - {x: -500.40002, y: -46.600098}
+        - {x: -466.40002, y: -3.6000977}
+        - {x: -467.40002, y: 52.399902}
+        - {x: -432.40002, y: 101.3999}
+        - {x: -297.40002, y: 134.3999}
+        - {x: 278.59998, y: 152.3999}
+        - {x: 456.59998, y: 112.3999}
+        - {x: 489.59998, y: -6.6000977}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2616a3016e49054883e1a576cb47fec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2456
+        y: 4915.2
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 240.6001, y: -166.6001}
+        - {x: -38.399902, y: -132.6001}
+        - {x: -216.3999, y: -175.6001}
+        - {x: -292.3999, y: -136.6001}
+        - {x: -383.3999, y: -33.600098}
+        - {x: -397.3999, y: 24.399902}
+        - {x: -400.3999, y: 129.3999}
+        - {x: -377.3999, y: 170.3999}
+        - {x: -327.3999, y: 205.3999}
+        - {x: -212.3999, y: 189.3999}
+        - {x: -122.3999, y: 149.3999}
+        - {x: -61.399902, y: 143.3999}
+        - {x: 55.600098, y: 178.3999}
+        - {x: 271.6001, y: 187.3999}
+        - {x: 313.6001, y: 154.3999}
+        - {x: 363.6001, y: 129.3999}
+        - {x: 398.6001, y: 54.399902}
+        - {x: 393.6001, y: -34.600098}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce06130d7b95a3b45bd9ed8c1dd85671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3684
+        y: 4915
+        width: 2460
+        height: 1229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 187, y: -40.5}
+        - {x: 161, y: -99.5}
+        - {x: 95, y: -158.5}
+        - {x: -79, y: -109.5}
+        - {x: -125, y: -85.5}
+        - {x: -523, y: -119.5}
+        - {x: -641, y: -88.5}
+        - {x: -862, y: 4.5}
+        - {x: -870, y: 45.5}
+        - {x: -846, y: 162.5}
+        - {x: -709, y: 217.5}
+        - {x: -395, y: 223.5}
+        - {x: -10, y: 180.5}
+        - {x: 49, y: 129.5}
+        - {x: 126, y: 188.5}
+        - {x: 203, y: 218.5}
+        - {x: 568, y: 237.5}
+        - {x: 728, y: 205.5}
+        - {x: 901, y: 141.5}
+        - {x: 915, y: 89.5}
+        - {x: 891, y: 47.5}
+        - {x: 392, y: -35.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b866b082afb89f4697a4934466b75c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3687.2
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 125.599976, y: -369.6001}
+        - {x: -22.400024, y: -596.6001}
+        - {x: -218.40002, y: -517.6001}
+        - {x: -314.40002, y: -254.6001}
+        - {x: -322.40002, y: 22.399902}
+        - {x: -300.40002, y: 43.399902}
+        - {x: -359.40002, y: 228.3999}
+        - {x: -367.40002, y: 342.3999}
+        - {x: -353.40002, y: 402.3999}
+        - {x: -310.40002, y: 460.3999}
+        - {x: -277.40002, y: 523.3999}
+        - {x: -131.40002, y: 601.3999}
+        - {x: 11.599976, y: 596.3999}
+        - {x: 93.599976, y: 464.3999}
+        - {x: 145.59998, y: 438.3999}
+        - {x: 146.59998, y: 341.3999}
+        - {x: 208.59998, y: 355.3999}
+        - {x: 304.59998, y: 319.3999}
+        - {x: 333.59998, y: 246.3999}
+        - {x: 261.59998, y: -98.6001}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3abaeddd97316428b9ce86c2805e46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 3490
+        width: 1229
+        height: 1426
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 43.5, y: -630}
+        - {x: -19.5, y: -577}
+        - {x: -17.5, y: -369}
+        - {x: -57.5, y: -345}
+        - {x: -132.5, y: -210}
+        - {x: -156.5, y: -124}
+        - {x: -175.5, y: 108}
+        - {x: -228.5, y: 44}
+        - {x: -276.5, y: 17}
+        - {x: -349.5, y: 100}
+        - {x: -435.5, y: 167}
+        - {x: -468.5, y: 249}
+        - {x: -436.5, y: 371}
+        - {x: -440.5, y: 452}
+        - {x: -460.5, y: 503}
+        - {x: -462.5, y: 571}
+        - {x: -443.5, y: 635}
+        - {x: -322.5, y: 677}
+        - {x: -196.5, y: 669}
+        - {x: -119.5, y: 640}
+        - {x: -59.5, y: 682}
+        - {x: 48.5, y: 694}
+        - {x: 300.5, y: 612}
+        - {x: 435.5, y: 474}
+        - {x: 439.5, y: 426}
+        - {x: 320.5, y: 129}
+        - {x: 286.5, y: -5}
+        - {x: 294.5, y: -244}
+        - {x: 177.5, y: -479}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317250aa047681844825a781e8b5a00e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2456
+        y: 3490
+        width: 1229
+        height: 1426
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 92.5, y: -466}
+        - {x: 54.5, y: -571}
+        - {x: 15.5, y: -594}
+        - {x: -53.5, y: -577}
+        - {x: -119.5, y: -493}
+        - {x: -133.5, y: -445}
+        - {x: -64.5, y: -225}
+        - {x: -146.5, y: -167}
+        - {x: -216.5, y: 105}
+        - {x: -148.5, y: 373}
+        - {x: -67.5, y: 615}
+        - {x: -7.5, y: 665}
+        - {x: 58.5, y: 672}
+        - {x: 104.5, y: 584}
+        - {x: 135.5, y: 537}
+        - {x: 219.5, y: 143}
+        - {x: 192.5, y: 1}
+        - {x: 52.5, y: -202}
+        - {x: 94.5, y: -262}
+        - {x: 104.5, y: -316}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f9979b754f87d43885f80d2d16d735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3684
+        y: 3687
+        width: 2460
+        height: 1229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 420, y: -177.5}
+        - {x: 337, y: -155.5}
+        - {x: 246, y: -144.5}
+        - {x: -152, y: -137.5}
+        - {x: -198, y: -123.5}
+        - {x: -311, y: -173.5}
+        - {x: -360, y: -176.5}
+        - {x: -658, y: -137.5}
+        - {x: -712, y: -98.5}
+        - {x: -731, y: -3.5}
+        - {x: -725, y: 107.5}
+        - {x: -636, y: 176.5}
+        - {x: -319, y: 165.5}
+        - {x: -214, y: 118.5}
+        - {x: -171, y: 163.5}
+        - {x: -103, y: 167.5}
+        - {x: -54, y: 73.5}
+        - {x: 216, y: 87.5}
+        - {x: 234, y: 110.5}
+        - {x: 665, y: 126.5}
+        - {x: 910, y: 35.5}
+        - {x: 895, y: -58.5}
+        - {x: 818, y: -141.5}
+        - {x: 657, y: -183.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf61f83796b4cd408e3e49a2cfba155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2190
+        width: 1229
+        height: 1498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 81.5, y: 103}
+        - {x: 43.5, y: -405}
+        - {x: -18.5, y: -669}
+        - {x: -119.5, y: -663}
+        - {x: -147.5, y: -611}
+        - {x: -151.5, y: -549}
+        - {x: -208.5, y: -492}
+        - {x: -196.5, y: -206}
+        - {x: -219.5, y: -65}
+        - {x: -213.5, y: 173}
+        - {x: -232.5, y: 437}
+        - {x: -205.5, y: 462}
+        - {x: -201.5, y: 544}
+        - {x: -125.5, y: 692}
+        - {x: -74.5, y: 704}
+        - {x: -10.5, y: 679}
+        - {x: 16.5, y: 551}
+        - {x: 94.5, y: 540}
+        - {x: 128.5, y: 457}
+        - {x: 102.5, y: 134}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ac9a3738eaa164d9d3a53d69bbf1bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 4877
+        y: 2445
+        width: 1229
+        height: 1229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 62.5, y: -565.5}
+        - {x: 7.5, y: -553.5}
+        - {x: -41.5, y: -519.5}
+        - {x: -52.5, y: -467.5}
+        - {x: -15.5, y: -345.5}
+        - {x: -109.5, y: -281.5}
+        - {x: -139.5, y: -203.5}
+        - {x: -94.5, y: -74.5}
+        - {x: -170.5, y: 232.5}
+        - {x: -90.5, y: 397.5}
+        - {x: -23.5, y: 485.5}
+        - {x: 69.5, y: 512.5}
+        - {x: 120.5, y: 461.5}
+        - {x: 195.5, y: 311.5}
+        - {x: 266.5, y: 107.5}
+        - {x: 151.5, y: -269.5}
+        - {x: 111.5, y: -323.5}
+        - {x: 137.5, y: -461.5}
+        - {x: 132.5, y: -547.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f48bd1b8fca0dd4bbf928fce559e93f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1231.2
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -30.400024, y: -536.6}
+        - {x: -75.400024, y: -512.6}
+        - {x: -103.400024, y: -296.59998}
+        - {x: -151.40002, y: -264.59998}
+        - {x: -157.40002, y: -201.59998}
+        - {x: -134.40002, y: -116.599976}
+        - {x: -148.40002, y: -52.599976}
+        - {x: -134.40002, y: 45.400024}
+        - {x: -106.400024, y: 118.400024}
+        - {x: -82.400024, y: 250.40002}
+        - {x: -84.400024, y: 420.40002}
+        - {x: -16.400024, y: 462.40002}
+        - {x: 68.599976, y: 477.40002}
+        - {x: 136.59998, y: 383.40002}
+        - {x: 107.599976, y: 210.40002}
+        - {x: 94.599976, y: 36.400024}
+        - {x: 83.599976, y: -198.59998}
+        - {x: 77.599976, y: -446.59998}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453f9c090415bfe4c8392f7b42778c6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2456
+        y: 1231.2
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 112.6001, y: -369.59998}
+        - {x: -57.399902, y: -457.59998}
+        - {x: -138.3999, y: -395.59998}
+        - {x: -157.3999, y: -320.59998}
+        - {x: -207.3999, y: -223.59998}
+        - {x: -264.3999, y: -174.59998}
+        - {x: -291.3999, y: -108.599976}
+        - {x: -392.3999, y: 266.40002}
+        - {x: -289.3999, y: 336.40002}
+        - {x: -208.3999, y: 346.40002}
+        - {x: -88.3999, y: 350.40002}
+        - {x: 42.600098, y: 347.40002}
+        - {x: 52.600098, y: 287.40002}
+        - {x: 118.6001, y: 325.40002}
+        - {x: 282.6001, y: 305.40002}
+        - {x: 311.6001, y: 247.40002}
+        - {x: 261.6001, y: 123.400024}
+        - {x: 322.6001, y: 62.400024}
+        - {x: 395.6001, y: -81.599976}
+        - {x: 311.6001, y: -199.59998}
+        - {x: 280.6001, y: -283.59998}
+        - {x: 188.6001, y: -315.59998}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f350e2a113555344ad4f69c40c8435a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3684
+        y: 1231.2
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 84.6001, y: -286.59998}
+        - {x: -9.399902, y: -287.59998}
+        - {x: -31.399902, y: -249.59998}
+        - {x: -132.3999, y: -179.59998}
+        - {x: -176.3999, y: -212.59998}
+        - {x: -311.3999, y: -203.59998}
+        - {x: -345.3999, y: -177.59998}
+        - {x: -341.3999, y: -119.599976}
+        - {x: -377.3999, y: -46.599976}
+        - {x: -349.3999, y: -4.5999756}
+        - {x: -246.3999, y: 31.400024}
+        - {x: -172.3999, y: -40.599976}
+        - {x: -145.3999, y: -26.599976}
+        - {x: 71.6001, y: 66.400024}
+        - {x: 53.600098, y: 179.40002}
+        - {x: 109.6001, y: 210.40002}
+        - {x: 182.6001, y: 119.400024}
+        - {x: 223.6001, y: 123.400024}
+        - {x: 278.6001, y: 86.400024}
+        - {x: 290.6001, y: -47.599976}
+        - {x: 270.6001, y: -173.59998}
+        - {x: 249.6001, y: -224.59998}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbe06ebda62253488abd10d77978a81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 4912
+        y: 1231.2
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 47.600098, y: -347.59998}
+        - {x: 23.600098, y: -345.59998}
+        - {x: -13.399902, y: -280.59998}
+        - {x: -48.399902, y: -196.59998}
+        - {x: -44.399902, y: 31.400024}
+        - {x: -97.3999, y: 38.400024}
+        - {x: -92.3999, y: 205.40002}
+        - {x: -69.3999, y: 256.40002}
+        - {x: -17.399902, y: 260.40002}
+        - {x: 5.6000977, y: 209.40002}
+        - {x: -6.3999023, y: 42.400024}
+        - {x: 67.6001, y: 75.400024}
+        - {x: 106.6001, y: 71.400024}
+        - {x: 121.6001, y: -10.599976}
+        - {x: 117.6001, y: -148.59998}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7a5cf1b5581694bb16e3290543aa5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.1999512
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 91.599976, y: -374.59998}
+        - {x: 36.599976, y: -330.59998}
+        - {x: 29.599976, y: -287.59998}
+        - {x: -124.400024, y: 34.400024}
+        - {x: -142.40002, y: 109.400024}
+        - {x: -234.40002, y: 100.400024}
+        - {x: -332.40002, y: 123.400024}
+        - {x: -365.40002, y: 147.40002}
+        - {x: -386.40002, y: 183.40002}
+        - {x: -392.40002, y: 260.40002}
+        - {x: -364.40002, y: 304.40002}
+        - {x: -261.40002, y: 354.40002}
+        - {x: -186.40002, y: 331.40002}
+        - {x: -115.400024, y: 286.40002}
+        - {x: -81.400024, y: 268.40002}
+        - {x: -22.400024, y: 297.40002}
+        - {x: 62.599976, y: 306.40002}
+        - {x: 156.59998, y: 263.40002}
+        - {x: 187.59998, y: 166.40002}
+        - {x: 273.59998, y: -54.599976}
+        - {x: 201.59998, y: -208.59998}
+        - {x: 152.59998, y: -359.59998}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781eeac3dcc027247bc283e00c40a57a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 3.1999512
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0.5999756, y: -114.599976}
+        - {x: -30.400024, y: -151.59998}
+        - {x: -80.400024, y: -209.59998}
+        - {x: -129.40002, y: -194.59998}
+        - {x: -179.40002, y: -256.59998}
+        - {x: -258.40002, y: -254.59998}
+        - {x: -325.40002, y: -192.59998}
+        - {x: -342.40002, y: -139.59998}
+        - {x: -303.40002, y: -45.599976}
+        - {x: -361.40002, y: 19.400024}
+        - {x: -360.40002, y: 125.400024}
+        - {x: -307.40002, y: 221.40002}
+        - {x: -118.400024, y: 237.40002}
+        - {x: -52.400024, y: 206.40002}
+        - {x: -17.400024, y: 167.40002}
+        - {x: 41.599976, y: 203.40002}
+        - {x: 126.599976, y: 211.40002}
+        - {x: 196.59998, y: 145.40002}
+        - {x: 203.59998, y: 87.400024}
+        - {x: 157.59998, y: -18.599976}
+        - {x: 98.599976, y: -29.599976}
+        - {x: -1.4000244, y: -33.599976}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2b03b6f4b16fa46859871f5770dd72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2456
+        y: 3.1999512
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 25.600098, y: -226.59998}
+        - {x: -8.399902, y: -140.59998}
+        - {x: -91.3999, y: -129.59998}
+        - {x: -152.3999, y: -163.59998}
+        - {x: -268.3999, y: -137.59998}
+        - {x: -355.3999, y: -24.599976}
+        - {x: -326.3999, y: 147.40002}
+        - {x: -223.3999, y: 215.40002}
+        - {x: -76.3999, y: 149.40002}
+        - {x: -24.399902, y: 233.40002}
+        - {x: 78.6001, y: 228.40002}
+        - {x: 131.6001, y: 158.40002}
+        - {x: 134.6001, y: 90.400024}
+        - {x: 199.6001, y: 26.400024}
+        - {x: 239.6001, y: -122.599976}
+        - {x: 196.6001, y: -217.59998}
+        - {x: 103.6001, y: -266.59998}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30fd555cd8775c41a09855aba799c2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3684
+        y: 3.1999512
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -101.3999, y: -243.59998}
+        - {x: -287.3999, y: -141.59998}
+        - {x: -299.3999, y: 3.4000244}
+        - {x: -319.3999, y: 76.400024}
+        - {x: -324.3999, y: 168.40002}
+        - {x: -289.3999, y: 213.40002}
+        - {x: 27.600098, y: 223.40002}
+        - {x: 123.6001, y: 243.40002}
+        - {x: 215.6001, y: 231.40002}
+        - {x: 219.6001, y: 139.40002}
+        - {x: 180.6001, y: -95.599976}
+        - {x: 133.6001, y: -196.59998}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df8ff89d8048c345bedd709e4bc22e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 1 Rocks Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 4912
+        y: 3.1999512
+        width: 1228.8
+        height: 1228.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -60.399902, y: -280.59998}
+        - {x: -105.3999, y: -227.59998}
+        - {x: -181.3999, y: -85.599976}
+        - {x: -271.3999, y: 51.400024}
+        - {x: -282.3999, y: 109.400024}
+        - {x: -241.3999, y: 180.40002}
+        - {x: 63.600098, y: 282.40002}
+        - {x: 240.6001, y: 269.40002}
+        - {x: 293.6001, y: 237.40002}
+        - {x: 292.6001, y: 132.40002}
+        - {x: 256.6001, y: 73.400024}
+        - {x: 159.6001, y: -315.59998}
+        - {x: 90.6001, y: -346.59998}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed2d70e0d0b77a438ca442a2ad82e65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fa5ddde610199b74e98b5565abcf7ae8
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
