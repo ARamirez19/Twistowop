@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>E:\GameData\Twistowop\Twistowop_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>E:\GameData\Twistowop\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\GameData\Twistowop\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3284840310" Name="Play_BallEnemy_Ambience" ObjectPath="\Events\Default Work Unit\Play_BallEnemy_Ambience"/>
+				<Event Id="506762798" Name="Play_BallEnemy_Attack" ObjectPath="\Events\Default Work Unit\Play_BallEnemy_Attack"/>
+				<Event Id="789229116" Name="Play_BallEnemy_Bark" ObjectPath="\Events\Default Work Unit\Play_BallEnemy_Bark"/>
+				<Event Id="738307890" Name="Play_BallEnemy_Beep" ObjectPath="\Events\Default Work Unit\Play_BallEnemy_Beep"/>
+				<Event Id="2251157239" Name="Play_MainMenuTheme" ObjectPath="\Events\Default Work Unit\Play_MainMenuTheme"/>
+				<Event Id="1677540204" Name="Stop_BallEnemy_Ambience" ObjectPath="\Events\Default Work Unit\Stop_BallEnemy_Ambience"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="120297609" Language="SFX">
+					<ShortName>BallEnemy_Bark_3.wav</ShortName>
+					<Path>SFX\BallEnemy_Bark_3_9E55AF32.wem</Path>
+				</File>
+				<File Id="180651609" Language="SFX">
+					<ShortName>BallEnemy_Bark_4.wav</ShortName>
+					<Path>SFX\BallEnemy_Bark_4_7CD8D331.wem</Path>
+				</File>
+				<File Id="576736924" Language="SFX">
+					<ShortName>BallEnemy_ChainLoop.wav</ShortName>
+					<Path>SFX\BallEnemy_ChainLoop_56D34C19.wem</Path>
+				</File>
+				<File Id="598320126" Language="SFX">
+					<ShortName>BallEnemy_Attack_2.wav</ShortName>
+					<Path>SFX\BallEnemy_Attack_2_56D34C19.wem</Path>
+				</File>
+				<File Id="720705529" Language="SFX">
+					<ShortName>BallEnemy_ChatterLoop.wav</ShortName>
+					<Path>SFX\BallEnemy_ChatterLoop_8956FC97.wem</Path>
+				</File>
+				<File Id="737388196" Language="SFX">
+					<ShortName>BallEnemy_Beep.wav</ShortName>
+					<Path>SFX\BallEnemy_Beep_56D34C19.wem</Path>
+				</File>
+				<File Id="905224636" Language="SFX">
+					<ShortName>BallEnemy_Bark_2.wav</ShortName>
+					<Path>SFX\BallEnemy_Bark_2_0BDDB287.wem</Path>
+				</File>
+				<File Id="928833758" Language="SFX">
+					<ShortName>BallEnemy_Bark_1.wav</ShortName>
+					<Path>SFX\BallEnemy_Bark_1_F642DFB5.wem</Path>
+				</File>
+				<File Id="934246036" Language="SFX">
+					<ShortName>sample music.wav</ShortName>
+					<Path>SFX\sample music_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

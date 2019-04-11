@@ -26,7 +26,7 @@
 				<Event Id="789229116" Name="Play_BallEnemy_Bark" ObjectPath="\Events\Default Work Unit\Play_BallEnemy_Bark"/>
 				<Event Id="738307890" Name="Play_BallEnemy_Beep" ObjectPath="\Events\Default Work Unit\Play_BallEnemy_Beep"/>
 				<Event Id="2251157239" Name="Play_MainMenuTheme" ObjectPath="\Events\Default Work Unit\Play_MainMenuTheme"/>
-				<Event Id="1677540204" Name="Stop_BallEnemy_Ambience" ObjectPath="\Events\Default Work Unit\Stop_BallEnemy_Ambience"/>
+				<Event Id="1677540204" Name="Stop_BallEnemy_Ambience" ObjectPath="\Events\Default Work Unit\Stop_BallEnemy_Ambience" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="120297609" Language="SFX">

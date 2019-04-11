@@ -17,21 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 088b46f1bccabf4fb863d4517c925398
     GuidInternal: 
-    m_lastTime: -8586468209970521902
+    m_lastTime: -8586466519278838743
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 85f5d33082593e48ab55f89aace56617
     GuidInternal: 
-    m_lastTime: -8586468209970767022
+    m_lastTime: -8586466519279247866
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 3efc5b7442fd134ca66db281903e326c
     GuidInternal: 
-    m_lastTime: -8586468209971185674
+    m_lastTime: -8586466519278699195
     List:
     - name: Main
       guid: 499516c4b5b311498b390e101480baea
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 87b3b5287df41f46bfff728d5783eec5
     GuidInternal: 
-    m_lastTime: -8586468149905014821
+    m_lastTime: -8586466519279417419
     List:
     - name: Play_BallEnemy_Ambience
       guid: b399026e76048645b66ac2fffcb09240
@@ -126,7 +126,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 0d27b6ba11089e4c85719e88cb913600
     GuidInternal: 
-    m_lastTime: -8586468209971026316
+    m_lastTime: -8586466519279157887
     List:
     - name: BallEnemy_Distance
       guid: 04bf3bd44ca3764cb2649d5f66f4dcdc
@@ -142,7 +142,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 388f69f607b45c48800e79a6d4fc779b
     GuidInternal: 
-    m_lastTime: -8586468209970786968
+    m_lastTime: -8586466519278218353
     List:
     - name: BallEnemy_Ambience
       guid: 29680e7f4834c244b43f352453194aaa
@@ -180,18 +180,16 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: df36ae9e69a11142a34f4e9153bcb9b4
     GuidInternal: 
-    m_lastTime: -8586468209970711395
+    m_lastTime: -8586466519279297734
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 71709fc6c7b3ec4382a79121d8f9b2c3
     GuidInternal: 
-    m_lastTime: -8586468209970926579
+    m_lastTime: -8586466519278138583
     List: []
   ExpandedItems:
   - /Twistowop_WwiseProject
-  - /Twistowop_WwiseProject/SoundBanks
-  - /Twistowop_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

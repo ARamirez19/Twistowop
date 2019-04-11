@@ -1,0 +1,30 @@
+Event	ID	Name			Wwise Object Path	Notes
+	506762798	Play_BallEnemy_Attack			\Default Work Unit\Play_BallEnemy_Attack	
+	738307890	Play_BallEnemy_Beep			\Default Work Unit\Play_BallEnemy_Beep	
+	789229116	Play_BallEnemy_Bark			\Default Work Unit\Play_BallEnemy_Bark	
+	1677540204	Stop_BallEnemy_Ambience			\Default Work Unit\Stop_BallEnemy_Ambience	
+	2251157239	Play_MainMenuTheme			\Default Work Unit\Play_MainMenuTheme	
+	3284840310	Play_BallEnemy_Ambience			\Default Work Unit\Play_BallEnemy_Ambience	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1252037349	BallEnemy_Ambience			\Default Work Unit\BallEnemy_Ambience	
+
+State	ID	Name	State Group			Notes
+	0	None	BallEnemy_Ambience			
+	58138747	Active	BallEnemy_Ambience			
+	3163453698	Inactive	BallEnemy_Ambience			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2142520180	BallEnemy_Distance			\Default Work Unit\BallEnemy_Distance	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	120297609	BallEnemy_Bark_3	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Bark_3_9E55AF32.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_3		50748
+	180651609	BallEnemy_Bark_4	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Bark_4_7CD8D331.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_4		59816
+	576736924	BallEnemy_ChainLoop	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_ChainLoop_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Ambience\BallEnemy_ChainLoop		390208
+	598320126	BallEnemy_Bite_2	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Attack_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Attack\BallEnemy_Bite_2		42864
+	720705529	BallEnemy_ChatterLoop	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_ChatterLoop_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Ambience\BallEnemy_ChatterLoop		390208
+	737388196	BallEnemy_Beep	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Beep_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Beep		22208
+	905224636	BallEnemy_Bark_2	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Bark_2_0BDDB287.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_2		43736
+	928833758	BallEnemy_Bark_1	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Bark_1_F642DFB5.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_1		58112
+	934246036	sample music	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\sample music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\sample music\sample music		19089096
+
