@@ -191,5 +191,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Twistowop_WwiseProject
+  - /Twistowop_WwiseProject/SoundBanks
+  - /Twistowop_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

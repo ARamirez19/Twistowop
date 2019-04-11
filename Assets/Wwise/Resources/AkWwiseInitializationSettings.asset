@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: AkWwiseInitializationSettings
   m_EditorClassIdentifier: 
   PlatformSettingsNameList:
+  - Android
   - Mac
   - Windows
   PlatformSettingsList:
+  - {fileID: 11400000, guid: d5d638ac6d041da43aec92bb2b37b304, type: 2}
   - {fileID: 11400000, guid: 8ba4b9d710980884d956b3bb1bc8a8cd, type: 2}
   - {fileID: 11400000, guid: 49cc491fcc5632d40bdaf57b721322ec, type: 2}
-  InvalidReferencePlatforms: []
+  InvalidReferencePlatforms:
+  - iOS
   UserSettings:
     m_BasePath: Audio\GeneratedSoundBanks
     m_StartupLanguage: English(US)
@@ -49,6 +52,7 @@ MonoBehaviour:
       m_PoolSize: 4194304
       m_MaxSoundPropagationDepth: 8
       m_DiffractionFlags: -1
+      m_MovementThreshold: 1
   AdvancedSettings:
     m_IOMemorySize: 2097152
     m_TargetAutoStreamBufferLengthMs: 380
