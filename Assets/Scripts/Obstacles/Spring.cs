@@ -15,10 +15,13 @@ public class Spring : MonoBehaviour
     private bool useVelocity;
     [SerializeField]
     private bool useDirectionalHit;
-    private Vector2 direction;  
+    private Vector2 direction;
+    private Animator myAnim;
+
 	// Use this for initialization
 	void Start ()
     {
+        myAnim = this.gameObject.GetComponentInChildren<Animator>();
         body = this.GetComponent<Rigidbody2D>();
 	    if(!affectedByGravity)
         {
@@ -50,6 +53,7 @@ public class Spring : MonoBehaviour
             {
                 other.rigidbody.AddForce(direction * springForce * 1000, ForceMode2D.Impulse);
             }
+            myAnim.SetTrigger("myTrigger");
         }
     }
 }
