@@ -29,11 +29,21 @@
 				<Event Id="3626035710" Name="Play_Carrot_Pickup" ObjectPath="\Events\Default Work Unit\SFX\Play_Carrot_Pickup"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="2660315473" Name="Play_RayGunShooter_FireLoop" ObjectPath="\Events\Default Work Unit\Enemies\RayGunShooter\Play_RayGunShooter_FireLoop"/>
+				<Event Id="2842982140" Name="Play_Shock" ObjectPath="\Events\Default Work Unit\SFX\Play_Shock"/>
+				<Event Id="2946345747" Name="Play_Shock_Ambience" ObjectPath="\Events\Default Work Unit\Ambiences\Play_Shock_Ambience"/>
 				<Event Id="311975177" Name="Play_SpaceShip_Ambience" ObjectPath="\Events\Default Work Unit\Ambiences\Play_SpaceShip_Ambience"/>
 				<Event Id="1167100998" Name="Play_SpaceShip_Large_Pass" ObjectPath="\Events\Default Work Unit\Ambiences\Play_SpaceShip_Large_Pass"/>
 				<Event Id="1677540204" Name="Stop_BallEnemy_Ambience" ObjectPath="\Events\Default Work Unit\Enemies\BallEnemy\Stop_BallEnemy_Ambience"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="63338338" Language="SFX">
+					<ShortName>Shock_3.wav</ShortName>
+					<Path>SFX\Shock_3_10C4C929.wem</Path>
+				</File>
+				<File Id="119908517" Language="SFX">
+					<ShortName>Shock_2.wav</ShortName>
+					<Path>SFX\Shock_2_10C4C929.wem</Path>
+				</File>
 				<File Id="120297609" Language="SFX">
 					<ShortName>BallEnemy_Bark_3.wav</ShortName>
 					<Path>SFX\BallEnemy_Bark_3_9E55AF32.wem</Path>
@@ -53,6 +63,14 @@
 				<File Id="205706695" Language="SFX">
 					<ShortName>LevelTheme_standIn.wav</ShortName>
 					<Path>SFX\LevelTheme_standIn_D79FB2B7.wem</Path>
+				</File>
+				<File Id="368360432" Language="SFX">
+					<ShortName>Shock_4.wav</ShortName>
+					<Path>SFX\Shock_4_10C4C929.wem</Path>
+				</File>
+				<File Id="439818504" Language="SFX">
+					<ShortName>Shock_1.wav</ShortName>
+					<Path>SFX\Shock_1_10C4C929.wem</Path>
 				</File>
 				<File Id="446198974" Language="SFX">
 					<ShortName>SpaceShipEngineAmbience.wav</ShortName>
@@ -89,6 +107,10 @@
 				<File Id="737388196" Language="SFX">
 					<ShortName>BallEnemy_Beep.wav</ShortName>
 					<Path>SFX\BallEnemy_Beep_56D34C19.wem</Path>
+				</File>
+				<File Id="778795566" Language="SFX">
+					<ShortName>Shock_Ambience.wav</ShortName>
+					<Path>SFX\Shock_Ambience_10C4C929.wem</Path>
 				</File>
 				<File Id="905224636" Language="SFX">
 					<ShortName>BallEnemy_Bark_2.wav</ShortName>

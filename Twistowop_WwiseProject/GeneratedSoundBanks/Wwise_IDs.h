@@ -21,6 +21,8 @@ namespace AK
         static const AkUniqueID PLAY_CARROT_PICKUP = 3626035710U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_RAYGUNSHOOTER_FIRELOOP = 2660315473U;
+        static const AkUniqueID PLAY_SHOCK = 2842982140U;
+        static const AkUniqueID PLAY_SHOCK_AMBIENCE = 2946345747U;
         static const AkUniqueID PLAY_SPACESHIP_AMBIENCE = 311975177U;
         static const AkUniqueID PLAY_SPACESHIP_LARGE_PASS = 1167100998U;
         static const AkUniqueID STOP_BALLENEMY_AMBIENCE = 1677540204U;

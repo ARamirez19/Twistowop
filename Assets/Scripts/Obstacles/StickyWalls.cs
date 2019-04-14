@@ -10,8 +10,10 @@ public class StickyWalls : MonoBehaviour
         public float timeStuck = 0f;
     }
 
+    public string audioEventId = "";
     private List<StuckObject> stuckObjects;
     private float stickDuration = 2.0f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +38,8 @@ public class StickyWalls : MonoBehaviour
                 newStuckObject.stuckObject = collidedObject;
                 newStuckObject.stuckObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
                 stuckObjects.Add(newStuckObject);
+                if(audioEventId != "")
+                    AkSoundEngine.PostEvent(audioEventId, gameObject);
             }
         }
 	}

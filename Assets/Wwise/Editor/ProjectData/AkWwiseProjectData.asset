@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 87b3b5287df41f46bfff728d5783eec5
     GuidInternal: 
-    m_lastTime: -8586463401343144175
+    m_lastTime: -8586463379613445573
     List:
     - name: Play_BallEnemy_Ambience
       guid: b399026e76048645b66ac2fffcb09240
@@ -166,6 +166,34 @@ MonoBehaviour:
       - ElementName: Play_RayGunShooter_FireLoop
         ObjectType: 3
       Path: Default Work Unit\Enemies\RayGunShooter\Play_RayGunShooter_FireLoop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Shock
+      guid: f17d70c93aaafe41a45f4743657a37ac
+      id: 2842982140
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Play_Shock
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Play_Shock
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Shock_Ambience
+      guid: f3ec9ff015b68a43b393c80cf9df0cc5
+      id: 2946345747
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiences
+        ObjectType: 4
+      - ElementName: Play_Shock_Ambience
+        ObjectType: 3
+      Path: Default Work Unit\Ambiences\Play_Shock_Ambience
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

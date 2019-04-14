@@ -188,6 +188,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Shock" ID="{C9707DF1-AA3A-41FE-A45F-4743657A37AC}">
+							<ChildrenList>
+								<Action Name="" ID="{1A47B55B-C68D-4635-B3B0-350BF8DC655B}" ShortID="496683059">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shocks" ID="{34897C9D-D6EA-4BB0-ADDA-77F23A14048A}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambiences" ID="{21FD07DB-D7BD-4196-881A-2085D191D973}" ShortID="872923614">
@@ -215,6 +229,20 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Large_SpaceShip_Passing_RtoL" ID="{781AEC74-696C-48F1-8DA7-3DE4FB108FEB}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Shock_Ambience" ID="{F09FECF3-B615-438A-B393-C80CF9DF0CC5}">
+							<ChildrenList>
+								<Action Name="" ID="{A236D3D7-8E6F-41F5-A33B-C32F15E331E6}" ShortID="101807757">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shock_Ambience" ID="{1C140E96-BB21-4DB2-A401-4528601A6040}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
