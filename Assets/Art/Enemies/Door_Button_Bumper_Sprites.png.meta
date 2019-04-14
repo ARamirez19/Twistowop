@@ -7,7 +7,7 @@ TextureImporter:
     21300004: Door_Button_Bumper_Sprites_2
     21300006: Door_Button_Bumper_Sprites_3
     21300008: Door_Button_Bumper_Sprites_4
-    21300010: Door_Button_Bumper_Sprites_5
+    21300010: Door_light_base
     21300012: Door_Button_Bumper_Sprites_6
     21300014: Door_Button_Bumper_Sprites_7
     21300016: Door_Button_Bumper_Sprites_8
@@ -101,12 +101,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12
-        y: 505
+        y: 500
         width: 349
-        height: 507
+        height: 387
       alignment: 9
       pivot: {x: 0.5000001, y: 0.9907818}
-      border: {x: 0, y: 328, z: 0, w: 125}
+      border: {x: 0, y: 335, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -269,12 +269,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 15
-        y: 18
+        y: 40
         width: 351
-        height: 464
+        height: 442
       alignment: 9
       pivot: {x: 0.49428305, y: 0.0026591113}
-      border: {x: 0, y: 38, z: 0, w: 290}
+      border: {x: 0, y: 0, z: 0, w: 290}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -320,6 +320,37 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6191c2467f16c364c9446899b5439348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_light_base
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 907
+        width: 356
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103.5, y: -57}
+        - {x: -110.5, y: -49}
+        - {x: -176.5, y: -50}
+        - {x: -176.5, y: 25}
+        - {x: -116.5, y: 61}
+        - {x: 123.5, y: 61}
+        - {x: 176.5, y: 29}
+        - {x: 176.5, y: -46}
+        - {x: 124.5, y: -46}
+        - {x: 123.5, y: -53}
+        - {x: 119.5, y: -56}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3904501a219ba84e82968438c456387
       vertices: []
       indices: 
       edges: []
