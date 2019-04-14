@@ -26,8 +26,11 @@
 				<Event Id="789229116" Name="Play_BallEnemy_Bark" ObjectPath="\Events\Default Work Unit\Enemies\BallEnemy\Play_BallEnemy_Bark"/>
 				<Event Id="738307890" Name="Play_BallEnemy_Beep" ObjectPath="\Events\Default Work Unit\Enemies\BallEnemy\Play_BallEnemy_Beep"/>
 				<Event Id="1705323465" Name="Play_Bumper_Hit" ObjectPath="\Events\Default Work Unit\SFX\Play_Bumper_Hit"/>
+				<Event Id="3626035710" Name="Play_Carrot_Pickup" ObjectPath="\Events\Default Work Unit\SFX\Play_Carrot_Pickup"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="2660315473" Name="Play_RayGunShooter_FireLoop" ObjectPath="\Events\Default Work Unit\Enemies\RayGunShooter\Play_RayGunShooter_FireLoop"/>
+				<Event Id="311975177" Name="Play_SpaceShip_Ambience" ObjectPath="\Events\Default Work Unit\Ambiences\Play_SpaceShip_Ambience"/>
+				<Event Id="1167100998" Name="Play_SpaceShip_Large_Pass" ObjectPath="\Events\Default Work Unit\Ambiences\Play_SpaceShip_Large_Pass"/>
 				<Event Id="1677540204" Name="Stop_BallEnemy_Ambience" ObjectPath="\Events\Default Work Unit\Enemies\BallEnemy\Stop_BallEnemy_Ambience"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -42,6 +45,18 @@
 				<File Id="180651609" Language="SFX">
 					<ShortName>BallEnemy_Bark_4.wav</ShortName>
 					<Path>SFX\BallEnemy_Bark_4_7CD8D331.wem</Path>
+				</File>
+				<File Id="201779009" Language="SFX">
+					<ShortName>Carrot_Pickup.wav</ShortName>
+					<Path>SFX\Carrot_Pickup_10C4C929.wem</Path>
+				</File>
+				<File Id="205706695" Language="SFX">
+					<ShortName>LevelTheme_standIn.wav</ShortName>
+					<Path>SFX\LevelTheme_standIn_D79FB2B7.wem</Path>
+				</File>
+				<File Id="446198974" Language="SFX">
+					<ShortName>SpaceShipEngineAmbience.wav</ShortName>
+					<Path>SFX\SpaceShipEngineAmbience_D79FB2B7.wem</Path>
 				</File>
 				<File Id="508470443" Language="SFX">
 					<ShortName>Bumper_Layer_2.wav</ShortName>
@@ -86,6 +101,10 @@
 				<File Id="934246036" Language="SFX">
 					<ShortName>sample music.wav</ShortName>
 					<Path>SFX\sample music_D79FB2B7.wem</Path>
+				</File>
+				<File Id="970773073" Language="SFX">
+					<ShortName>Large_SpaceShip_Passing_RtoL.wav</ShortName>
+					<Path>SFX\Large_SpaceShip_Passing_RtoL_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

@@ -174,6 +174,52 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Carrot_Pickup" ID="{363E3051-FACD-4CBA-A4BD-B3FB9EF1753A}">
+							<ChildrenList>
+								<Action Name="" ID="{C8468685-3451-4DD8-9B65-2CEBCBA2D2DB}" ShortID="664491478">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Carrot_Pickup" ID="{8D4E744C-BC26-496B-B595-95C0B42770B2}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambiences" ID="{21FD07DB-D7BD-4196-881A-2085D191D973}" ShortID="872923614">
+					<ChildrenList>
+						<Event Name="Play_SpaceShip_Ambience" ID="{B2405448-884C-4E92-A0DF-5591148CC938}">
+							<ChildrenList>
+								<Action Name="" ID="{8AF4DDAC-8A2C-4066-AFB4-D831860DBD8B}" ShortID="503996780">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpaceShipEngineAmbience" ID="{82D52B4F-6F28-4F03-810C-2C3E3D70319A}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SpaceShip_Large_Pass" ID="{8C5E060D-E33C-4C43-9BFF-4A9DF9FBC7AD}">
+							<ChildrenList>
+								<Action Name="" ID="{0086D107-95A8-4B8C-AFC1-746CE8C24EF8}" ShortID="44719557">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Large_SpaceShip_Passing_RtoL" ID="{781AEC74-696C-48F1-8DA7-3DE4FB108FEB}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

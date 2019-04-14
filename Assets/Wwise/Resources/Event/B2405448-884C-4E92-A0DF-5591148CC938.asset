@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 912e81ebab7d62d4e89469db515ec099, type: 3}
+  m_Name: B2405448-884C-4E92-A0DF-5591148CC938
+  m_EditorClassIdentifier: 
+  objectName: Play_SpaceShip_Ambience
+  id: 311975177
+  guid: B2405448-884C-4E92-A0DF-5591148CC938

@@ -264,7 +264,7 @@
 							<ChildrenList>
 								<MusicSegment Name="sample music" ID="{1BD29CAB-0ECB-4D0E-870C-7FDC0FD14F5D}" ShortID="394980128">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="99422.0416666667"/>
+										<Property Name="EndPosition" Type="Real64" Value="198844.083333333"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
@@ -304,6 +304,16 @@
 													<Language>SFX</Language>
 													<AudioFile>sample music.wav</AudioFile>
 												</AudioFileSource>
+												<AudioFileSource Name="LevelTheme_standIn" ID="{76AF968E-88A2-4A7D-8452-BB0AAD29B87E}" ShortID="205706695">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>LevelTheme_standIn.wav</AudioFile>
+												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{EA5E2E9D-37C3-4140-A93F-0F1C94ACCC14}">
@@ -323,6 +333,15 @@
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
 															<AudioSourceRef Name="sample music" ID="{8BD64BB2-3481-4475-892C-681281071E4B}"/>
+														</MusicClip>
+														<MusicClip Name="LevelTheme_standIn" ID="{D11DD04F-BD14-4D10-B73B-F7B3B0DA01B6}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="99422.0416666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="99422.0416666667"/>
+															</PropertyList>
+															<AudioSourceRef Name="LevelTheme_standIn" ID="{76AF968E-88A2-4A7D-8452-BB0AAD29B87E}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>

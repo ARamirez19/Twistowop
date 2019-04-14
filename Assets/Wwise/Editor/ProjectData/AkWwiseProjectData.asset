@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 87b3b5287df41f46bfff728d5783eec5
     GuidInternal: 
-    m_lastTime: -8586463828196485925
+    m_lastTime: -8586463401343144175
     List:
     - name: Play_BallEnemy_Ambience
       guid: b399026e76048645b66ac2fffcb09240
@@ -113,6 +113,34 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_Bumper_Hit
+      guid: f168861a0a46934eb55c673be2e5ebb5
+      id: 1705323465
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Play_Bumper_Hit
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Play_Bumper_Hit
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Carrot_Pickup
+      guid: 51303e36cdfaba4ca4bdb3fb9ef1753a
+      id: 3626035710
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Play_Carrot_Pickup
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Play_Carrot_Pickup
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Music
       guid: 139df2645ee9004fa18ce50645a1cf55
       id: 2932040671
@@ -138,6 +166,34 @@ MonoBehaviour:
       - ElementName: Play_RayGunShooter_FireLoop
         ObjectType: 3
       Path: Default Work Unit\Enemies\RayGunShooter\Play_RayGunShooter_FireLoop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_SpaceShip_Ambience
+      guid: 485440b24c88924ea0df5591148cc938
+      id: 311975177
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiences
+        ObjectType: 4
+      - ElementName: Play_SpaceShip_Ambience
+        ObjectType: 3
+      Path: Default Work Unit\Ambiences\Play_SpaceShip_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_SpaceShip_Large_Pass
+      guid: 0d065e8c3ce3434c9bff4a9df9fbc7ad
+      id: 1167100998
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiences
+        ObjectType: 4
+      - ElementName: Play_SpaceShip_Large_Pass
+        ObjectType: 3
+      Path: Default Work Unit\Ambiences\Play_SpaceShip_Large_Pass
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -258,5 +314,10 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Twistowop_WwiseProject
+  - /Twistowop_WwiseProject/Events
+  - /Twistowop_WwiseProject/Events/Default Work Unit
+  - /Twistowop_WwiseProject/Events/Default Work Unit/Enemies
+  - /Twistowop_WwiseProject/Events/Default Work Unit/Enemies/BallEnemy
+  - /Twistowop_WwiseProject/Events/Default Work Unit/Enemies/RayGunShooter
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

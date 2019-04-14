@@ -5465,6 +5465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdd81b1fd47227548ae40a5020a30389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioEventID: Play_Carrot_Pickup
 --- !u!58 &8481303661901680908
 CircleCollider2D:
   m_ObjectHideFlags: 0
