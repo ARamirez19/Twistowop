@@ -18,6 +18,13 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="Music" ID="{7BF7585E-3B1C-47FF-B54B-47498B46DE60}">
+					<ChildrenList>
+						<State Name="None" ID="{5ACFCAE2-3CF4-4BCC-88BD-BC563C6C47C2}"/>
+						<State Name="MainMenu" ID="{F2FE7C63-880D-47C8-BB7B-4010387DD0C2}"/>
+						<State Name="Zone_1" ID="{3ED61B3F-0F60-42C5-A1B6-F7F500BEF3F2}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

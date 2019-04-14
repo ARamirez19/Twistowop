@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="94">
-	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1555229230" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
@@ -9,21 +9,21 @@
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Effects\Factory Effects.wwu" DateLow="1554954957" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Events\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Events\Default Work Unit.wwu" DateLow="1555229230" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1555224065" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1555228228" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1555228185" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Queries\Factory Queries.wwu" DateLow="1554954957" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1555224579" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\States\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\States\Default Work Unit.wwu" DateLow="1555224065" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1555224065" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Twistowop_WwiseProject.tim.wsettings" DateLow="1554954959" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Twistowop_WwiseProject.tim.wsettings" DateLow="1555224581" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Twistowop_WwiseProject.wproj" DateLow="1554954957" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameData\Twistowop\Twistowop_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1554954957" DateHigh="0"/>
 </ValidationCache>

@@ -24,14 +24,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 85f5d33082593e48ab55f89aace56617
     GuidInternal: 
-    m_lastTime: -8586466519279247866
+    m_lastTime: -8586463786994836739
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 3efc5b7442fd134ca66db281903e326c
     GuidInternal: 
-    m_lastTime: -8586466519278699195
+    m_lastTime: -8586463823064159937
     List:
     - name: Main
       guid: 499516c4b5b311498b390e101480baea
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 87b3b5287df41f46bfff728d5783eec5
     GuidInternal: 
-    m_lastTime: -8586466519279417419
+    m_lastTime: -8586463828196485925
     List:
     - name: Play_BallEnemy_Ambience
       guid: b399026e76048645b66ac2fffcb09240
@@ -55,9 +55,13 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Enemies
+        ObjectType: 4
+      - ElementName: BallEnemy
+        ObjectType: 4
       - ElementName: Play_BallEnemy_Ambience
         ObjectType: 3
-      Path: Default Work Unit\Play_BallEnemy_Ambience
+      Path: Default Work Unit\Enemies\BallEnemy\Play_BallEnemy_Ambience
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -67,9 +71,13 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Enemies
+        ObjectType: 4
+      - ElementName: BallEnemy
+        ObjectType: 4
       - ElementName: Play_BallEnemy_Attack
         ObjectType: 3
-      Path: Default Work Unit\Play_BallEnemy_Attack
+      Path: Default Work Unit\Enemies\BallEnemy\Play_BallEnemy_Attack
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -79,9 +87,13 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Enemies
+        ObjectType: 4
+      - ElementName: BallEnemy
+        ObjectType: 4
       - ElementName: Play_BallEnemy_Bark
         ObjectType: 3
-      Path: Default Work Unit\Play_BallEnemy_Bark
+      Path: Default Work Unit\Enemies\BallEnemy\Play_BallEnemy_Bark
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -91,21 +103,41 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Enemies
+        ObjectType: 4
+      - ElementName: BallEnemy
+        ObjectType: 4
       - ElementName: Play_BallEnemy_Beep
         ObjectType: 3
-      Path: Default Work Unit\Play_BallEnemy_Beep
+      Path: Default Work Unit\Enemies\BallEnemy\Play_BallEnemy_Beep
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Play_MainMenuTheme
+    - name: Play_Music
       guid: 139df2645ee9004fa18ce50645a1cf55
-      id: 2251157239
+      id: 2932040671
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_MainMenuTheme
+      - ElementName: Play_Music
         ObjectType: 3
-      Path: Default Work Unit\Play_MainMenuTheme
+      Path: Default Work Unit\Play_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_RayGunShooter_FireLoop
+      guid: 63307fe30ff6b24b8d61c1fdda8eba76
+      id: 2660315473
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Enemies
+        ObjectType: 4
+      - ElementName: RayGunShooter
+        ObjectType: 4
+      - ElementName: Play_RayGunShooter_FireLoop
+        ObjectType: 3
+      Path: Default Work Unit\Enemies\RayGunShooter\Play_RayGunShooter_FireLoop
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -115,9 +147,13 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Enemies
+        ObjectType: 4
+      - ElementName: BallEnemy
+        ObjectType: 4
       - ElementName: Stop_BallEnemy_Ambience
         ObjectType: 3
-      Path: Default Work Unit\Stop_BallEnemy_Ambience
+      Path: Default Work Unit\Enemies\BallEnemy\Stop_BallEnemy_Ambience
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -126,7 +162,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 0d27b6ba11089e4c85719e88cb913600
     GuidInternal: 
-    m_lastTime: -8586466519279157887
+    m_lastTime: -8586463828196276487
     List:
     - name: BallEnemy_Distance
       guid: 04bf3bd44ca3764cb2649d5f66f4dcdc
@@ -142,7 +178,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 388f69f607b45c48800e79a6d4fc779b
     GuidInternal: 
-    m_lastTime: -8586466519278218353
+    m_lastTime: -8586463828196436058
     List:
     - name: BallEnemy_Ambience
       guid: 29680e7f4834c244b43f352453194aaa
@@ -175,12 +211,43 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Music
+      guid: 5e58f77b1c3bff47b54b47498b46de60
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 9
+      Path: Default Work Unit\Music
+      values:
+      - name: MainMenu
+        guid: 637cfef20d88c847bb7b4010387dd0c2
+        id: 3604647259
+        PathAndIcons:
+        - ElementName: MainMenu
+          ObjectType: 8
+      - name: None
+        guid: e2cacf5af43ccc4b88bdbc563c6c47c2
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Zone_1
+        guid: 3f1bd63e600fc542a1b6f7f500bef3f2
+        id: 2643994087
+        PathAndIcons:
+        - ElementName: Zone_1
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: df36ae9e69a11142a34f4e9153bcb9b4
     GuidInternal: 
-    m_lastTime: -8586466519279297734
+    m_lastTime: -8586463828196316189
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu

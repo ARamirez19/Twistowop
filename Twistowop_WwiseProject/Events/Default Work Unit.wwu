@@ -3,87 +3,7 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{28B5B387-F47D-461F-BFFF-728D5783EEC5}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_BallEnemy_Attack" ID="{DF813680-9663-4D2F-ADAC-FC82D6600B63}">
-					<ChildrenList>
-						<Action Name="" ID="{C5534796-D5C5-4669-BAA9-BA390B556619}" ShortID="1001549354">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BallEnemy_Bite_2" ID="{1BF5C6C6-F310-4516-9B4A-7F911B9340E5}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_BallEnemy_Beep" ID="{D7C9D015-3E98-41C3-A6ED-9FCFDABFE2E0}">
-					<ChildrenList>
-						<Action Name="" ID="{073AC82E-CA1C-4D40-B619-E680314D167E}" ShortID="463585920">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BallEnemy_Beep" ID="{FB5F11EF-E3DF-4C49-BD4D-EEB8B61A4D01}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_BallEnemy_Ambience" ID="{6E0299B3-0476-4586-B66A-C2FFFCB09240}">
-					<ChildrenList>
-						<Action Name="" ID="{DD8F025A-C836-4C0B-99A2-A1E3C123EB33}" ShortID="270712762">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BallEnemy_Ambience" ID="{2D07B837-44B2-46E9-B2B1-6331D8325CEC}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_BallEnemy_Bark" ID="{1F03949C-0962-44FA-ADB0-CCCFAD4A75DC}">
-					<ChildrenList>
-						<Action Name="" ID="{5CAB266D-A9C5-4313-BB50-88986BB1692A}" ShortID="144816864">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BallEnemy_Bark" ID="{69476E02-2586-4BA8-8B79-FD1441C3A635}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_BallEnemy_Ambience" ID="{A61FBCC7-CBF2-42CA-A871-347EFC3EB7A1}">
-					<ChildrenList>
-						<Action Name="" ID="{DCE1BAB8-8133-4A1F-ABAD-637DA42B6915}" ShortID="484975756">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BallEnemy_ChainLoop" ID="{7EBBADCE-1984-45DB-A502-A594BF35C355}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{ADA3BCDC-792B-43D0-B788-54B909A07AFF}" ShortID="531104214">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BallEnemy_ChatterLoop" ID="{0140440B-2FD8-43B7-9380-054C603753BE}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_MainMenuTheme" ID="{64F29D13-E95E-4F00-A18C-E50645A1CF55}">
+				<Event Name="Play_Music" ID="{64F29D13-E95E-4F00-A18C-E50645A1CF55}">
 					<ChildrenList>
 						<Action Name="" ID="{2C2EAED0-1633-4845-AED5-ED93D524BF9A}" ShortID="797485189">
 							<PropertyList>
@@ -91,12 +11,171 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music" ID="{B832228F-ACE6-440E-AB31-962F2D2E58BC}" WorkUnitID="{1B0BD4DB-EF0E-4575-9132-569B7299D776}"/>
+									<ObjectRef Name="music" ID="{C7885396-9031-42E0-84D7-B14CBC32C408}" WorkUnitID="{1B0BD4DB-EF0E-4575-9132-569B7299D776}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Enemies" ID="{1CC4E5F4-2C6D-4A5B-B461-EE349429258C}" ShortID="164490703">
+					<ChildrenList>
+						<Folder Name="RayGunShooter" ID="{578A6F22-B377-41C5-828B-DE99906B2E71}" ShortID="112442568">
+							<ChildrenList>
+								<Event Name="Play_RayGunShooter_FireLoop" ID="{E37F3063-F60F-4BB2-8D61-C1FDDA8EBA76}">
+									<ChildrenList>
+										<Action Name="" ID="{450D8669-A7C5-43DD-8CF0-CC93CE774085}" ShortID="740217334">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RayGunShooter_MX" ID="{8CBBC73B-0B68-4E03-9A09-E7B6D00D4624}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{14C3C088-BEB7-4210-9A2E-F851BC05B1BB}" ShortID="817870226">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RayGunShooter_SFX" ID="{D0AB8F51-730E-4513-86A6-83D7C7E55494}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="BallEnemy" ID="{49976384-D469-4653-B65E-A3F8B70F4392}" ShortID="680303017">
+							<ChildrenList>
+								<Event Name="Play_BallEnemy_Beep" ID="{D7C9D015-3E98-41C3-A6ED-9FCFDABFE2E0}">
+									<ChildrenList>
+										<Action Name="" ID="{073AC82E-CA1C-4D40-B619-E680314D167E}" ShortID="463585920">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BallEnemy_Beep" ID="{FB5F11EF-E3DF-4C49-BD4D-EEB8B61A4D01}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_BallEnemy_Attack" ID="{DF813680-9663-4D2F-ADAC-FC82D6600B63}">
+									<ChildrenList>
+										<Action Name="" ID="{C5534796-D5C5-4669-BAA9-BA390B556619}" ShortID="1001549354">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BallEnemy_Bite_2" ID="{1BF5C6C6-F310-4516-9B4A-7F911B9340E5}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_BallEnemy_Ambience" ID="{A61FBCC7-CBF2-42CA-A871-347EFC3EB7A1}">
+									<ChildrenList>
+										<Action Name="" ID="{DCE1BAB8-8133-4A1F-ABAD-637DA42B6915}" ShortID="484975756">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BallEnemy_ChainLoop" ID="{7EBBADCE-1984-45DB-A502-A594BF35C355}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{ADA3BCDC-792B-43D0-B788-54B909A07AFF}" ShortID="531104214">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BallEnemy_ChatterLoop" ID="{0140440B-2FD8-43B7-9380-054C603753BE}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_BallEnemy_Ambience" ID="{6E0299B3-0476-4586-B66A-C2FFFCB09240}">
+									<ChildrenList>
+										<Action Name="" ID="{DD8F025A-C836-4C0B-99A2-A1E3C123EB33}" ShortID="270712762">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BallEnemy_Ambience" ID="{2D07B837-44B2-46E9-B2B1-6331D8325CEC}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_BallEnemy_Bark" ID="{1F03949C-0962-44FA-ADB0-CCCFAD4A75DC}">
+									<ChildrenList>
+										<Action Name="" ID="{5CAB266D-A9C5-4313-BB50-88986BB1692A}" ShortID="144816864">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BallEnemy_Bark" ID="{69476E02-2586-4BA8-8B79-FD1441C3A635}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{80CC523F-B6CF-49E7-9DE3-6EC72919A079}" ShortID="496337222">
+					<ChildrenList>
+						<Event Name="Play_Bumper_Hit" ID="{1A8668F1-460A-4E93-B55C-673BE2E5EBB5}">
+							<ChildrenList>
+								<Action Name="" ID="{0A4FE506-806B-4A9E-B362-BEF3C02D8596}" ShortID="131452278">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bumper_Layer_1" ID="{8BCC7BE6-32CA-43C9-B28F-2D61836D474A}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AD646A94-641A-43F2-AEFC-C03AECFF51DD}" ShortID="290909053">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bumper_Layer_2" ID="{2A893173-69E8-4351-9DD9-B8EBDCE246F9}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{62BB5751-4692-47E1-8A09-2FC05013829F}" ShortID="348891522">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bumper_Layer_3" ID="{77B0B65B-8B1C-4329-BE62-CDEBA0D1B0AC}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
