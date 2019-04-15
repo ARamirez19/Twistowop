@@ -31,8 +31,10 @@ public class PlayerController : BaseController
     private bool jetpackCooldown = true;
     private bool rotatePlayer = false;
     private bool upIsUp = false;
+   
     private Rigidbody2D playerRigidbody;
     public bool portalEligible = true;
+    public bool spinPlayer = false;
 
     void Update()
     {
@@ -77,6 +79,10 @@ public class PlayerController : BaseController
                 jetpackTime = jetpackTimer;
             }
             timerText.text = ((int)jetpackTime).ToString();
+        }
+        if(spinPlayer == true)
+        {
+            transform.Rotate(Vector3.forward * 500.0f * Time.deltaTime);
         }
 	}
 

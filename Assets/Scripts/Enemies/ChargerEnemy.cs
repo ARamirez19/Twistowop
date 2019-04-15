@@ -29,6 +29,8 @@ public class ChargerEnemy : EnemyController
 	private bool returnToStartPos = false;
 	[SerializeField]
 	private bool hitWall = false;
+    [SerializeField]
+    private bool hitPlayer = false;
 
 	[SerializeField]
 	private GameObject field;
@@ -38,13 +40,18 @@ public class ChargerEnemy : EnemyController
 	private Transform endPos;
 	[SerializeField]
 	private GameObject movementSprite;
+    private GameObject player;
 
+    private float waitTime;
+    [SerializeField]
+    private float thrust;
 	private Animator myAnim;
 	private Vector2 direction;
 
     // Start is called before the first frame update
     protected override void ExtraStart()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
 		field = this.gameObject.transform.GetChild(0).gameObject;
 		movementSprite = this.gameObject.transform.GetChild(1).gameObject;
 		startPos = this.gameObject.transform.GetChild(2).transform;
@@ -113,6 +120,11 @@ public class ChargerEnemy : EnemyController
 			myAnim.SetBool("returning", false);
 			speed = 0;
 		}
+
+        if(hitPlayer == true)
+        {
+            player.GetComponent<Rigidbody2D>().velocity += direction * thrust;
+        }
     }
 
 	public IEnumerator ImpactTimer()
@@ -139,7 +151,11 @@ public class ChargerEnemy : EnemyController
 		if(other.gameObject.tag == "Player")
 		{
 			myAnim.SetTrigger("hitCubark");
-			base.OnCollisionEnter2D(other);
+            base.deathAnimation = true;
+            waitTime = 2.0f;
+            hitPlayer = true;
+            player.GetComponent<BoxCollider2D>().enabled = false;
+            base.StartCoroutine(DeathTimer(waitTime));
 		}
 	}
 
