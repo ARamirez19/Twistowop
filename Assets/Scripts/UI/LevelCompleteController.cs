@@ -40,9 +40,9 @@ public class LevelCompleteController : MonoBehaviour
         }
 
         Debug.Log(currScene.name + "stars: " + starsToAdd);
-        if (PlayerPrefs.HasKey(currScene + "stars"))
+        if (PlayerPrefs.HasKey(currScene.name + "stars"))
         {
-            if (PlayerPrefs.GetInt(currScene + "stars") < starsToAdd)
+            if (PlayerPrefs.GetInt(currScene.name + "stars") < starsToAdd)
             {
                 Debug.Log("Added Stars: Key Already Exists");
                 PlayerPrefs.SetInt(currScene.name + "stars", starsToAdd);
