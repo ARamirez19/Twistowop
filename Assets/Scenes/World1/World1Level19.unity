@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 87666739}
   m_Layer: 0
   m_Name: red_platform_03
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 102537985}
   m_Layer: 0
   m_Name: red_medium_02
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -784,7 +784,7 @@ GameObject:
   - component: {fileID: 421264252}
   m_Layer: 0
   m_Name: red_long_01
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1070,7 +1070,7 @@ GameObject:
   - component: {fileID: 510842422}
   m_Layer: 0
   m_Name: red_short_01
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1267,7 +1267,7 @@ GameObject:
   - component: {fileID: 556052079}
   m_Layer: 0
   m_Name: red_platform_05
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1739,7 +1739,7 @@ GameObject:
   - component: {fileID: 808337841}
   m_Layer: 0
   m_Name: red_short_02
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2207,6 +2207,86 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9045749165552435579, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749165701162551, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749165787857868, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749165912359165, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749166024101120, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749166031220241, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749166188551955, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749166241184278, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749166395382795, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749166525766873, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749166706867453, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749166850208795, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749166934495751, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749166988195210, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749167107940374, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045749167453878389, guid: 2d9cfaae588e41045be9b297e453e471,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 9045749165552435578, guid: 2d9cfaae588e41045be9b297e453e471,
         type: 3}
       propertyPath: m_Material
@@ -2461,7 +2541,7 @@ GameObject:
   - component: {fileID: 1803585627}
   m_Layer: 0
   m_Name: red_platform_01
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2727,7 +2807,7 @@ GameObject:
   - component: {fileID: 1962134250}
   m_Layer: 0
   m_Name: red_platform_04
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 160313895}
   m_Layer: 0
   m_Name: blue_medium_02
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 244688450}
   m_Layer: 0
   m_Name: blue_corner_01
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -780,7 +780,7 @@ GameObject:
   - component: {fileID: 566233881}
   m_Layer: 0
   m_Name: blue_platform_04
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1036,7 +1036,7 @@ GameObject:
   - component: {fileID: 1102025427}
   m_Layer: 0
   m_Name: blue_short_01
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1719,6 +1719,86 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3012999165385488877, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999165469220849, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999165512053003, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999165869297967, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999165990040963, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999166184713696, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999166329632892, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999166473244218, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999166652230593, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999166775774349, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999167081812477, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999167137649381, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999167194347488, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999167243632886, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999167253308391, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012999167397317899, guid: fae2b097ee293974aa63392fb9d7532f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae2b097ee293974aa63392fb9d7532f, type: 3}
 --- !u!1 &1446762047
@@ -1886,7 +1966,7 @@ GameObject:
   - component: {fileID: 1631104012}
   m_Layer: 0
   m_Name: blue_corner_04
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

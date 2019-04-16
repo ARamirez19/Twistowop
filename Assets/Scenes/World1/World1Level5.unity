@@ -1089,7 +1089,7 @@ GameObject:
   - component: {fileID: 1017243618}
   m_Layer: 0
   m_Name: orange_platform_02
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1425,7 +1425,7 @@ GameObject:
   - component: {fileID: 1246629587}
   m_Layer: 0
   m_Name: orange_platform_04
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2004,6 +2004,16 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8144573697680718080, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2138265517472801848, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2957276381978325679, guid: 4c7010f0e390560408be9db645afebca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2023,16 +2033,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 8144573697680718080, guid: 4c7010f0e390560408be9db645afebca,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2138265517472801848, guid: 4c7010f0e390560408be9db645afebca,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6388542208373426380, guid: 4c7010f0e390560408be9db645afebca, type: 3}

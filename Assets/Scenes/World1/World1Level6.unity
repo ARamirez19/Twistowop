@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 368240868}
   m_Layer: 0
   m_Name: asteroid_long_01
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1139,7 +1139,7 @@ GameObject:
   - component: {fileID: 876820765}
   m_Layer: 0
   m_Name: orange_platform_06
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1395,7 +1395,7 @@ GameObject:
   - component: {fileID: 933582011}
   m_Layer: 0
   m_Name: orange_platform_07
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2461,7 +2461,7 @@ GameObject:
   - component: {fileID: 1659681716}
   m_Layer: 0
   m_Name: asteroid_long_02
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3019,32 +3019,6 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2957276381978325679, guid: 4c7010f0e390560408be9db645afebca,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2957276381978325679, guid: 4c7010f0e390560408be9db645afebca,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 3604009395782681809, guid: 4c7010f0e390560408be9db645afebca,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -16.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 3604009395782681809, guid: 4c7010f0e390560408be9db645afebca,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 6615956050057201528, guid: 4c7010f0e390560408be9db645afebca,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9323b9c9222fb474ea0748ffbdcf3799,
-        type: 3}
     - target: {fileID: 6399307656137580797, guid: 4c7010f0e390560408be9db645afebca,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3080,6 +3054,32 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2957276381978325679, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957276381978325679, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604009395782681809, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604009395782681809, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615956050057201528, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9323b9c9222fb474ea0748ffbdcf3799,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 6388542208373426380, guid: 4c7010f0e390560408be9db645afebca, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4c7010f0e390560408be9db645afebca, type: 3}
@@ -3380,6 +3380,86 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5672500216382623788, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500216490475200, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500216495414737, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500216643342274, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500216716683975, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500216870620378, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500217101160874, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500217229440742, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500217337631517, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500217446131035, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500217567457479, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500217928329380, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500218074221576, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500218239069228, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500218395518154, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672500218479018710, guid: a916f289593625f4e984f064accc71f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a916f289593625f4e984f064accc71f8, type: 3}
 --- !u!1 &2015492289
@@ -3395,7 +3475,7 @@ GameObject:
   - component: {fileID: 2015492291}
   m_Layer: 0
   m_Name: orange_platform_08
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3755,7 +3835,7 @@ GameObject:
   - component: {fileID: 2084277429}
   m_Layer: 0
   m_Name: asteroid_medium_02
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

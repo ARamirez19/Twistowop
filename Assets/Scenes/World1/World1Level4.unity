@@ -382,6 +382,86 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3042354581891784285, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354581897329996, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354582045634737, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354582063344711, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354582252800602, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354582305304415, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354582369382711, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354582671913856, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354582757168763, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354582960443482, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354583117448646, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354583188604985, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354583544229013, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354583671677515, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354583789028439, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042354583901539505, guid: c5927c9de852bbf4b97dbe29752ba75e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5927c9de852bbf4b97dbe29752ba75e, type: 3}
 --- !u!4 &453370673 stripped
@@ -528,7 +608,7 @@ GameObject:
   - component: {fileID: 885966372}
   m_Layer: 0
   m_Name: asteroid_corner_01
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1104,16 +1184,6 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3604009395782681809, guid: 4c7010f0e390560408be9db645afebca,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 19.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 3604009395782681809, guid: 4c7010f0e390560408be9db645afebca,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.58
-      objectReference: {fileID: 0}
     - target: {fileID: 8144573697680718080, guid: 4c7010f0e390560408be9db645afebca,
         type: 3}
       propertyPath: m_IsActive
@@ -1123,6 +1193,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604009395782681809, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604009395782681809, guid: 4c7010f0e390560408be9db645afebca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.58
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6388542208373426380, guid: 4c7010f0e390560408be9db645afebca, type: 3}
@@ -1353,7 +1433,7 @@ GameObject:
   - component: {fileID: 1447522818}
   m_Layer: 0
   m_Name: orange_platform_03
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1763,7 +1843,7 @@ GameObject:
   - component: {fileID: 2009654854}
   m_Layer: 0
   m_Name: orange_platform_08
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2115,7 +2195,7 @@ GameObject:
   - component: {fileID: 2117671429}
   m_Layer: 0
   m_Name: asteroid_corner_04
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
