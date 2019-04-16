@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour, IGameState
 
     [SerializeField] private int freezeLimit = 0;
     private int timesFrozen = 0;
+    public int deathCounter;
     [SerializeField] private bool canPlayerFreeze = true;
 
     private GameStateManager gsManager;
@@ -70,13 +71,29 @@ public class LevelManager : MonoBehaviour, IGameState
         {
             PersistentGUI.Instance.gameObject.SetActive(true);
         }
+
+        if(PlayerPrefs.HasKey("DeathCounter"))
+        {
+            deathCounter = PlayerPrefs.GetInt("DeathCounter");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("DeathCounter", 3);
+            deathCounter = PlayerPrefs.GetInt("DeathCounter");
+        }
     }
 
     void Update()
     {
+        Debug.Log(state);
         if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
         {
             currentTimer += Time.deltaTime;
+        }
+        if( state == e_GAMESTATE.LEVELCOMPLETE)
+        {
+            deathCounter = 3;
+            PlayerPrefs.SetInt("DeathCounter", deathCounter);
         }
     }
 
@@ -113,6 +130,17 @@ public class LevelManager : MonoBehaviour, IGameState
 
     public void RestartLevel()
     {
+        deathCounter--;
+        PlayerPrefs.SetInt("DeathCounter", deathCounter);
+        if (deathCounter < 1)
+        {
+            if (PlayerPrefs.GetInt("Lives") > 0)
+            {
+                PlayerPrefs.SetInt("Lives", PlayerPrefs.GetInt("Lives") - 1);
+            }
+            deathCounter = 3;
+            PlayerPrefs.SetInt("DeathCounter", deathCounter);
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
