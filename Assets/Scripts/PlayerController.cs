@@ -273,4 +273,17 @@ public class PlayerController : BaseController
     {
         upIsUp = s;
     }
+
+    public void PlayerDeath()
+    {
+        StartCoroutine(PlayerShot());
+    }
+
+    public IEnumerator PlayerShot()
+    {
+        spinPlayer = true;
+        this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        yield return new WaitForSeconds(2.0f);
+        levelManager.RestartLevel();
+    }
 }

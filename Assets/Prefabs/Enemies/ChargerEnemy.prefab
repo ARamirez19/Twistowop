@@ -10916,6 +10916,8 @@ MonoBehaviour:
   doesVelocityStop: 1
   isAffectedByFreeze: 1
   isAffectedByGravityWells: 0
+  isAffectedByStickyWalls: 1
+  deathAnimation: 0
   speed: 0
   incrementSpeed: 0.3
   maxSpeed: 17
@@ -10923,10 +10925,12 @@ MonoBehaviour:
   moveToEndPos: 0
   returnToStartPos: 0
   hitWall: 0
+  hitPlayer: 0
   field: {fileID: 3221149377244581418}
   startPos: {fileID: 354422352579399870}
   endPos: {fileID: 3855281112639611472}
   movementSprite: {fileID: 4804278842222897091}
+  playerThrust: 10
 --- !u!50 &5999134441855841771
 Rigidbody2D:
   serializedVersion: 4

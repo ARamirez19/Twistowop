@@ -6017,6 +6017,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shadow_Cubark Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7584153425367028590, guid: a28f42f16caa18f42be72c723a890f29,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7599371204846123577, guid: a28f42f16caa18f42be72c723a890f29,
         type: 3}
       propertyPath: m_LocalPosition.x

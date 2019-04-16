@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WallSpike : EnemyController
+public class BallEnemy : EnemyController
 {
     private GameObject player;
-    float waitTime = 2.0f;
+    private float waitTime = 2.0f;
 
     protected override void ExtraStart()
     {
