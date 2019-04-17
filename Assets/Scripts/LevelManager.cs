@@ -122,10 +122,7 @@ public class LevelManager : MonoBehaviour, IGameState
 
     public void NextLevel()
     {
-        if (SceneManager.GetActiveScene().name == "Level5")
-            SceneManager.LoadScene("LevelSelect");
-        else
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   
     }
 
     public void RestartLevel()
