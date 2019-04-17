@@ -11,9 +11,11 @@ public class Bullet : MonoBehaviour, IGameState
     private int speed;
     protected LevelManager levelManager;
     private Rigidbody2D rbody;
+    private GameObject player;
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         gsManager = GameStateManager.GetInstance();
         gsManager.GameStateSubscribe(this.gameObject);
         state = gsManager.GetGameState();
@@ -52,8 +54,8 @@ public class Bullet : MonoBehaviour, IGameState
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.tag == "Player" && (state == GameState.e_GAMESTATE.PLAYING))
-        {
-            levelManager.RestartLevel();
+        { 
+            player.GetComponent<PlayerController>().PlayerDeath();
             Destroy(this.gameObject);
         }
         else

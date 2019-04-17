@@ -27,7 +27,6 @@ public class WindEnemy : EnemyController
     {
 		player = GameObject.FindGameObjectWithTag("Player");
 		playerBody = player.GetComponent<Rigidbody2D>();
-
 		field = this.gameObject.transform.GetChild(1).gameObject;
 		startPos = this.gameObject.transform.GetChild(2).transform.position;
 		endPos = this.gameObject.transform.GetChild(3).transform.position;
@@ -59,7 +58,19 @@ public class WindEnemy : EnemyController
         }
     }
 
-	void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.tag == "Player" && (state == GameState.e_GAMESTATE.PLAYING || state == GameState.e_GAMESTATE.PAUSED))
+        {
+            base.deathAnimation = true;
+            float waitTime = 2.0f;
+            StartCoroutine(DeathTimer(waitTime));
+            player.GetComponent<PlayerController>().spinPlayer = true;
+            player.GetComponent<BoxCollider2D>().enabled = false;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.gameObject.tag == "Player" && pushObject == true)
 		{

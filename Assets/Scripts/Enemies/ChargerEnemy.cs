@@ -44,7 +44,7 @@ public class ChargerEnemy : EnemyController
 
     private float waitTime;
     [SerializeField]
-    private float thrust;
+    private float playerThrust;
 	private Animator myAnim;
 	private Vector2 direction;
 
@@ -123,7 +123,7 @@ public class ChargerEnemy : EnemyController
 
         if(hitPlayer == true)
         {
-            player.GetComponent<Rigidbody2D>().velocity += direction * thrust;
+            player.GetComponent<Rigidbody2D>().velocity += direction * playerThrust;
         }
     }
 

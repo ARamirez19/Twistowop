@@ -11,9 +11,10 @@ public class LockonEnemy : EnemyController
 	private float distance;
 	[SerializeField]
 	private float lockonTimer;
-	private Vector2 enemyDirection;
+    private float waitTime = 2.0f;
+    private Vector2 enemyDirection;
 	private bool lockingOn = false;
-	
+    private bool confirmedKill = false;
 	// Start is called before the first frame update
 	protected override void ExtraStart()
 	{
@@ -23,7 +24,7 @@ public class LockonEnemy : EnemyController
 	// Update is called once per frame
 	void Update()
 	{
-		if(state == GameState.e_GAMESTATE.PLAYING && lockingOn == false)
+		if(state == GameState.e_GAMESTATE.PLAYING && lockingOn == false && confirmedKill == false)
 		{
 			enemyDirection = player.transform.position - transform.position;
 			enemyDirection = enemyDirection.normalized;
@@ -42,7 +43,12 @@ public class LockonEnemy : EnemyController
 		yield return new WaitForSeconds(lockonTimer);
 		if(Vector2.Distance(this.gameObject.transform.position, player.transform.position) < distance)
 		{
-			levelManager.RestartLevel();
+            //levelManager.RestartLevel();
+            confirmedKill = true;
+            base.deathAnimation = true;
+            StartCoroutine(DeathTimer(waitTime));
+            player.GetComponent<PlayerController>().spinPlayer = true;
+            player.GetComponent<BoxCollider2D>().enabled = false;
 		}
 		else
 		{
