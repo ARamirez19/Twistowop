@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class PlayerAudio : MonoBehaviour
 {
-    [SerializeField]
-    private float lightImpact = 10;
-    [SerializeField]
-    private float mediumImpact = 20;
-    [SerializeField]
-    private float heavyImpact = 30;
+    private float lightImpact = 5;
+    private float mediumImpact = 10;
+    private float heavyImpact = 15;
 
     private Rigidbody2D rb;
     // Start is called before the first frame update

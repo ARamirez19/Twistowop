@@ -10,7 +10,8 @@ namespace GameState
 		PAUSED,
 		PLAYING,
 		MENU,
-		LEVELCOMPLETE
+		LEVELCOMPLETE,
+        DEAD
 	}
 }
 

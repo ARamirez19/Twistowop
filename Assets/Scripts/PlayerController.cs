@@ -34,7 +34,7 @@ public class PlayerController : BaseController
    
     private Rigidbody2D playerRigidbody;
     public bool portalEligible = true;
-    public bool spinPlayer = false;
+    public bool deadPlayer = false;
 
     void Update()
     {
@@ -80,7 +80,7 @@ public class PlayerController : BaseController
             }
             timerText.text = ((int)jetpackTime).ToString();
         }
-        if(spinPlayer == true)
+        if(deadPlayer == true)
         {
             transform.Rotate(Vector3.forward * 500.0f * Time.deltaTime);
         }
@@ -276,12 +276,13 @@ public class PlayerController : BaseController
 
     public void PlayerDeath()
     {
+        gsManager.SetGameState(e_GAMESTATE.DEAD);
         StartCoroutine(PlayerShot());
     }
 
     public IEnumerator PlayerShot()
     {
-        spinPlayer = true;
+        deadPlayer = true;
         this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
         yield return new WaitForSeconds(2.0f);
         levelManager.RestartLevel();

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using GameState;
 using System.Collections;
 
 public class EnemyController : BaseController
@@ -15,6 +16,7 @@ public class EnemyController : BaseController
 
     public IEnumerator DeathTimer(float time)
     {
+        gsManager.SetGameState(e_GAMESTATE.DEAD);
         yield return new WaitForSeconds(time);
         levelManager.RestartLevel();
     }

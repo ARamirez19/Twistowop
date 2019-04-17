@@ -65,7 +65,7 @@ public class WindEnemy : EnemyController
             base.deathAnimation = true;
             float waitTime = 2.0f;
             StartCoroutine(DeathTimer(waitTime));
-            player.GetComponent<PlayerController>().spinPlayer = true;
+            player.GetComponent<PlayerController>().deadPlayer = true;
             player.GetComponent<BoxCollider2D>().enabled = false;
         }
     }

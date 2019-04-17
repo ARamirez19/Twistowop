@@ -47,7 +47,7 @@ public class LockonEnemy : EnemyController
             confirmedKill = true;
             base.deathAnimation = true;
             StartCoroutine(DeathTimer(waitTime));
-            player.GetComponent<PlayerController>().spinPlayer = true;
+            player.GetComponent<PlayerController>().deadPlayer = true;
             player.GetComponent<BoxCollider2D>().enabled = false;
 		}
 		else

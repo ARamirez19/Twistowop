@@ -35,7 +35,7 @@ public class DoNotTouch : EnemyController
             waitTime = 2.0f;
             base.deathAnimation = true;
             StartCoroutine(PushPlayer());
-            player.GetComponent<PlayerController>().spinPlayer = true;
+            player.GetComponent<PlayerController>().deadPlayer = true;
             base.StartCoroutine(DeathTimer(waitTime));
             player.GetComponent<BoxCollider2D>().enabled = false;
         }
