@@ -1,50 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject[] musicVolume;
-    [SerializeField]
-    private GameObject[] effectVolume;
+    [SerializeField] private Slider musicSlider;
+    [SerializeField] private Slider effectsSlider;
 
-    public int currentMusicVol = 12;
-    public int currenteffectVol = 12;
 
-    public void LowerMusic()
+    private void Awake()
     {
-        if(currentMusicVol != 0)
-        {
-            musicVolume[currentMusicVol-1].SetActive(false);
-            currentMusicVol--;
-        }
+        musicSlider = GameObject.Find("MusicSlider").GetComponent<Slider>();
+        effectsSlider = GameObject.Find("EffectsSlider").GetComponent<Slider>();
+        float savedMusicVol = PlayerPrefs.GetFloat("MusicVol", musicSlider.maxValue);
+        float savedEffectsVol = PlayerPrefs.GetFloat("EffectsVol", effectsSlider.maxValue);
+        musicSlider.value = savedMusicVol;
+        effectsSlider.value = savedEffectsVol;
+        SetMusicVol(savedMusicVol);
+        SetEffectsVol(savedEffectsVol);
+        musicSlider.onValueChanged.AddListener((float _) => SetMusicVol(_));
+        effectsSlider.onValueChanged.AddListener((float _) => SetEffectsVol(_));
     }
 
-    public void IncreaseMusic()
+    void SetMusicVol(float vol)
     {
-        if (currentMusicVol != 12)
-        {
-            musicVolume[currentMusicVol].SetActive(true);
-            currentMusicVol++;
-        }
+        //Add code to change vol
+        PlayerPrefs.SetFloat("MusicVol", vol);
     }
 
-    public void LowerSoundEffects()
+    void SetEffectsVol(float vol)
     {
-        if(currenteffectVol != 0)
-        {
-            effectVolume[currenteffectVol - 1].SetActive(false);
-            currenteffectVol--;
-        }
-    }
-
-    public void IncreaseSoundEffects()
-    {
-        if (currenteffectVol != 12)
-        {
-            effectVolume[currenteffectVol].SetActive(true);
-            currenteffectVol++;
-        }
+        //Add code to change vol
+        PlayerPrefs.SetFloat("EffectsVol", vol);
     }
 }

@@ -45,7 +45,6 @@ public class Lives : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(deathCounter);
        if(PlayerPrefs.HasKey("DeathCounter"))
        {
            if (PlayerPrefs.GetInt("DeathCounter") != deathCounter)
@@ -72,7 +71,6 @@ public class Lives : MonoBehaviour
 
     public void UpdateHeart()
     {
-        Debug.Log((float)deathCounter/3);
         heart.fillAmount = ((float)deathCounter/3.0f);
     }
 }
