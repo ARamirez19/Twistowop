@@ -35,6 +35,7 @@
 				<Event Id="1167100998" Name="Play_SpaceShip_Large_Pass" ObjectPath="\Events\Default Work Unit\Ambiences\Play_SpaceShip_Large_Pass"/>
 				<Event Id="1677540204" Name="Stop_BallEnemy_Ambience" ObjectPath="\Events\Default Work Unit\Enemies\BallEnemy\Stop_BallEnemy_Ambience" MaxAttenuation="0.000000"/>
 				<Event Id="2370134607" Name="Stop_RayGunShooter_FireLoop" ObjectPath="\Events\Default Work Unit\Enemies\RayGunShooter\Stop_RayGunShooter_FireLoop" MaxAttenuation="0.000000"/>
+				<Event Id="2895423681" Name="Stop_Shock_Ambience" ObjectPath="\Events\Default Work Unit\Ambiences\Stop_Shock_Ambience" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="63338338" Language="SFX">

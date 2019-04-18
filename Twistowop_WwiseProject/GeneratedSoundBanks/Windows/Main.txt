@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2370134607	Stop_RayGunShooter_FireLoop			\Default Work Unit\Enemies\RayGunShooter\Stop_RayGunShooter_FireLoop	
 	2660315473	Play_RayGunShooter_FireLoop			\Default Work Unit\Enemies\RayGunShooter\Play_RayGunShooter_FireLoop	
 	2842982140	Play_Shock			\Default Work Unit\SFX\Play_Shock	
+	2895423681	Stop_Shock_Ambience			\Default Work Unit\Ambiences\Stop_Shock_Ambience	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	2946345747	Play_Shock_Ambience			\Default Work Unit\Ambiences\Play_Shock_Ambience	
 	3284840310	Play_BallEnemy_Ambience			\Default Work Unit\Enemies\BallEnemy\Play_BallEnemy_Ambience	
