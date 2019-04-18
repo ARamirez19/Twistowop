@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 87b3b5287df41f46bfff728d5783eec5
     GuidInternal: 
-    m_lastTime: -8586463379613445573
+    m_lastTime: -8586461268956004220
     List:
     - name: Play_BallEnemy_Ambience
       guid: b399026e76048645b66ac2fffcb09240
@@ -238,6 +238,36 @@ MonoBehaviour:
       - ElementName: Stop_BallEnemy_Ambience
         ObjectType: 3
       Path: Default Work Unit\Enemies\BallEnemy\Stop_BallEnemy_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_RayGunShooter_FireLoop
+      guid: e5dca138b9433241a534e91874b0e1e2
+      id: 2370134607
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Enemies
+        ObjectType: 4
+      - ElementName: RayGunShooter
+        ObjectType: 4
+      - ElementName: Stop_RayGunShooter_FireLoop
+        ObjectType: 3
+      Path: Default Work Unit\Enemies\RayGunShooter\Stop_RayGunShooter_FireLoop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Shock_Ambience
+      guid: 9ab0b2ac5c962c42b64acdc19ae8a6ee
+      id: 2895423681
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Shock_Ambience
+        ObjectType: 3
+      Path: Default Work Unit\Ambiences\Stop_Shock_Ambience
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

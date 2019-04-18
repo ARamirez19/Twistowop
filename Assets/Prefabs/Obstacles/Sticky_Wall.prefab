@@ -68,6 +68,7 @@ GameObject:
   - component: {fileID: 1799924592096744947}
   - component: {fileID: 7694365221040239902}
   - component: {fileID: 5118879472020133856}
+  - component: {fileID: 3115080689959679112}
   m_Layer: 0
   m_Name: Sticky_Wall
   m_TagString: Untagged
@@ -193,6 +194,36 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: c9596fe77d8d47943a06d3f87820d217,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &3115080689959679112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2718574029028357605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45da61bbf5756304d957a1192c0e3106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 958ca0ea
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6084a4739ad63c0469ed7d2330e4b0a8,
       type: 2}
   useCallbacks: 0
   Callbacks: []

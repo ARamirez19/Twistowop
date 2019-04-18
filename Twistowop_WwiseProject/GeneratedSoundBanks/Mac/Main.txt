@@ -6,6 +6,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1167100998	Play_SpaceShip_Large_Pass			\Default Work Unit\Ambiences\Play_SpaceShip_Large_Pass	
 	1677540204	Stop_BallEnemy_Ambience			\Default Work Unit\Enemies\BallEnemy\Stop_BallEnemy_Ambience	
 	1705323465	Play_Bumper_Hit			\Default Work Unit\SFX\Play_Bumper_Hit	
+	2370134607	Stop_RayGunShooter_FireLoop			\Default Work Unit\Enemies\RayGunShooter\Stop_RayGunShooter_FireLoop	
 	2660315473	Play_RayGunShooter_FireLoop			\Default Work Unit\Enemies\RayGunShooter\Play_RayGunShooter_FireLoop	
 	2842982140	Play_Shock			\Default Work Unit\SFX\Play_Shock	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
@@ -29,27 +30,27 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2142520180	BallEnemy_Distance			\Default Work Unit\BallEnemy_Distance	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	63338338	Shock_3	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Shock_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shocks\Shocks\Shock_3		299072
-	119908517	Shock_2	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Shock_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shocks\Shocks\Shock_2		358464
-	120297609	BallEnemy_Bark_3	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Bark_3_9E55AF32.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_3		50748
-	164339215	Bumper_Layer_3	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Bumper_Layer_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bumpers\Bumper_Layer_3		171200
-	180651609	BallEnemy_Bark_4	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Bark_4_7CD8D331.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_4		59816
-	201779009	Carrot_Pickup	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Carrot_Pickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Carrot_Pickup		288832
-	205706695	sample music	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\LevelTheme_standIn_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music\Zone_1\sample music\sample music		19089096
-	368360432	Shock_4	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Shock_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shocks\Shocks\Shock_4		313408
-	439818504	Shock_1	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Shock_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shocks\Shocks\Shock_1		332984
-	446198974	SpaceShipEngineAmbience	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\SpaceShipEngineAmbience_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\SpaceShipEngineAmbience		2537536
-	508470443	Bumper_Layer_2	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Bumper_Layer_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bumpers\Bumper_Layer_2		27712
-	576736924	BallEnemy_ChainLoop	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_ChainLoop_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Ambience\BallEnemy_ChainLoop		390208
-	598320126	BallEnemy_Bite_2	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Attack_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Attack\BallEnemy_Bite_2		42864
-	613207402	RayGunShooter_SFX	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\RayGunShooter_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\RayGunShooter\RayGunShooter_SFX		451648
-	633114224	MainMenuTheme	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\MainMenuTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music\MainMenu\MainMenuTheme\MainMenuTheme		9890652
-	707156080	Bumper_Layer_1	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Bumper_Layer_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bumpers\Bumper_Layer_1		148800
-	720705529	BallEnemy_ChatterLoop	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_ChatterLoop_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Ambience\BallEnemy_ChatterLoop		390208
-	737388196	BallEnemy_Beep	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Beep_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Beep		22208
-	778795566	Shock_Ambience	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Shock_Ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Shock_Ambience		1932848
-	905224636	BallEnemy_Bark_2	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Bark_2_0BDDB287.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_2		43736
-	928833758	BallEnemy_Bark_1	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Bark_1_F642DFB5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_1		58112
-	934246036	sample music	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\sample music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music\Zone_1\sample music\sample music		19089096
-	970773073	Large_SpaceShip_Passing_RtoL	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Large_SpaceShip_Passing_RtoL_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Large_SpaceShip_Passing_RtoL		1311808
+	63338338	Shock_3	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Shock_3_229C4AF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shocks\Shocks\Shock_3		44806
+	119908517	Shock_2	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Shock_2_229C4AF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shocks\Shocks\Shock_2		86218
+	120297609	BallEnemy_Bark_3	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Bark_3_EFC6E5EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_3		6222
+	164339215	Bumper_Layer_3	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Bumper_Layer_3_229C4AF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bumpers\Bumper_Layer_3		22082
+	180651609	BallEnemy_Bark_4	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Bark_4_3B14B369.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_4		6562
+	201779009	Carrot_Pickup	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Carrot_Pickup_229C4AF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Carrot_Pickup		42368
+	205706695	sample music	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\LevelTheme_standIn_643E073F.wem		\Interactive Music Hierarchy\Default Work Unit\music\Zone_1\sample music\sample music		2782971
+	368360432	Shock_4	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Shock_4_229C4AF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shocks\Shocks\Shock_4		75293
+	439818504	Shock_1	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Shock_1_229C4AF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shocks\Shocks\Shock_1		69379
+	446198974	SpaceShipEngineAmbience	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\SpaceShipEngineAmbience_643E073F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\SpaceShipEngineAmbience		319772
+	508470443	Bumper_Layer_2	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Bumper_Layer_2_229C4AF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bumpers\Bumper_Layer_2		4919
+	576736924	BallEnemy_ChainLoop	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_ChainLoop_8B4C3B21.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Ambience\BallEnemy_ChainLoop		77622
+	598320126	BallEnemy_Bite_2	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Attack_2_8B4C3B21.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Attack\BallEnemy_Bite_2		6170
+	613207402	RayGunShooter_SFX	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\RayGunShooter_643E073F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\RayGunShooter\RayGunShooter_SFX		126744
+	633114224	MainMenuTheme	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\MainMenuTheme_643E073F.wem		\Interactive Music Hierarchy\Default Work Unit\music\MainMenu\MainMenuTheme\MainMenuTheme		1666511
+	707156080	Bumper_Layer_1	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Bumper_Layer_1_229C4AF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bumpers\Bumper_Layer_1		18412
+	720705529	BallEnemy_ChatterLoop	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_ChatterLoop_C501F23F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Ambience\BallEnemy_ChatterLoop		62985
+	737388196	BallEnemy_Beep	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Beep_8B4C3B21.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Beep		3206
+	778795566	Shock_Ambience	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Shock_Ambience_229C4AF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Shock_Ambience		612285
+	905224636	BallEnemy_Bark_2	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Bark_2_18A673DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_2		6127
+	928833758	BallEnemy_Bark_1	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\BallEnemy_Bark_1_B68D0A1D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BallEnemy\BallEnemy_Bark\BallEnemy_Bark_1		8143
+	934246036	sample music	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\sample music_643E073F.wem		\Interactive Music Hierarchy\Default Work Unit\music\Zone_1\sample music\sample music		2826903
+	970773073	Large_SpaceShip_Passing_RtoL	E:\GameData\Twistowop\Twistowop_WwiseProject\.cache\Mac\SFX\Large_SpaceShip_Passing_RtoL_229C4AF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Large_SpaceShip_Passing_RtoL		109184
 

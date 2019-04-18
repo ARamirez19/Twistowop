@@ -26,6 +26,7 @@ namespace AK
         static const AkUniqueID PLAY_SPACESHIP_AMBIENCE = 311975177U;
         static const AkUniqueID PLAY_SPACESHIP_LARGE_PASS = 1167100998U;
         static const AkUniqueID STOP_BALLENEMY_AMBIENCE = 1677540204U;
+        static const AkUniqueID STOP_RAYGUNSHOOTER_FIRELOOP = 2370134607U;
     } // namespace EVENTS
 
     namespace STATES

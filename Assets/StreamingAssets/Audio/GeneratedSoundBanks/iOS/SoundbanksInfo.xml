@@ -34,99 +34,101 @@
 				<Event Id="311975177" Name="Play_SpaceShip_Ambience" ObjectPath="\Events\Default Work Unit\Ambiences\Play_SpaceShip_Ambience"/>
 				<Event Id="1167100998" Name="Play_SpaceShip_Large_Pass" ObjectPath="\Events\Default Work Unit\Ambiences\Play_SpaceShip_Large_Pass"/>
 				<Event Id="1677540204" Name="Stop_BallEnemy_Ambience" ObjectPath="\Events\Default Work Unit\Enemies\BallEnemy\Stop_BallEnemy_Ambience"/>
+				<Event Id="2370134607" Name="Stop_RayGunShooter_FireLoop" ObjectPath="\Events\Default Work Unit\Enemies\RayGunShooter\Stop_RayGunShooter_FireLoop"/>
+				<Event Id="2895423681" Name="Stop_Shock_Ambience" ObjectPath="\Events\Default Work Unit\Ambiences\Stop_Shock_Ambience"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="63338338" Language="SFX">
 					<ShortName>Shock_3.wav</ShortName>
-					<Path>SFX\Shock_3_10C4C929.wem</Path>
+					<Path>SFX\Shock_3_229C4AF1.wem</Path>
 				</File>
 				<File Id="119908517" Language="SFX">
 					<ShortName>Shock_2.wav</ShortName>
-					<Path>SFX\Shock_2_10C4C929.wem</Path>
+					<Path>SFX\Shock_2_229C4AF1.wem</Path>
 				</File>
 				<File Id="120297609" Language="SFX">
 					<ShortName>BallEnemy_Bark_3.wav</ShortName>
-					<Path>SFX\BallEnemy_Bark_3_9E55AF32.wem</Path>
+					<Path>SFX\BallEnemy_Bark_3_EFC6E5EA.wem</Path>
 				</File>
 				<File Id="164339215" Language="SFX">
 					<ShortName>Bumper_Layer_3.wav</ShortName>
-					<Path>SFX\Bumper_Layer_3_10C4C929.wem</Path>
+					<Path>SFX\Bumper_Layer_3_229C4AF1.wem</Path>
 				</File>
 				<File Id="180651609" Language="SFX">
 					<ShortName>BallEnemy_Bark_4.wav</ShortName>
-					<Path>SFX\BallEnemy_Bark_4_7CD8D331.wem</Path>
+					<Path>SFX\BallEnemy_Bark_4_3B14B369.wem</Path>
 				</File>
 				<File Id="201779009" Language="SFX">
 					<ShortName>Carrot_Pickup.wav</ShortName>
-					<Path>SFX\Carrot_Pickup_10C4C929.wem</Path>
+					<Path>SFX\Carrot_Pickup_229C4AF1.wem</Path>
 				</File>
 				<File Id="205706695" Language="SFX">
 					<ShortName>LevelTheme_standIn.wav</ShortName>
-					<Path>SFX\LevelTheme_standIn_D79FB2B7.wem</Path>
+					<Path>SFX\LevelTheme_standIn_643E073F.wem</Path>
 				</File>
 				<File Id="368360432" Language="SFX">
 					<ShortName>Shock_4.wav</ShortName>
-					<Path>SFX\Shock_4_10C4C929.wem</Path>
+					<Path>SFX\Shock_4_229C4AF1.wem</Path>
 				</File>
 				<File Id="439818504" Language="SFX">
 					<ShortName>Shock_1.wav</ShortName>
-					<Path>SFX\Shock_1_10C4C929.wem</Path>
+					<Path>SFX\Shock_1_229C4AF1.wem</Path>
 				</File>
 				<File Id="446198974" Language="SFX">
 					<ShortName>SpaceShipEngineAmbience.wav</ShortName>
-					<Path>SFX\SpaceShipEngineAmbience_D79FB2B7.wem</Path>
+					<Path>SFX\SpaceShipEngineAmbience_643E073F.wem</Path>
 				</File>
 				<File Id="508470443" Language="SFX">
 					<ShortName>Bumper_Layer_2.wav</ShortName>
-					<Path>SFX\Bumper_Layer_2_10C4C929.wem</Path>
+					<Path>SFX\Bumper_Layer_2_229C4AF1.wem</Path>
 				</File>
 				<File Id="576736924" Language="SFX">
 					<ShortName>BallEnemy_ChainLoop.wav</ShortName>
-					<Path>SFX\BallEnemy_ChainLoop_56D34C19.wem</Path>
+					<Path>SFX\BallEnemy_ChainLoop_8B4C3B21.wem</Path>
 				</File>
 				<File Id="598320126" Language="SFX">
 					<ShortName>BallEnemy_Attack_2.wav</ShortName>
-					<Path>SFX\BallEnemy_Attack_2_56D34C19.wem</Path>
+					<Path>SFX\BallEnemy_Attack_2_8B4C3B21.wem</Path>
 				</File>
 				<File Id="613207402" Language="SFX">
 					<ShortName>RayGunShooter.wav</ShortName>
-					<Path>SFX\RayGunShooter_D79FB2B7.wem</Path>
+					<Path>SFX\RayGunShooter_643E073F.wem</Path>
 				</File>
 				<File Id="633114224" Language="SFX">
 					<ShortName>MainMenuTheme.wav</ShortName>
-					<Path>SFX\MainMenuTheme_D79FB2B7.wem</Path>
+					<Path>SFX\MainMenuTheme_643E073F.wem</Path>
 				</File>
 				<File Id="707156080" Language="SFX">
 					<ShortName>Bumper_Layer_1.wav</ShortName>
-					<Path>SFX\Bumper_Layer_1_10C4C929.wem</Path>
+					<Path>SFX\Bumper_Layer_1_229C4AF1.wem</Path>
 				</File>
 				<File Id="720705529" Language="SFX">
 					<ShortName>BallEnemy_ChatterLoop.wav</ShortName>
-					<Path>SFX\BallEnemy_ChatterLoop_8956FC97.wem</Path>
+					<Path>SFX\BallEnemy_ChatterLoop_C501F23F.wem</Path>
 				</File>
 				<File Id="737388196" Language="SFX">
 					<ShortName>BallEnemy_Beep.wav</ShortName>
-					<Path>SFX\BallEnemy_Beep_56D34C19.wem</Path>
+					<Path>SFX\BallEnemy_Beep_8B4C3B21.wem</Path>
 				</File>
 				<File Id="778795566" Language="SFX">
 					<ShortName>Shock_Ambience.wav</ShortName>
-					<Path>SFX\Shock_Ambience_10C4C929.wem</Path>
+					<Path>SFX\Shock_Ambience_229C4AF1.wem</Path>
 				</File>
 				<File Id="905224636" Language="SFX">
 					<ShortName>BallEnemy_Bark_2.wav</ShortName>
-					<Path>SFX\BallEnemy_Bark_2_0BDDB287.wem</Path>
+					<Path>SFX\BallEnemy_Bark_2_18A673DF.wem</Path>
 				</File>
 				<File Id="928833758" Language="SFX">
 					<ShortName>BallEnemy_Bark_1.wav</ShortName>
-					<Path>SFX\BallEnemy_Bark_1_F642DFB5.wem</Path>
+					<Path>SFX\BallEnemy_Bark_1_B68D0A1D.wem</Path>
 				</File>
 				<File Id="934246036" Language="SFX">
 					<ShortName>sample music.wav</ShortName>
-					<Path>SFX\sample music_D79FB2B7.wem</Path>
+					<Path>SFX\sample music_643E073F.wem</Path>
 				</File>
 				<File Id="970773073" Language="SFX">
 					<ShortName>Large_SpaceShip_Passing_RtoL.wav</ShortName>
-					<Path>SFX\Large_SpaceShip_Passing_RtoL_10C4C929.wem</Path>
+					<Path>SFX\Large_SpaceShip_Passing_RtoL_229C4AF1.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

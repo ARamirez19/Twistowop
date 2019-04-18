@@ -653,6 +653,7 @@ GameObject:
   - component: {fileID: 3611235862800720475}
   - component: {fileID: 1005942762774335098}
   - component: {fileID: 2357465986071619059}
+  - component: {fileID: 6937665906657704338}
   m_Layer: 0
   m_Name: Shooter_Enemy
   m_TagString: Untagged
@@ -804,6 +805,36 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 37a43f0a61ea4ad42bfc70e26e74cf03,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &6937665906657704338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611235862800720472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45da61bbf5756304d957a1192c0e3106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 958ca0ea
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5f1264a0aa908a942b9934a306e9d8e8,
       type: 2}
   useCallbacks: 0
   Callbacks: []

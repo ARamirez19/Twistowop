@@ -50,6 +50,20 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Stop_RayGunShooter_FireLoop" ID="{38A1DCE5-43B9-4132-A534-E91874B0E1E2}">
+									<ChildrenList>
+										<Action Name="" ID="{B57DDB93-B50B-417D-B4BF-AAE3DC09CD1F}" ShortID="792818984">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RayGunShooter_SFX" ID="{D0AB8F51-730E-4513-86A6-83D7C7E55494}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="BallEnemy" ID="{49976384-D469-4653-B65E-A3F8B70F4392}" ShortID="680303017">
@@ -239,6 +253,20 @@
 								<Action Name="" ID="{A236D3D7-8E6F-41F5-A33B-C32F15E331E6}" ShortID="101807757">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shock_Ambience" ID="{1C140E96-BB21-4DB2-A401-4528601A6040}" WorkUnitID="{9AA90E1C-9EB5-443B-876F-B5A958F80FE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Shock_Ambience" ID="{ACB2B09A-965C-422C-B64A-CDC19AE8A6EE}">
+							<ChildrenList>
+								<Action Name="" ID="{193AE0DB-E6D4-4D40-B430-54ECE69E83C9}" ShortID="473851316">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

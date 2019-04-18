@@ -12,9 +12,9 @@ public class BaseCollectable : MonoBehaviour
     {
         if (string.Compare(other.tag, "Player") == 0)
         {
-            LevelManager.GetInstance().CurrentCollectableCount++;
-            if(audioEventID != "")
+            if (audioEventID != "")
                 AkSoundEngine.PostEvent(audioEventID, gameObject);
+            LevelManager.GetInstance().CurrentCollectableCount++;
             Destroy(this.gameObject);
         }
     }

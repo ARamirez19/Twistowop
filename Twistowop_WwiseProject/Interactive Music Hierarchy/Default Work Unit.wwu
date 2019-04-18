@@ -107,8 +107,8 @@
 														<MusicClip Name="MainMenuTheme" ID="{D06E9F2E-FA4C-42EC-9909-1F512EC8EAC0}">
 															<PropertyList>
 																<Property Name="BeginTrimOffset" Type="Real64" Value="958.128168307805"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="51513.4791666667"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="50442.6300373815"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="563.604804886942"/>
 																<Property Name="PlayAt" Type="Real64" Value="-958.128168307804"/>
 															</PropertyList>
 															<AudioSourceRef Name="MainMenuTheme" ID="{15AE31EF-11C6-4CF4-B470-625A1F4B383B}"/>
@@ -125,7 +125,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>51.5134791666667</XPos>
+																				<XPos>50.44263</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -144,7 +144,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>51.5134791666667</XPos>
+																				<XPos>50.44263</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -163,7 +163,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>51.5134791666667</XPos>
+																				<XPos>50.44263</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
