@@ -24,6 +24,11 @@ public class LevelManager : MonoBehaviour, IGameState
     private GameObject LevelCompleteGUIObj;
     private GameObject StartMenuGUIObj;
 
+    private GameObject finalGoal;
+    private SpriteRenderer[] goalSprites;
+    private SpriteMask[] goalMasks;
+    private ParticleSystem dataParticle;
+
     [SerializeField] private List<BaseCollectable> collectables = new List<BaseCollectable>();
     public int CollectableAmount { get; private set; }
     public int CurrentCollectableCount { get; set; }
@@ -57,6 +62,22 @@ public class LevelManager : MonoBehaviour, IGameState
         state = gsManager.GetGameState();
         gsManager.GameStateSubscribe(this.gameObject);
 
+        finalGoal = GameObject.FindGameObjectWithTag("Goal");
+        finalGoal.GetComponent<Animator>().enabled = false;
+        finalGoal.GetComponent<CircleCollider2D>().enabled = false;
+        goalSprites = finalGoal.gameObject.GetComponentsInChildren<SpriteRenderer>();
+        goalMasks = finalGoal.gameObject.GetComponentsInChildren<SpriteMask>();
+        dataParticle = finalGoal.gameObject.GetComponentInChildren<ParticleSystem>();
+        dataParticle.Stop();
+        foreach(SpriteRenderer spriteRenderer in goalSprites)
+        {
+            spriteRenderer.enabled = false;
+        }
+        foreach(SpriteMask spriteMask in goalMasks)
+        {
+            spriteMask.enabled = false;
+        }
+
         GUIObj = GameObject.FindGameObjectWithTag("GUI");
 
         LevelCompleteGUIObj = GameObject.FindGameObjectWithTag("LevelCompleteGUI");
@@ -85,7 +106,7 @@ public class LevelManager : MonoBehaviour, IGameState
 
     void Update()
     {
-        Debug.Log(state);
+        //Debug.Log(state);
         if (state == e_GAMESTATE.PLAYING || state == e_GAMESTATE.PAUSED)
         {
             currentTimer += Time.deltaTime;
@@ -171,5 +192,20 @@ public class LevelManager : MonoBehaviour, IGameState
         {
             gsManager.SetGameState(e_GAMESTATE.PLAYING);
         }
+    }
+
+    public void SetGoalActive()
+    {
+        finalGoal.GetComponent<Animator>().enabled = true;
+        foreach(SpriteRenderer spriteRenderer in goalSprites)
+        {
+            spriteRenderer.enabled = true;
+        }
+        foreach(SpriteMask spriteMask in goalMasks)
+        {
+            spriteMask.enabled = true;
+        }
+        dataParticle.Play();
+        finalGoal.GetComponent<CircleCollider2D>().enabled = true;
     }
 }
